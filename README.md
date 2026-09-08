@@ -81,6 +81,8 @@ Pixel comparison is limited to the configured STYLE and GENERAL-01 main-content 
 
 The versioned JSON catalogs are sufficient to run this repository. Original Word files and private/local evidence directories are not required or included. Each finding has stable IDs, expected content/link rules, source and destination URLs, and explicit review obligations. See [coverage](docs/coverage.md), [contracts](docs/contracts.md), and [report format](docs/report-format.md).
 
+The [release verification record](docs/verification.md) separates checker self-tests from the first complete live acceptance results.
+
 - DOM assertions use recognized main-content roots, not navigation/footer text as a fallback. Browser observations are rendered DOM and computed styles, **not access to the site's server-side source code**.
 - Desktop is 1440 x 1000; mobile is 390 x 844. Anchor tests use keyboard activation on both. They do not certify touch reliability. Missing inline Top of Page links do not imply the global Back to Top button is missing.
 - External availability is checked afresh. A historically broken URL that recovers is not permanently blacklisted. A removed URL still requires review of its replacement.
