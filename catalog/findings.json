@@ -1,0 +1,2420 @@
+[
+  {
+    "id": "ABOUT-01",
+    "title": "AdCom names run together in the elected member table",
+    "baselineURL": "https://rs.ieee.org/about-rs/administrative-committee-adcom-members.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/administrative-committee-adcom-members/",
+    "rules": [
+      {
+        "id": "ABOUT-01-01",
+        "type": "forbidText",
+        "label": "Separate all four joined elected-member names",
+        "values": [
+          "Loretta ArellanoJoanna F. DeFranco",
+          "Ruizhi (Ricky) GaoGeorge Pallis",
+          "Preeti ChauhanChristian K. Hansen",
+          "Farnoosh NaderkhaniScott Tamashiro"
+        ]
+      },
+      {
+        "id": "ABOUT-01-02",
+        "type": "requireText",
+        "label": "Keep the affected member names readable",
+        "values": [
+          "Loretta Arellano",
+          "Joanna F. DeFranco",
+          "Ruizhi (Ricky) Gao",
+          "George Pallis",
+          "Preeti Chauhan",
+          "Christian K. Hansen",
+          "Farnoosh Naderkhani",
+          "Scott Tamashiro"
+        ]
+      },
+      {
+        "id": "ABOUT-01-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore separate readable entries. Treat the changed member identity separately in ABOUT-02."
+      },
+      {
+        "id": "ABOUT-01-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Inspect table-cell DOM and matched screenshots: each approved member must occupy a separate readable line. Whitespace-normalized text cannot prove BR nodes or line layout. Roster authority remains ABOUT-02."
+      }
+    ],
+    "reviews": [
+      "Restore separate readable entries. Treat the changed member identity separately in ABOUT-02.",
+      "Inspect table-cell DOM and matched screenshots: each approved member must occupy a separate readable line. Whitespace-normalized text cannot prove BR nodes or line layout. Roster authority remains ABOUT-02."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-02",
+    "title": "AdCom roster differs for the term ending 2026",
+    "baselineURL": "https://rs.ieee.org/about-rs/administrative-committee-adcom-members.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/administrative-committee-adcom-members/",
+    "rules": [
+      {
+        "id": "ABOUT-02-01",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-02-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm the authorized roster. The difference is verified, but the page alone cannot establish whether it is an intentional editorial update."
+      },
+      {
+        "id": "ABOUT-02-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare the complete term-ending-2026 cells and obtain the approved roster from the owner; neither Nir Kshetri nor Joanna F. DeFranco is automatically declared the authorized appointment."
+      }
+    ],
+    "reviews": [
+      "Confirm the authorized roster. The difference is verified, but the page alone cannot establish whether it is an intentional editorial update.",
+      "Compare the complete term-ending-2026 cells and obtain the approved roster from the owner; neither Nir Kshetri nor Joanna F. DeFranco is automatically declared the authorized appointment."
+    ],
+    "historicalCheckCount": 5,
+    "correction": "Keep the finding as an editorial discrepancy requiring owner confirmation, not a proven incorrect appointment."
+  },
+  {
+    "id": "ABOUT-03",
+    "title": "Protected AdCom navigation entries are absent",
+    "baselineURL": "https://rs.ieee.org/about-rs/administrative-committee-adcom-members.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/administrative-committee-adcom-members/",
+    "rules": [
+      {
+        "id": "ABOUT-03-01",
+        "type": "requireLink",
+        "label": "Restore discoverable Adcom Only navigation",
+        "filter": {
+          "text": "Adcom Only"
+        },
+        "scope": "all"
+      },
+      {
+        "id": "ABOUT-03-02",
+        "type": "requireLink",
+        "label": "Restore discoverable ExCom Only navigation",
+        "filter": {
+          "text": "ExCom Only"
+        },
+        "scope": "all"
+      },
+      {
+        "id": "ABOUT-03-03",
+        "type": "requireLink",
+        "label": "Restore discoverable AdCom Meetings sitemap entry",
+        "filter": {
+          "text": "AdCom Meetings"
+        },
+        "scope": "all",
+        "pageKey": "sitemap"
+      },
+      {
+        "id": "ABOUT-03-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm replacement routes and the intended members-only navigation. Source routes lead to sign-in, so protected body content was not compared."
+      },
+      {
+        "id": "ABOUT-03-05",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Owner approval is required for replacement routes and access roles. Capture navigation and sitemap, but do not fetch protected bodies or equate a login gate with deletion."
+      }
+    ],
+    "reviews": [
+      "Confirm replacement routes and the intended members-only navigation. Source routes lead to sign-in, so protected body content was not compared.",
+      "Owner approval is required for replacement routes and access roles. Capture navigation and sitemap, but do not fetch protected bodies or equate a login gate with deletion."
+    ],
+    "historicalCheckCount": 6,
+    "correction": "Do not describe the protected body content as lost. Ask for intended routes and access roles.",
+    "pages": [
+      {
+        "key": "primary",
+        "baselineURL": "https://rs.ieee.org/about-rs/administrative-committee-adcom-members.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/administrative-committee-adcom-members/"
+      },
+      {
+        "key": "sitemap",
+        "baselineURL": "https://rs.ieee.org/about-rs/sitemap.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/sitemap/"
+      }
+    ]
+  },
+  {
+    "id": "ABOUT-04",
+    "title": "Members only page has different access behavior",
+    "baselineURL": "https://rs.ieee.org/about-rs/for-rs-members-only.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/for-rs-members-only/",
+    "rules": [
+      {
+        "id": "ABOUT-04-01",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm the intended access policy and test logged-out and member roles. This observation does not prove unauthorized disclosure or content equivalence."
+      },
+      {
+        "id": "ABOUT-04-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare requested/final URLs and logged-out entry screenshots for both routes. Obtain the intended access matrix and authorized role-based testing. There is no reliable automatic acceptance condition until the owner decides public versus restricted access; blocked captures must never pass. Do not preserve public editorial access as an expected condition."
+      }
+    ],
+    "reviews": [
+      "Confirm the intended access policy and test logged-out and member roles. This observation does not prove unauthorized disclosure or content equivalence.",
+      "Compare requested/final URLs and logged-out entry screenshots for both routes. Obtain the intended access matrix and authorized role-based testing. There is no reliable automatic acceptance condition until the owner decides public versus restricted access; blocked captures must never pass. Do not preserve public editorial access as an expected condition."
+    ],
+    "historicalCheckCount": 4,
+    "correction": "This is an access-policy confirmation item. Neither unauthorized disclosure nor source/new content equality has been established."
+  },
+  {
+    "id": "ABOUT-05",
+    "title": "MOU links change from protected routes to direct files",
+    "baselineURL": "https://rs.ieee.org/about-rs/rs-mous.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/rs-mous/",
+    "rules": [
+      {
+        "id": "ABOUT-05-01",
+        "type": "orderedText",
+        "label": "Preserve all seven MOU labels in their source order",
+        "values": [
+          "RAS with ISV",
+          "RS IoT",
+          "Sensors with Reliability Soc",
+          "NTC with Reliability Soc",
+          "CSC with Reliability Soc",
+          "RL-TEC",
+          "Reliability Society with ISV"
+        ]
+      },
+      {
+        "id": "ABOUT-05-02",
+        "type": "requireLink",
+        "label": "Restore the RAS with ISV action",
+        "filter": {
+          "text": "RAS with ISV"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-05-03",
+        "type": "requireLink",
+        "label": "Restore the RS IoT action",
+        "filter": {
+          "text": "RS IoT"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-05-04",
+        "type": "requireLink",
+        "label": "Restore the Sensors with Reliability Soc action",
+        "filter": {
+          "text": "Sensors with Reliability Soc"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-05-05",
+        "type": "requireLink",
+        "label": "Restore the NTC with Reliability Soc action",
+        "filter": {
+          "text": "NTC with Reliability Soc"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-05-06",
+        "type": "requireLink",
+        "label": "Restore the CSC with Reliability Soc action",
+        "filter": {
+          "text": "CSC with Reliability Soc"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-05-07",
+        "type": "requireLink",
+        "label": "Restore the RL-TEC action",
+        "filter": {
+          "text": "RL-TEC"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-05-08",
+        "type": "requireLink",
+        "label": "Restore the Reliability Society with ISV action",
+        "filter": {
+          "text": "Reliability Society with ISV"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-05-09",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm whether these documents are intended for public access before launch. No authentication or protected source document access was attempted."
+      },
+      {
+        "id": "ABOUT-05-10",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare all seven hrefs and unauthenticated entry responses with the approved access policy. Link labels/order do not approve public PDFs or establish equality with protected source documents."
+      }
+    ],
+    "reviews": [
+      "Confirm whether these documents are intended for public access before launch. No authentication or protected source document access was attempted.",
+      "Compare all seven hrefs and unauthenticated entry responses with the approved access policy. Link labels/order do not approve public PDFs or establish equality with protected source documents."
+    ],
+    "historicalCheckCount": 10,
+    "correction": "Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-06",
+    "title": "See chapter list still navigates to the old site",
+    "baselineURL": "https://rs.ieee.org/about-rs/administrative-committee-adcom-members.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/administrative-committee-adcom-members/",
+    "rules": [
+      {
+        "id": "ABOUT-06-01",
+        "type": "requireLink",
+        "label": "Restore the See chapter list action",
+        "filter": {
+          "text": "See chapter list",
+          "href": "https://ieeerelsoc.wpenginepowered.com/chapters/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ABOUT-06-02",
+        "type": "forbidLink",
+        "label": "Remove the old-host chapter navigation target",
+        "filter": {
+          "text": "See chapter list",
+          "href": "https://rs.ieee.org/chapters.html"
+        }
+      },
+      {
+        "id": "ABOUT-06-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Use the corresponding migrated route, or document and test the production redirect strategy. The current link is not a 404; it leaves the migrated site."
+      }
+    ],
+    "reviews": [
+      "Use the corresponding migrated route, or document and test the production redirect strategy. The current link is not a 404; it leaves the migrated site."
+    ],
+    "historicalCheckCount": 3,
+    "correction": "Retain as an old-host navigation dependency, not a 404 or missing page."
+  },
+  {
+    "id": "ARCHIVE-01",
+    "title": "May 2015 contains the wrong issue content",
+    "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-may.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-may/",
+    "rules": [
+      {
+        "id": "ARCHIVE-01-01",
+        "type": "requireText",
+        "label": "Restore the two May 2015 articles and subject",
+        "values": [
+          "Performance Testing of a Real-World System",
+          "Intersecting Definitions of V&V",
+          "System and Software Assurance"
+        ]
+      },
+      {
+        "id": "ARCHIVE-01-02",
+        "type": "requireLink",
+        "label": "Restore the Performance Testing of a Real-World System action",
+        "filter": {
+          "text": "Performance Testing of a Real-World System",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-01-03",
+        "type": "requireLink",
+        "label": "Restore the Intersecting Definitions of V&V action",
+        "filter": {
+          "text": "Intersecting Definitions of V&V",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-01-04",
+        "type": "forbidText",
+        "label": "Remove the combined-issue articles from May",
+        "values": [
+          "Critical Infrastructure Systems and the Internet of Things",
+          "Is Your Vehicle Controlled by You?",
+          "Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments",
+          "Tool, Technique, and Tao in Computer Security Education",
+          "CTF: Alternative Training for Offensive Security"
+        ]
+      },
+      {
+        "id": "ARCHIVE-01-05",
+        "type": "linkCount",
+        "label": "Restore the nine May PDF document actions",
+        "filter": {
+          "hrefEndsWith": ".pdf"
+        },
+        "min": 9,
+        "max": 9
+      },
+      {
+        "id": "ARCHIVE-01-06",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore May content and targets; check ARCHIVE-02 at the same time. The misplaced CTF article title also loses the word Alternative."
+      },
+      {
+        "id": "ARCHIVE-01-07",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare the cover and all nine intended May documents, including the 15-page entire issue. Text/extension checks cannot prove document identity; historical twelve-file combined-to-May equality is not a current test."
+      }
+    ],
+    "reviews": [
+      "Restore May content and targets; check ARCHIVE-02 at the same time. The misplaced CTF article title also loses the word Alternative.",
+      "Compare the cover and all nine intended May documents, including the 15-page entire issue. Text/extension checks cannot prove document identity; historical twelve-file combined-to-May equality is not a current test."
+    ],
+    "historicalCheckCount": 30,
+    "correction": "The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-02",
+    "title": "August September October 2015 page has no issue content",
+    "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-august-september-october.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-august-september-october/",
+    "rules": [
+      {
+        "id": "ARCHIVE-02-01",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-02",
+        "type": "requireText",
+        "label": "Restore all five combined-issue article titles",
+        "values": [
+          "Critical Infrastructure Systems and the Internet of Things",
+          "Is Your Vehicle Controlled by You?",
+          "Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments",
+          "Tool, Technique, and Tao in Computer Security Education",
+          "CTF: Alternative Training for Offensive Security"
+        ]
+      },
+      {
+        "id": "ARCHIVE-02-03",
+        "type": "requireLink",
+        "label": "Restore the Click Here to Download the Entire Issue action",
+        "filter": {
+          "text": "Click Here to Download the Entire Issue",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-04",
+        "type": "requireLink",
+        "label": "Restore the Cover action",
+        "filter": {
+          "text": "Cover",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-05",
+        "type": "requireLink",
+        "label": "Restore the Reliability Society Administrative Committee (AdCom) Member action",
+        "filter": {
+          "text": "Reliability Society Administrative Committee (AdCom) Member",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-06",
+        "type": "requireLink",
+        "label": "Restore the Technical Committees action",
+        "filter": {
+          "text": "Technical Committees",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-07",
+        "type": "requireLink",
+        "label": "Restore the Editorial Board action",
+        "filter": {
+          "text": "Editorial Board",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-08",
+        "type": "requireLink",
+        "label": "Restore the Message from the Editor action",
+        "filter": {
+          "text": "Message from the Editor",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-09",
+        "type": "requireLink",
+        "label": "Restore the Regular Issue: IoT Critical Infrastructure and Computer Security Education action",
+        "filter": {
+          "text": "Regular Issue: IoT Critical Infrastructure and Computer Security Education",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-10",
+        "type": "requireLink",
+        "label": "Restore the Critical Infrastructure Systems and the Internet of Things action",
+        "filter": {
+          "text": "Critical Infrastructure Systems and the Internet of Things",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-11",
+        "type": "requireLink",
+        "label": "Restore the Is Your Vehicle Controlled by You? action",
+        "filter": {
+          "text": "Is Your Vehicle Controlled by You?",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-12",
+        "type": "requireLink",
+        "label": "Restore the Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments action",
+        "filter": {
+          "text": "Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-13",
+        "type": "requireLink",
+        "label": "Restore the Tool, Technique, and Tao in Computer Security Education action",
+        "filter": {
+          "text": "Tool, Technique, and Tao in Computer Security Education",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-14",
+        "type": "requireLink",
+        "label": "Restore the CTF: Alternative Training for Offensive Security action",
+        "filter": {
+          "text": "CTF: Alternative Training for Offensive Security",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-02-15",
+        "type": "linkCount",
+        "label": "Restore twelve total combined-issue PDF actions, including the five articles",
+        "filter": {
+          "hrefEndsWith": ".pdf"
+        },
+        "min": 12,
+        "max": 12
+      },
+      {
+        "id": "ARCHIVE-02-16",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore the combined issue body at its own URL. Its twelve source documents are available through migrated May; CMS deletion history is unknown."
+      },
+      {
+        "id": "ARCHIVE-02-17",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Inspect the cover and all twelve document identities at the combined route. The PDF contents and 27-page entire issue require separate file inspection. No CMS deletion history is asserted."
+      }
+    ],
+    "reviews": [
+      "Restore the combined issue body at its own URL. Its twelve source documents are available through migrated May; CMS deletion history is unknown.",
+      "Inspect the cover and all twelve document identities at the combined route. The PDF contents and 27-page entire issue require separate file inspection. No CMS deletion history is asserted."
+    ],
+    "historicalCheckCount": 21,
+    "correction": "Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-03",
+    "title": "February 2016 has the wrong special issue subject",
+    "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-february.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-february/",
+    "rules": [
+      {
+        "id": "ARCHIVE-03-01",
+        "type": "forbidHeading",
+        "label": "Remove the incorrect February 2016 subject heading",
+        "text": "Special Issue on Trustworthy Computing and Cybersecurity",
+        "level": 2
+      },
+      {
+        "id": "ARCHIVE-03-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Correct the subject heading to match the source issue and verify the page title and contents together."
+      },
+      {
+        "id": "ARCHIVE-03-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare the restored subject with the cover and all three retained article documents; a text occurrence alone does not establish issue-wide subject consistency."
+      }
+    ],
+    "reviews": [
+      "Correct the subject heading to match the source issue and verify the page title and contents together.",
+      "Compare the restored subject with the cover and all three retained article documents; a text occurrence alone does not establish issue-wide subject consistency."
+    ],
+    "historicalCheckCount": 6,
+    "correction": "Correct the added subject heading. Do not claim that every individual article is about Systems of Systems or that the entire issue was replaced."
+  },
+  {
+    "id": "ARCHIVE-04",
+    "title": "Four Cover links open JPEG images instead of PDFs",
+    "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november/",
+    "rules": [
+      {
+        "id": "ARCHIVE-04-01",
+        "type": "requireLink",
+        "label": "Restore the Cover action",
+        "filter": {
+          "text": "Cover",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-november"
+      },
+      {
+        "id": "ARCHIVE-04-02",
+        "type": "requireLink",
+        "label": "Restore the Cover action",
+        "filter": {
+          "text": "Cover",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-may"
+      },
+      {
+        "id": "ARCHIVE-04-03",
+        "type": "requireLink",
+        "label": "Restore the Cover action",
+        "filter": {
+          "text": "Cover",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-august"
+      },
+      {
+        "id": "ARCHIVE-04-04",
+        "type": "requireLink",
+        "label": "Restore the Cover action",
+        "filter": {
+          "text": "Cover",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-november"
+      },
+      {
+        "id": "ARCHIVE-04-05",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore the PDF cover targets for parity, or confirm the deliberate conversion to images. The targets are accessible; forced-download behavior was not established."
+      },
+      {
+        "id": "ARCHIVE-04-06",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "2015-november: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change."
+      },
+      {
+        "id": "ARCHIVE-04-07",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "2016-may: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change."
+      },
+      {
+        "id": "ARCHIVE-04-08",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "2016-august: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change."
+      },
+      {
+        "id": "ARCHIVE-04-09",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "2016-november: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change."
+      }
+    ],
+    "reviews": [
+      "Restore the PDF cover targets for parity, or confirm the deliberate conversion to images. The targets are accessible; forced-download behavior was not established.",
+      "2015-november: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change.",
+      "2016-may: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change.",
+      "2016-august: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change.",
+      "2016-november: inspect the response MIME type and cover identity. A .pdf href does not prove PDF bytes or forced download; owner-approved conversion needs an explicit acceptance change."
+    ],
+    "historicalCheckCount": 6,
+    "correction": "This is a four-page PDF-to-image change, not four broken links or an exhaustive sitewide file-type count. A PDF response does not establish forced-download behavior.",
+    "pages": [
+      {
+        "key": "2015-november",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november/"
+      },
+      {
+        "key": "2016-may",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-may.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-may/"
+      },
+      {
+        "key": "2016-august",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-august.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-august/"
+      },
+      {
+        "key": "2016-november",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-november.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-november/"
+      }
+    ]
+  },
+  {
+    "id": "ARCHIVE-05",
+    "title": "Issue subjects and special versus regular grouping are lost",
+    "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-february.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-february/",
+    "rules": [
+      {
+        "id": "ARCHIVE-05-01",
+        "type": "requireText",
+        "label": "Restore 2015-february subject/category labels",
+        "values": [
+          "Special Issue on Prognostics and Health Management (PHM) - Table of Contents:"
+        ],
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-02",
+        "type": "requireLink",
+        "label": "Restore the A Circuit Component Modeling Approach Based on Vehicle Control System Health Simulation action",
+        "filter": {
+          "text": "A Circuit Component Modeling Approach Based on Vehicle Control System Health Simulation",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-03",
+        "type": "requireLink",
+        "label": "Restore the Life Prediction and Classification of Fault-Modes in Solid State Lamps Using Bayesian Probabilistic Models action",
+        "filter": {
+          "text": "Life Prediction and Classification of Fault-Modes in Solid State Lamps Using Bayesian Probabilistic Models",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-04",
+        "type": "requireLink",
+        "label": "Restore the Data Driven Approach for Drill Bit Monitoring action",
+        "filter": {
+          "text": "Data Driven Approach for Drill Bit Monitoring",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-05",
+        "type": "requireLink",
+        "label": "Restore the Fault Diagnostic Opportunities for Solenoid Operated Valves using Physics-of-Failure Analysis action",
+        "filter": {
+          "text": "Fault Diagnostic Opportunities for Solenoid Operated Valves using Physics-of-Failure Analysis",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-06",
+        "type": "requireLink",
+        "label": "Restore the Fuel Cells Impedance Estimation Using Regression Analysis action",
+        "filter": {
+          "text": "Fuel Cells Impedance Estimation Using Regression Analysis",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-07",
+        "type": "requireLink",
+        "label": "Restore the Challenges and Success in the Implementation of a Fleet Wide PHM for Energy Applications action",
+        "filter": {
+          "text": "Challenges and Success in the Implementation of a Fleet Wide PHM for Energy Applications",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-08",
+        "type": "requireLink",
+        "label": "Restore the Fleet-Wide Prognostic and Health Management Suite: Asset Fault Signature Database action",
+        "filter": {
+          "text": "Fleet-Wide Prognostic and Health Management Suite: Asset Fault Signature Database",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-february"
+      },
+      {
+        "id": "ARCHIVE-05-09",
+        "type": "requireText",
+        "label": "Restore 2015-november subject/category labels",
+        "values": [
+          "Special Issue - Invited Thoughts on the Internet of Things"
+        ],
+        "pageKey": "2015-november"
+      },
+      {
+        "id": "ARCHIVE-05-10",
+        "type": "requireLink",
+        "label": "Restore the Requirements Engineering of Reliable IoT Systems: The First Step action",
+        "filter": {
+          "text": "Requirements Engineering of Reliable IoT Systems: The First Step",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-november"
+      },
+      {
+        "id": "ARCHIVE-05-11",
+        "type": "requireLink",
+        "label": "Restore the Secure and Reliable IoT Adoption: “I think I can, I think I can” action",
+        "filter": {
+          "text": "Secure and Reliable IoT Adoption: “I think I can, I think I can”",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-november"
+      },
+      {
+        "id": "ARCHIVE-05-12",
+        "type": "requireLink",
+        "label": "Restore the Considerations for Healthcare Applications in the Internet of Things action",
+        "filter": {
+          "text": "Considerations for Healthcare Applications in the Internet of Things",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-november"
+      },
+      {
+        "id": "ARCHIVE-05-13",
+        "type": "requireLink",
+        "label": "Restore the Digital Immunity: An Intreaging Metaphor action",
+        "filter": {
+          "text": "Digital Immunity: An Intreaging Metaphor",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2015-november"
+      },
+      {
+        "id": "ARCHIVE-05-14",
+        "type": "requireText",
+        "label": "Restore 2016-may subject/category labels",
+        "values": [
+          "Special Issue on Big Data:"
+        ],
+        "pageKey": "2016-may"
+      },
+      {
+        "id": "ARCHIVE-05-15",
+        "type": "requireLink",
+        "label": "Restore the Grid Reliability Depends on Big Data action",
+        "filter": {
+          "text": "Grid Reliability Depends on Big Data",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-may"
+      },
+      {
+        "id": "ARCHIVE-05-16",
+        "type": "requireLink",
+        "label": "Restore the Farming Big Data Must Allow for Hills and Valleys that Affect Quality and Reliability action",
+        "filter": {
+          "text": "Farming Big Data Must Allow for Hills and Valleys that Affect Quality and Reliability",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-may"
+      },
+      {
+        "id": "ARCHIVE-05-17",
+        "type": "requireLink",
+        "label": "Restore the The Internet of Things and Big Data Systems: The International Bazaar action",
+        "filter": {
+          "text": "The Internet of Things and Big Data Systems: The International Bazaar",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-may"
+      },
+      {
+        "id": "ARCHIVE-05-18",
+        "type": "requireText",
+        "label": "Restore 2016-august subject/category labels",
+        "values": [
+          "Special Issue on IoT Security:",
+          "Regular Issue:"
+        ],
+        "pageKey": "2016-august"
+      },
+      {
+        "id": "ARCHIVE-05-19",
+        "type": "requireLink",
+        "label": "Restore the Secure and Safe Automated Vehicle Platooning action",
+        "filter": {
+          "text": "Secure and Safe Automated Vehicle Platooning",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-august"
+      },
+      {
+        "id": "ARCHIVE-05-20",
+        "type": "requireLink",
+        "label": "Restore the Investigating Anonymous and Secure Fault-Tolerable Routing Protocols for Overlay Networks action",
+        "filter": {
+          "text": "Investigating Anonymous and Secure Fault-Tolerable Routing Protocols for Overlay Networks",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-august"
+      },
+      {
+        "id": "ARCHIVE-05-21",
+        "type": "requireLink",
+        "label": "Restore the A Density-Based Clustering Method for Machinery Anomaly Detection action",
+        "filter": {
+          "text": "A Density-Based Clustering Method for Machinery Anomaly Detection",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-august"
+      },
+      {
+        "id": "ARCHIVE-05-22",
+        "type": "requireText",
+        "label": "Restore 2016-november subject/category labels",
+        "values": [
+          "Regular Issue:"
+        ],
+        "pageKey": "2016-november"
+      },
+      {
+        "id": "ARCHIVE-05-23",
+        "type": "requireLink",
+        "label": "Restore the Effects of Sampling Rate on the Accuracy of the Gas Turbine Performance Deterioration Modeling action",
+        "filter": {
+          "text": "Effects of Sampling Rate on the Accuracy of the Gas Turbine Performance Deterioration Modeling",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-november"
+      },
+      {
+        "id": "ARCHIVE-05-24",
+        "type": "requireLink",
+        "label": "Restore the Applying Genetic Algorithm to Rearrange Cloud Virtual Machines for Balancing Resource Allocation action",
+        "filter": {
+          "text": "Applying Genetic Algorithm to Rearrange Cloud Virtual Machines for Balancing Resource Allocation",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-november"
+      },
+      {
+        "id": "ARCHIVE-05-25",
+        "type": "requireLink",
+        "label": "Restore the Resolving Malware-Loading Problem by Leveraging Shellcode Detection Heuristics action",
+        "filter": {
+          "text": "Resolving Malware-Loading Problem by Leveraging Shellcode Detection Heuristics",
+          "hrefEndsWith": ".pdf"
+        },
+        "pageKey": "2016-november"
+      },
+      {
+        "id": "ARCHIVE-05-26",
+        "type": "orderedText",
+        "label": "Restore August special versus regular article grouping",
+        "values": [
+          "Special Issue on IoT Security:",
+          "Secure and Safe Automated Vehicle Platooning",
+          "Investigating Anonymous and Secure Fault-Tolerable Routing Protocols for Overlay Networks",
+          "Regular Issue:",
+          "A Density-Based Clustering Method for Machinery Anomaly Detection"
+        ],
+        "pageKey": "2016-august"
+      },
+      {
+        "id": "ARCHIVE-05-27",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore the source subject labels and grouping: February and November 2015; May, August and November 2016. The cover image alone does not replace searchable HTML labels."
+      },
+      {
+        "id": "ARCHIVE-05-28",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare all five contents blocks and twenty article destinations. Six subject/category label occurrences are not six headings. August has two special articles and one regular article; inspect group boundaries. Eleven source category-anchor occurrences represent ten document targets, not eleven distinct PDFs."
+      }
+    ],
+    "reviews": [
+      "Restore the source subject labels and grouping: February and November 2015; May, August and November 2016. The cover image alone does not replace searchable HTML labels.",
+      "Compare all five contents blocks and twenty article destinations. Six subject/category label occurrences are not six headings. August has two special articles and one regular article; inspect group boundaries. Eleven source category-anchor occurrences represent ten document targets, not eleven distinct PDFs."
+    ],
+    "historicalCheckCount": 29,
+    "correction": "Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets.",
+    "pages": [
+      {
+        "key": "2015-february",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-february.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-february/"
+      },
+      {
+        "key": "2015-november",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november/"
+      },
+      {
+        "key": "2016-may",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-may.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-may/"
+      },
+      {
+        "key": "2016-august",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-august.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-august/"
+      },
+      {
+        "key": "2016-november",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-november.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-november/"
+      }
+    ]
+  },
+  {
+    "id": "ARCHIVE-06",
+    "title": "The 2011 special issue label is attached to the wrong link",
+    "baselineURL": "https://rs.ieee.org/publications/reliability-society-newsletter.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/publications/reliability-society-newsletter/",
+    "rules": [
+      {
+        "id": "ARCHIVE-06-01",
+        "type": "forbidText",
+        "label": "Remove the exact joined and misassociated AugustSpecial Issue label",
+        "values": [
+          "AugustSpecial Issue"
+        ],
+        "caseSensitive": true,
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-06-02",
+        "type": "requireLink",
+        "label": "Restore the August action",
+        "filter": {
+          "text": "August",
+          "hrefEndsWith": "/2011/3_2011/index.htm"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-06-03",
+        "type": "requireLink",
+        "label": "Restore the Special Issue-AdCom Election action",
+        "filter": {
+          "text": "Special Issue-AdCom Election",
+          "hrefEndsWith": "/2011/specialissue_2011/index.htm"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-06-04",
+        "type": "forbidText",
+        "label": "Remove the exact joined and misassociated AugustSpecial Issue label",
+        "values": [
+          "AugustSpecial Issue"
+        ],
+        "caseSensitive": true,
+        "pageKey": "technical-archive"
+      },
+      {
+        "id": "ARCHIVE-06-05",
+        "type": "requireLink",
+        "label": "Restore the August action",
+        "filter": {
+          "text": "August",
+          "hrefEndsWith": "/2011/3_2011/index.htm"
+        },
+        "pageKey": "technical-archive"
+      },
+      {
+        "id": "ARCHIVE-06-06",
+        "type": "requireLink",
+        "label": "Restore the Special Issue-AdCom Election action",
+        "filter": {
+          "text": "Special Issue-AdCom Election",
+          "hrefEndsWith": "/2011/specialissue_2011/index.htm"
+        },
+        "pageKey": "technical-archive"
+      },
+      {
+        "id": "ARCHIVE-06-07",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Correct the label-to-destination association on both the Publications newsletter archive and its Technical Activities duplicate. Neither destination is missing."
+      },
+      {
+        "id": "ARCHIVE-06-08",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Inspect both Publications and Technical Activities archive copies and open both 2011 targets. Labels and href suffixes cannot prove full regular-August versus AdCom Election document identity."
+      }
+    ],
+    "reviews": [
+      "Correct the label-to-destination association on both the Publications newsletter archive and its Technical Activities duplicate. Neither destination is missing.",
+      "Inspect both Publications and Technical Activities archive copies and open both 2011 targets. Labels and href suffixes cannot prove full regular-August versus AdCom Election document identity."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed.",
+    "pages": [
+      {
+        "key": "primary",
+        "baselineURL": "https://rs.ieee.org/publications/reliability-society-newsletter.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/publications/reliability-society-newsletter/"
+      },
+      {
+        "key": "technical-archive",
+        "baselineURL": "https://rs.ieee.org/publications/reliability-society-newsletter.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/reliability-society-newsletter-ta/"
+      }
+    ]
+  },
+  {
+    "id": "ARCHIVE-07",
+    "title": "Issue captions lose links and the combined month label",
+    "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/",
+    "rules": [
+      {
+        "id": "ARCHIVE-07-01",
+        "type": "requireLink",
+        "label": "Restore the February Issue action",
+        "filter": {
+          "text": "February Issue",
+          "hrefEndsWith": "/reliability-special-issue-2016-february/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-02",
+        "type": "requireLink",
+        "label": "Restore the May Issue action",
+        "filter": {
+          "text": "May Issue",
+          "hrefEndsWith": "/reliability-special-issue-2016-may/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-03",
+        "type": "requireLink",
+        "label": "Restore the August Issue action",
+        "filter": {
+          "text": "August Issue",
+          "hrefEndsWith": "/reliability-special-issue-2016-august/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-04",
+        "type": "requireLink",
+        "label": "Restore the November Issue action",
+        "filter": {
+          "text": "November Issue",
+          "hrefEndsWith": "/reliability-special-issue-2016-november/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-05",
+        "type": "requireLink",
+        "label": "Restore the February Issue action",
+        "filter": {
+          "text": "February Issue",
+          "hrefEndsWith": "/reliability-special-issue-2015-february/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-06",
+        "type": "requireLink",
+        "label": "Restore the May Issue action",
+        "filter": {
+          "text": "May Issue",
+          "hrefEndsWith": "/reliability-special-issue-2015-may/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-07",
+        "type": "requireLink",
+        "label": "Restore the August/September/October Issue action",
+        "filter": {
+          "text": "August/September/October Issue",
+          "hrefEndsWith": "/reliability-special-issue-2015-august-september-october/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-08",
+        "type": "requireLink",
+        "label": "Restore the November Issue action",
+        "filter": {
+          "text": "November Issue",
+          "hrefEndsWith": "/reliability-special-issue-2015-november/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-09",
+        "type": "requireLink",
+        "label": "Restore the November Issue action",
+        "filter": {
+          "text": "November Issue",
+          "hrefEndsWith": "/reliability-special-issue-2014-november/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "ARCHIVE-07-10",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore caption click targets and the complete combined-month label. Do not treat the nine issues as missing pages."
+      },
+      {
+        "id": "ARCHIVE-07-11",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Inspect all nine index captions and cover links, including August/September/October Issue. Test keyboard activation and resulting issue identity; image links alone cannot satisfy caption-link parity."
+      }
+    ],
+    "reviews": [
+      "Restore caption click targets and the complete combined-month label. Do not treat the nine issues as missing pages.",
+      "Inspect all nine index captions and cover links, including August/September/October Issue. Test keyboard activation and resulting issue identity; image links alone cannot satisfy caption-link parity."
+    ],
+    "historicalCheckCount": 12,
+    "correction": "Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "GENERAL-01",
+    "title": "Chapter table causes substantial mobile overflow",
+    "baselineURL": "https://rs.ieee.org/chapters.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/chapters/",
+    "rules": [
+      {
+        "id": "GENERAL-01-01",
+        "type": "overflow",
+        "label": "Avoid materially worse mobile chapter overflow",
+        "viewport": "mobile",
+        "maxExtraPixels": 20
+      },
+      {
+        "id": "GENERAL-01-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Keep the page within the viewport and make the complete table accessible without losing the contact column. The source also has some table overflow; the new behavior is materially worse."
+      },
+      {
+        "id": "GENERAL-01-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare at 390 by 844 with the same environment and all 53 chapter rows expanded. The threshold is conservative, not a pixel-perfect verdict. Inspect contact-column visibility and local table overflow; source overflow was not zero."
+      }
+    ],
+    "reviews": [
+      "Keep the page within the viewport and make the complete table accessible without losing the contact column. The source also has some table overflow; the new behavior is materially worse.",
+      "Compare at 390 by 844 with the same environment and all 53 chapter rows expanded. The threshold is conservative, not a pixel-perfect verdict. Inspect contact-column visibility and local table overflow; source overflow was not zero."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-02",
+    "title": "Transactions on Reliability roster omits Xiaoge Zhang",
+    "baselineURL": "https://rs.ieee.org/publications/transactions-on-reliability/editorial-board.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/publications/transactions-on-reliability/editorial-board-tor/",
+    "rules": [
+      {
+        "id": "GENERAL-02-01",
+        "type": "requireText",
+        "label": "Restore the omitted baseline board member and affiliation pending editorial approval",
+        "values": [
+          "Xiaoge Zhang",
+          "The Hong Kong Polytechnic University",
+          "Hong Kong"
+        ]
+      },
+      {
+        "id": "GENERAL-02-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm the current approved board. The omission relative to the baseline is verified, but whether this is an intentional roster update requires an editor."
+      },
+      {
+        "id": "GENERAL-02-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare the complete roster and obtain editor approval for any replacement roster. Baseline-parity failure does not establish an incorrect appointment."
+      }
+    ],
+    "reviews": [
+      "Confirm the current approved board. The omission relative to the baseline is verified, but whether this is an intentional roster update requires an editor.",
+      "Compare the complete roster and obtain editor approval for any replacement roster. Baseline-parity failure does not establish an incorrect appointment."
+    ],
+    "historicalCheckCount": 6,
+    "correction": "The omission relative to baseline is confirmed, but an approved roster update remains possible. Ask the editor to resolve that policy question."
+  },
+  {
+    "id": "GENERAL-03",
+    "title": "Events page omits the final conference search link",
+    "baselineURL": "https://rs.ieee.org/events-conferences.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/events/",
+    "rules": [
+      {
+        "id": "GENERAL-03-01",
+        "type": "requireLink",
+        "label": "Restore the closing IEEE conference-search navigation",
+        "filter": {
+          "href": "http://www.ieee.org/conferences_events/index.html"
+        }
+      },
+      {
+        "id": "GENERAL-03-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore the source closing paragraph and corresponding destination, or confirm its deliberate removal."
+      },
+      {
+        "id": "GENERAL-03-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Verify the link is in the closing paragraph after the last event table. An approved HTTPS/replacement URL needs a catalog update; href presence alone cannot prove placement."
+      }
+    ],
+    "reviews": [
+      "Restore the source closing paragraph and corresponding destination, or confirm its deliberate removal.",
+      "Verify the link is in the closing paragraph after the last event table. An approved HTTPS/replacement URL needs a catalog update; href presence alone cannot prove placement."
+    ],
+    "historicalCheckCount": 6,
+    "correction": "This is omitted navigation/content, not an unavailable external destination."
+  },
+  {
+    "id": "GENERAL-04",
+    "title": "Sponsor category controls are absent from the replacement schedule",
+    "baselineURL": "https://rs.ieee.org/events-conferences.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/events/",
+    "rules": [
+      {
+        "id": "GENERAL-04-01",
+        "type": "requireText",
+        "label": "Restore discoverable sponsor-category labels",
+        "values": [
+          "Society Sponsor",
+          "Technical Cosponsor"
+        ]
+      },
+      {
+        "id": "GENERAL-04-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm whether equivalent sponsor-category controls are required. Their presence on the source is verified; working source filtering was not established. New search and sorting do work."
+      },
+      {
+        "id": "GENERAL-04-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare controls and exercise each sponsor category with known events, then clear the filter. Static text cannot prove filtering or accessible control semantics. Source filtering was not proven functional by the historical captures."
+      }
+    ],
+    "reviews": [
+      "Confirm whether equivalent sponsor-category controls are required. Their presence on the source is verified; working source filtering was not established. New search and sorting do work.",
+      "Compare controls and exercise each sponsor category with known events, then clear the filter. Static text cannot prove filtering or accessible control semantics. Source filtering was not proven functional by the historical captures."
+    ],
+    "historicalCheckCount": 8,
+    "correction": "Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-05",
+    "title": "Conference schedule uses a different listing range",
+    "baselineURL": "https://rs.ieee.org/events-conferences.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/events/",
+    "rules": [
+      {
+        "id": "GENERAL-05-01",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "primary"
+      },
+      {
+        "id": "GENERAL-05-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm the intended feed date range or item limit. These additional events are not classified as incorrect, but the current content extent differs from the baseline."
+      },
+      {
+        "id": "GENERAL-05-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Capture the full schedule including pagination, dates and item counts on both sites, then ask the owner to approve the feed horizon/item limit. Historical 13-versus-21 counts are not fixed acceptance limits; 2028-2032 events must not be automatically forbidden."
+      }
+    ],
+    "reviews": [
+      "Confirm the intended feed date range or item limit. These additional events are not classified as incorrect, but the current content extent differs from the baseline.",
+      "Capture the full schedule including pagination, dates and item counts on both sites, then ask the owner to approve the feed horizon/item limit. Historical 13-versus-21 counts are not fixed acceptance limits; 2028-2032 events must not be automatically forbidden."
+    ],
+    "historicalCheckCount": 6,
+    "correction": "A wider listing range is verified. No added event is labeled false merely because it is absent from the source; confirm the intended feed horizon or item limit."
+  },
+  {
+    "id": "TECH-01",
+    "title": "Digital Reality Initiative words lose separating spaces",
+    "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/",
+    "rules": [
+      {
+        "id": "TECH-01-01",
+        "type": "forbidText",
+        "label": "Remove all four joined word boundaries",
+        "values": [
+          "linebetween",
+          "DigitalTransformation",
+          "besuccessful",
+          "personallearning"
+        ]
+      },
+      {
+        "id": "TECH-01-02",
+        "type": "requireText",
+        "label": "Restore readable Digital Reality Initiative wording",
+        "values": [
+          "line between",
+          "Digital Transformation",
+          "be successful",
+          "personal learning"
+        ]
+      },
+      {
+        "id": "TECH-01-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore word separation in these paragraphs. Minor font differences and inherited punctuation problems are not part of this finding."
+      }
+    ],
+    "reviews": [
+      "Restore word separation in these paragraphs. Minor font differences and inherited punctuation problems are not part of this finding."
+    ],
+    "historicalCheckCount": 4,
+    "correction": "Restore readable separation. Minor punctuation and body-font differences remain outside this finding."
+  },
+  {
+    "id": "TECH-02",
+    "title": "Electric Autonomous Vehicles email links become plain text",
+    "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/electric-autonomous-vehicles.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/electric-autonomous-vehicles/",
+    "rules": [
+      {
+        "id": "TECH-02-01",
+        "type": "mailtoCoverage",
+        "label": "Restore fifteen verified contact actions, including the retained Wong action",
+        "addresses": [
+          "ewong@utdallas.edu",
+          "yang@guardstrike.com",
+          "alur@cis.upenn.edu",
+          "yue.chen@futurewei.com",
+          "zychen@nju.edu.cn",
+          "mjia@yxqiche.com",
+          "kaisheng@tsinghua.edu.cn",
+          "manan123@bjut.edu.cn",
+          "weisong@wayne.edu",
+          "shinichi.shiraishi@tri-ad.global",
+          "songfu@shanghaitech.edu.cn",
+          "gsong7@ford.com",
+          "lzwang@nju.edu.cn",
+          "minxie@cityu.edu.hk",
+          "mz@queensu.ca"
+        ]
+      },
+      {
+        "id": "TECH-02-02",
+        "type": "forbidLink",
+        "label": "Do not restore the inherited Eunsuk Kang wrong-recipient link",
+        "filter": {
+          "text": "eskang@cmu.edu",
+          "href": "mailto:gsong7@ford.com"
+        }
+      },
+      {
+        "id": "TECH-02-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore working email actions with verified recipients. Do not blindly copy the inherited Eunsuk Kang mismatch: its source label and href point to different addresses."
+      },
+      {
+        "id": "TECH-02-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm Eunsuk Kang's intended recipient with the owner before adding a positive mailto rule for eskang@cmu.edu. The source label and href disagree. The other gsong7@ford.com contact is legitimate and must remain independently clickable; no email delivery is tested."
+      }
+    ],
+    "reviews": [
+      "Restore working email actions with verified recipients. Do not blindly copy the inherited Eunsuk Kang mismatch: its source label and href point to different addresses.",
+      "Confirm Eunsuk Kang's intended recipient with the owner before adding a positive mailto rule for eskang@cmu.edu. The source label and href disagree. The other gsong7@ford.com contact is legitimate and must remain independently clickable; no email delivery is tested."
+    ],
+    "historicalCheckCount": 18,
+    "correction": "The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-03",
+    "title": "Committee pages move into the newsletter hierarchy",
+    "baselineURL": "https://rs.ieee.org/about-rs/sitemap.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/sitemap/",
+    "rules": [
+      {
+        "id": "TECH-03-01",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "primary"
+      },
+      {
+        "id": "TECH-03-02",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "sitemap"
+      },
+      {
+        "id": "TECH-03-03",
+        "type": "requireLink",
+        "label": "Restore BIG Data under Technical Committees",
+        "filter": {
+          "textIncludes": "BIG Data",
+          "hrefIncludes": "/technical-committees/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "TECH-03-04",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "big-data-1"
+      },
+      {
+        "id": "TECH-03-05",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "big-data-2"
+      },
+      {
+        "id": "TECH-03-06",
+        "type": "requireLink",
+        "label": "Restore Prognostics and Health Management (PHM) under Technical Committees",
+        "filter": {
+          "textIncludes": "Prognostics and Health Management (PHM)",
+          "hrefIncludes": "/technical-committees/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "TECH-03-07",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "prognostics-and-health-management-phm-1"
+      },
+      {
+        "id": "TECH-03-08",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "prognostics-and-health-management-phm-2"
+      },
+      {
+        "id": "TECH-03-09",
+        "type": "requireLink",
+        "label": "Restore Reliability Science for Advanced Materials & Devices under Technical Committees",
+        "filter": {
+          "textIncludes": "Reliability Science for Advanced Materials & Devices",
+          "hrefIncludes": "/technical-committees/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "TECH-03-10",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "reliability-science-for-advanced-materials-devices-1"
+      },
+      {
+        "id": "TECH-03-11",
+        "type": "requireLink",
+        "label": "Restore System and Software Assurance under Technical Committees",
+        "filter": {
+          "textIncludes": "System and Software Assurance",
+          "hrefIncludes": "/technical-committees/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "TECH-03-12",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "system-and-software-assurance-1"
+      },
+      {
+        "id": "TECH-03-13",
+        "type": "requireLink",
+        "label": "Restore Systems of Systems under Technical Committees",
+        "filter": {
+          "textIncludes": "Systems of Systems",
+          "hrefIncludes": "/technical-committees/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "TECH-03-14",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "systems-of-systems-1"
+      },
+      {
+        "id": "TECH-03-15",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "systems-of-systems-2"
+      },
+      {
+        "id": "TECH-03-16",
+        "type": "requireLink",
+        "label": "Restore Trustworthy Computing and Cybersecurity under Technical Committees",
+        "filter": {
+          "textIncludes": "Trustworthy Computing and Cybersecurity",
+          "hrefIncludes": "/technical-committees/"
+        },
+        "pageKey": "primary"
+      },
+      {
+        "id": "TECH-03-17",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "trustworthy-computing-and-cybersecurity-1"
+      },
+      {
+        "id": "TECH-03-18",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "trustworthy-computing-and-cybersecurity-2"
+      },
+      {
+        "id": "TECH-03-19",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "newsletter-1"
+      },
+      {
+        "id": "TECH-03-20",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "newsletter-2"
+      },
+      {
+        "id": "TECH-03-21",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm the intended hierarchy and canonical routes. Preserve the committee structure and avoid maintaining parallel copies unintentionally. These are routing and organization differences, not missing body content."
+      },
+      {
+        "id": "TECH-03-22",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare Technical Committees navigation and sitemap hierarchy for BIG Data, PHM, Reliability Science for Advanced Materials & Devices, System and Software Assurance, Systems of Systems, Trustworthy Computing and the newsletter duplicate. Review all linked parallel routes, body equivalence and canonical tags; Snapshot has no canonical or tree semantics. No SEO penalty is inferred."
+      }
+    ],
+    "reviews": [
+      "Confirm the intended hierarchy and canonical routes. Preserve the committee structure and avoid maintaining parallel copies unintentionally. These are routing and organization differences, not missing body content.",
+      "Compare Technical Committees navigation and sitemap hierarchy for BIG Data, PHM, Reliability Science for Advanced Materials & Devices, System and Software Assurance, Systems of Systems, Trustworthy Computing and the newsletter duplicate. Review all linked parallel routes, body equivalence and canonical tags; Snapshot has no canonical or tree semantics. No SEO penalty is inferred."
+    ],
+    "historicalCheckCount": 8,
+    "correction": "This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty.",
+    "pages": [
+      {
+        "key": "primary",
+        "baselineURL": "https://rs.ieee.org/about-rs/sitemap.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/sitemap/"
+      },
+      {
+        "key": "sitemap",
+        "baselineURL": "https://rs.ieee.org/about-rs/sitemap.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/sitemap/"
+      },
+      {
+        "key": "big-data-1",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/big-data.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/big-data/"
+      },
+      {
+        "key": "big-data-2",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/big-data.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/big-data-tc/"
+      },
+      {
+        "key": "prognostics-and-health-management-phm-1",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/prognostics-and-health-management-phm.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/prognostics-and-health-management-phm/"
+      },
+      {
+        "key": "prognostics-and-health-management-phm-2",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/prognostics-and-health-management-phm.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/prognostics-and-health-management-phm-tc/"
+      },
+      {
+        "key": "reliability-science-for-advanced-materials-devices-1",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/reliability-science-for-advanced-materials-devices.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/reliability-science-for-advanced-materials-devices/"
+      },
+      {
+        "key": "system-and-software-assurance-1",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/system-and-software-assurance.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/system-and-software-assurance/"
+      },
+      {
+        "key": "systems-of-systems-1",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/systems-of-systems.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/systems-of-systems/"
+      },
+      {
+        "key": "systems-of-systems-2",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/systems-of-systems.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/systems-of-systems-tc/"
+      },
+      {
+        "key": "trustworthy-computing-and-cybersecurity-1",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/trustworthy-computing-and-cybersecurity.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/trustworthy-computing-and-cybersecurity/"
+      },
+      {
+        "key": "trustworthy-computing-and-cybersecurity-2",
+        "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/trustworthy-computing-and-cybersecurity.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/trustworthy-computing-and-cybersecurity/"
+      },
+      {
+        "key": "newsletter-1",
+        "baselineURL": "https://rs.ieee.org/publications/reliability-society-newsletter.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/publications/reliability-society-newsletter/"
+      },
+      {
+        "key": "newsletter-2",
+        "baselineURL": "https://rs.ieee.org/publications/reliability-society-newsletter.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/reliability-society-newsletter-ta/"
+      }
+    ]
+  },
+  {
+    "id": "STYLE-01",
+    "title": "Sampled Technical Committees title is larger and heavier",
+    "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/",
+    "rules": [
+      {
+        "id": "STYLE-01-01",
+        "type": "compareMetric",
+        "label": "Keep sampled H1 fontSize near the baseline",
+        "path": "h1.fontSize",
+        "relativeTolerance": 0.25,
+        "absoluteTolerance": 2
+      },
+      {
+        "id": "STYLE-01-02",
+        "type": "compareMetric",
+        "label": "Keep sampled H1 fontWeight near the baseline",
+        "path": "h1.fontWeight",
+        "relativeTolerance": 0.25,
+        "absoluteTolerance": 2
+      },
+      {
+        "id": "STYLE-01-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm or align this materially different sampled title treatment. Loaded font faces, changed wrapping and every subpage's title behavior were not established."
+      },
+      {
+        "id": "STYLE-01-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Use matched desktop captures with fonts settled. Numeric tolerances flag substantial differences only; judge hierarchy visually and do not extrapolate this single Technical Committees H1 to every site heading."
+      }
+    ],
+    "reviews": [
+      "Confirm or align this materially different sampled title treatment. Loaded font faces, changed wrapping and every subpage's title behavior were not established.",
+      "Use matched desktop captures with fonts settled. Numeric tolerances flag substantial differences only; judge hierarchy visually and do not extrapolate this single Technical Committees H1 to every site heading."
+    ],
+    "historicalCheckCount": 6,
+    "correction": "This is sample-based evidence of a substantial title difference, not measurement of every site's heading or a minor-font defect list."
+  },
+  {
+    "id": "STYLE-02",
+    "title": "AdCom tables change borders and column proportions",
+    "baselineURL": "https://rs.ieee.org/about-rs/administrative-committee-adcom-members.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/administrative-committee-adcom-members/",
+    "rules": [
+      {
+        "id": "STYLE-02-01",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "primary"
+      },
+      {
+        "id": "STYLE-02-02",
+        "type": "overflow",
+        "label": "Avoid materially worse page overflow during visual restoration",
+        "maxExtraPixels": 20
+      },
+      {
+        "id": "STYLE-02-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Match the source table treatment where visual parity is required. This styling difference is separate from the corrupted elected-member entries in ABOUT-01."
+      },
+      {
+        "id": "STYLE-02-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare complete AdCom table screenshots and cell rectangles for borders, column proportions and spacing. Snapshot does not provide border styles; overflow/content checks do not automate grid or proportion parity."
+      }
+    ],
+    "reviews": [
+      "Match the source table treatment where visual parity is required. This styling difference is separate from the corrupted elected-member entries in ABOUT-01.",
+      "Compare complete AdCom table screenshots and cell rectangles for borders, column proportions and spacing. Snapshot does not provide border styles; overflow/content checks do not automate grid or proportion parity."
+    ],
+    "historicalCheckCount": 5,
+    "correction": "Keep this visual finding separate from the four missing line breaks in the elected-member table."
+  },
+  {
+    "id": "STYLE-03",
+    "title": "November 2015 cover and contents layout changes",
+    "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2015-november/",
+    "rules": [
+      {
+        "id": "STYLE-03-01",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "primary"
+      },
+      {
+        "id": "STYLE-03-02",
+        "type": "overflow",
+        "label": "Avoid materially worse page overflow during visual restoration",
+        "maxExtraPixels": 20
+      },
+      {
+        "id": "STYLE-03-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Use the measured November 2015 comparison for layout review. Do not generalize identical behavior to every issue or confuse it with wrong content and PDF-to-image changes."
+      },
+      {
+        "id": "STYLE-03-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare November 2015 cover placement, contents table and download order using image/table rectangles and screenshots. Entire Issue already remains above the cover. No numeric layout identity is claimed; other issues are outside this visual sample."
+      }
+    ],
+    "reviews": [
+      "Use the measured November 2015 comparison for layout review. Do not generalize identical behavior to every issue or confuse it with wrong content and PDF-to-image changes.",
+      "Compare November 2015 cover placement, contents table and download order using image/table rectangles and screenshots. Entire Issue already remains above the cover. No numeric layout identity is claimed; other issues are outside this visual sample."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-04",
+    "title": "Electric Autonomous Vehicles portraits are enlarged",
+    "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/electric-autonomous-vehicles.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/electric-autonomous-vehicles/",
+    "rules": [
+      {
+        "id": "STYLE-04-01",
+        "type": "mainNotEmpty",
+        "label": "Capture a populated content region for comparison",
+        "minChars": 80,
+        "pageKey": "primary"
+      },
+      {
+        "id": "STYLE-04-02",
+        "type": "overflow",
+        "label": "Avoid materially worse page overflow during visual restoration",
+        "maxExtraPixels": 20
+      },
+      {
+        "id": "STYLE-04-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm the intended portrait sizes and spacing. Do not infer that both images are upscaled or both demonstrably softer."
+      },
+      {
+        "id": "STYLE-04-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare Wong and Yang image rectangles, natural dimensions and contact spacing. Both were enlarged; only Yang was browser-upscaled. Snapshot values support human comparison but no contract rule compares individual image sizes or sharpness."
+      }
+    ],
+    "reviews": [
+      "Confirm the intended portrait sizes and spacing. Do not infer that both images are upscaled or both demonstrably softer.",
+      "Compare Wong and Yang image rectangles, natural dimensions and contact spacing. Both were enlarged; only Yang was browser-upscaled. Snapshot values support human comparison but no contract rule compares individual image sizes or sharpness."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "NAV-01",
+    "title": "Sitemap ordering no longer follows the source sequence",
+    "baselineURL": "https://rs.ieee.org/about-rs/sitemap.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/sitemap/",
+    "rules": [
+      {
+        "id": "NAV-01-01",
+        "type": "orderedText",
+        "label": "Restore descending annual-report order",
+        "values": [
+          "2011",
+          "2010",
+          "2009",
+          "2008",
+          "2007"
+        ]
+      },
+      {
+        "id": "NAV-01-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Restore the baseline section and archive order, or confirm that the alphabetical sitemap is intentional. Main content availability is assessed separately."
+      },
+      {
+        "id": "NAV-01-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare the full sitemap tree with the main navigation and all nine dated archive captions. Whole-text order cannot validate parent-child branches or repeated month labels. Owner approval may supersede baseline order."
+      }
+    ],
+    "reviews": [
+      "Restore the baseline section and archive order, or confirm that the alphabetical sitemap is intentional. Main content availability is assessed separately.",
+      "Compare the full sitemap tree with the main navigation and all nine dated archive captions. Whole-text order cannot validate parent-child branches or repeated month labels. Owner approval may supersede baseline order."
+    ],
+    "historicalCheckCount": 4,
+    "correction": "This is an ordering difference requiring baseline-parity or editorial confirmation, not evidence of missing report files."
+  },
+  {
+    "id": "NAV-02",
+    "title": "Sitemap labels expose disambiguation suffixes",
+    "baselineURL": "https://rs.ieee.org/about-rs/sitemap.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/sitemap/",
+    "rules": [
+      {
+        "id": "NAV-02-01",
+        "type": "forbidLink",
+        "label": "Remove the public disambiguation suffix in Editorial Board-RM",
+        "filter": {
+          "text": "Editorial Board-RM"
+        }
+      },
+      {
+        "id": "NAV-02-02",
+        "type": "forbidLink",
+        "label": "Remove the public disambiguation suffix in Editorial Board-TOR",
+        "filter": {
+          "text": "Editorial Board-TOR"
+        }
+      },
+      {
+        "id": "NAV-02-03",
+        "type": "forbidLink",
+        "label": "Remove the public disambiguation suffix in Editorial Board-RNSI",
+        "filter": {
+          "text": "Editorial Board-RNSI"
+        }
+      },
+      {
+        "id": "NAV-02-04",
+        "type": "forbidLink",
+        "label": "Remove the public disambiguation suffix in Education-TC",
+        "filter": {
+          "text": "Education-TC"
+        }
+      },
+      {
+        "id": "NAV-02-05",
+        "type": "forbidLink",
+        "label": "Remove the public disambiguation suffix in Reliability Society Newsletter-TA",
+        "filter": {
+          "text": "Reliability Society Newsletter-TA"
+        }
+      },
+      {
+        "id": "NAV-02-06",
+        "type": "forbidLink",
+        "label": "Remove the public disambiguation suffix in Systems of Systems – TC",
+        "filter": {
+          "text": "Systems of Systems – TC"
+        }
+      },
+      {
+        "id": "NAV-02-07",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm whether these internal-looking suffixes belong in public labels. Preserve the source-facing naming if not; the editorial board body heading is retained."
+      },
+      {
+        "id": "NAV-02-08",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Inspect exact public labels, branch context and the special-issue editorial browser title (RNSI). Do not forbid internal route slugs; the contract has no browser-title assertion. Confirm approved public naming."
+      }
+    ],
+    "reviews": [
+      "Confirm whether these internal-looking suffixes belong in public labels. Preserve the source-facing naming if not; the editorial board body heading is retained.",
+      "Inspect exact public labels, branch context and the special-issue editorial browser title (RNSI). Do not forbid internal route slugs; the contract has no browser-title assertion. Confirm approved public naming."
+    ],
+    "historicalCheckCount": 10,
+    "correction": "Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "ASSET-01",
+    "title": "Some migrated resources still depend on legacy paths",
+    "baselineURL": "https://rs.ieee.org/about-rs/division-vi-societies.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/division-vi-societies/",
+    "rules": [
+      {
+        "id": "ASSET-01-01",
+        "type": "legacyResources",
+        "label": "Migrate loaded visible images off the legacy host",
+        "hostname": "rs.ieee.org",
+        "pageKey": "division"
+      },
+      {
+        "id": "ASSET-01-02",
+        "type": "legacyResources",
+        "label": "Migrate loaded visible images off the legacy host",
+        "hostname": "rs.ieee.org",
+        "pageKey": "roadmap"
+      },
+      {
+        "id": "ASSET-01-03",
+        "type": "review",
+        "label": "Optional cleanup of the residual empty legacy file anchor",
+        "reason": "Optional cleanup: retention is allowed for the empty/line-break-only legacy anchor https://rs.ieee.org/images/files/newsletters/2014/RD5._Prof._Brahim_Hamid_last.pdf. This historical href is not a visible download action or a loaded-image dependency.",
+        "pageKey": "2014-november"
+      },
+      {
+        "id": "ASSET-01-04",
+        "type": "review",
+        "label": "Optional cleanup of the residual empty legacy file anchor",
+        "reason": "Optional cleanup: retention is allowed for the empty/line-break-only legacy anchor https://rs.ieee.org/images/files/newsletters/2014/RD6_11-17.pdf. This historical href is not a visible download action or a loaded-image dependency.",
+        "pageKey": "2014-november"
+      },
+      {
+        "id": "ASSET-01-05",
+        "type": "review",
+        "label": "Optional cleanup of the residual empty legacy file anchor",
+        "reason": "Optional cleanup: retention is allowed for the empty/line-break-only legacy anchor https://rs.ieee.org/images/files/techact/Reliability/2016-02/2016-02-a01.pdf. This historical href is not a visible download action or a loaded-image dependency.",
+        "pageKey": "2016-february"
+      },
+      {
+        "id": "ASSET-01-06",
+        "type": "review",
+        "label": "Optional cleanup of the residual empty legacy file anchor",
+        "reason": "Optional cleanup: retention is allowed for the empty/line-break-only legacy anchor https://rs.ieee.org/images/files/techact/Reliability/2016-02/2016-02-a02.pdf. This historical href is not a visible download action or a loaded-image dependency.",
+        "pageKey": "2016-february"
+      },
+      {
+        "id": "ASSET-01-07",
+        "type": "review",
+        "label": "Optional cleanup of the residual empty legacy file anchor",
+        "reason": "Optional cleanup: retention is allowed for the empty/line-break-only legacy anchor https://rs.ieee.org/images/files/techact/Reliability/2016-02/2016-02-a03.pdf. This historical href is not a visible download action or a loaded-image dependency.",
+        "pageKey": "2016-february"
+      },
+      {
+        "id": "ASSET-01-08",
+        "type": "review",
+        "label": "Optional cleanup of the residual empty Binghamton legacy anchor",
+        "reason": "Optional cleanup: retention is allowed for the empty/line-break-only legacy anchor on rs.ieee.org ending in /Binghamton.pptx. This historical href is not a visible download action or a loaded-image dependency.",
+        "pageKey": "congress-2024"
+      },
+      {
+        "id": "ASSET-01-09",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Preserve or migrate the eight actual image dependencies. Review the six residual hrefs separately; no current broken asset or six-visible-download dependency is established."
+      },
+      {
+        "id": "ASSET-01-10",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Inventory eight loaded images (seven Division VI logos and one Roadmap schedule image) separately from six empty/line-break-only hrefs. Confirm migrated images still render and the six labeled migrated downloads remain usable. Zero legacy images can also result from missing images, so inspect replacement completeness. Intentional retained hosting requires owner approval."
+      }
+    ],
+    "reviews": [
+      "Preserve or migrate the eight actual image dependencies. Review the six residual hrefs separately; no current broken asset or six-visible-download dependency is established.",
+      "Inventory eight loaded images (seven Division VI logos and one Roadmap schedule image) separately from six empty/line-break-only hrefs. Confirm migrated images still render and the six labeled migrated downloads remain usable. Zero legacy images can also result from missing images, so inspect replacement completeness. Intentional retained hosting requires owner approval."
+    ],
+    "historicalCheckCount": 15,
+    "correction": "Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not.",
+    "pages": [
+      {
+        "key": "division",
+        "baselineURL": "https://rs.ieee.org/about-rs/division-vi-societies.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/division-vi-societies/"
+      },
+      {
+        "key": "roadmap",
+        "baselineURL": "https://rs.ieee.org/roadmap.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/roadmap/"
+      },
+      {
+        "key": "2014-november",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2014-november.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2014-november/"
+      },
+      {
+        "key": "2016-february",
+        "baselineURL": "https://rs.ieee.org/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-february.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/ieee-reliability-newsletter-special-issues/issues/reliability-special-issue-2016-february/"
+      },
+      {
+        "key": "congress-2024",
+        "baselineURL": "https://rs.ieee.org/chapters/chapter-congress-master-page/chapter-congress-june-2024.html",
+        "migratedURL": "https://ieeerelsoc.wpenginepowered.com/chapters/chapter-congress-master-page/chapter-congress-june-2024/"
+      }
+    ]
+  },
+  {
+    "id": "LINK-01",
+    "title": "Education links to two profile destinations displaying errors",
+    "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/education.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/education-tc/",
+    "rules": [
+      {
+        "id": "LINK-01-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://en.wikipedia.org/wiki/Emmanuel_Gonzalez, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-01-02",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://www1.wne.edu/engineering/ie/index.cfm?selection=doc.10756, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-01-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner."
+      },
+      {
+        "id": "LINK-01-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 14,
+    "correction": "Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02",
+    "title": "Business Resources links to two reference destinations displaying not-found errors",
+    "baselineURL": "https://rs.ieee.org/about-rs/ieee-reliability-society-business-planning-resources.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/ieee-reliability-society-business-planning-resources/",
+    "rules": [
+      {
+        "id": "LINK-02-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://humanities.uchicago.edu/forms_unrest/ROGET.html, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-02-02",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://www.facstaff.bucknell.edu/rbeard/diction.html, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-02-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner."
+      },
+      {
+        "id": "LINK-02-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 14,
+    "correction": "Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03",
+    "title": "AdCom links to a Life Science Initiative destination displaying an unavailable-site message",
+    "baselineURL": "https://rs.ieee.org/about-rs/administrative-committee-adcom-members.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/about/administrative-committee-adcom-members/",
+    "rules": [
+      {
+        "id": "LINK-03-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://lifesciences.ieee.org/, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-03-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner."
+      },
+      {
+        "id": "LINK-03-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-04",
+    "title": "Migrated UK/Ireland chapter link displays Not Found and a casino-promotional footer",
+    "baselineURL": "https://rs.ieee.org/chapters.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/chapters/",
+    "rules": [
+      {
+        "id": "LINK-04-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://www.ieee.org.uk/cpmt.html, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-04-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "The bad link is present only in the currently checked migrated chapter table. Confirm its replacement; historic causation, compromise and domain ownership remain unproven."
+      },
+      {
+        "id": "LINK-04-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "The bad link is present only in the currently checked migrated chapter table. Confirm its replacement; historic causation, compromise and domain ownership remain unproven.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 9,
+    "correction": "Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-05",
+    "title": "Migrated San Diego and Twin Cities chapter links display not-found errors",
+    "baselineURL": "https://rs.ieee.org/chapters.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/chapters/",
+    "rules": [
+      {
+        "id": "LINK-05-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://www.sdieee.org/cgi-bin/webobjects/ieee.woa/1/wo/pcyb7ctvim4wwkszlehobg/0.1.7.1.21.5, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-05-02",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For http://www.tc-ieee.org/index.php/local-chaptersaffinity-groups/reliability.html, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-05-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Confirm replacement chapter destinations. The current comparison is complete for these rows; the date and cause of link introduction remain unknown."
+      },
+      {
+        "id": "LINK-05-04",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "Confirm replacement chapter destinations. The current comparison is complete for these rows; the date and cause of link introduction remain unknown.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 16,
+    "correction": "The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-06",
+    "title": "IEEE Access Peer Reviewers link displays a missing-page message",
+    "baselineURL": "https://rs.ieee.org/publications/ieee-access-reliability-society-section.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/publications/ieee-access-reliability-society-section/",
+    "rules": [
+      {
+        "id": "LINK-06-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For https://ieeeaccess.ieee.org/the-rapid-peer-review-advantage/, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-06-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner."
+      },
+      {
+        "id": "LINK-06-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07",
+    "title": "Events pages link a PHM Call for paper to a destination displaying a not-found error",
+    "baselineURL": "https://rs.ieee.org/events-conferences.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/events/",
+    "rules": [
+      {
+        "id": "LINK-07-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For https://phmconf.org/callforpapers.html, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-07-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner."
+      },
+      {
+        "id": "LINK-07-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-08",
+    "title": "Technical Committees pages link P7009 to a browser-confirmed missing page",
+    "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/",
+    "rules": [
+      {
+        "id": "LINK-08-01",
+        "type": "review",
+        "label": "Use fresh destination evidence for this historical external target",
+        "reason": "For https://sagroups.ieee.org/7009/, use the fresh destination check in src/run.mjs when the exact target remains a visible main-content link. A repaired original URL can satisfy availability without a catalog revision; historical failure does not permanently forbid it. Owner review applies only to replacement or removal semantics, including useful navigation and intended destination identity. Absence alone does not certify a replacement."
+      },
+      {
+        "id": "LINK-08-02",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner."
+      },
+      {
+        "id": "LINK-08-03",
+        "type": "review",
+        "label": "Review acceptance beyond the automated predicates",
+        "reason": "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+      }
+    ],
+    "reviews": [
+      "The same exact target occurs on both checked current pages. These observations do not establish that migration caused the remote failure. Confirm an appropriate replacement destination with the content owner.",
+      "Compare current source/migrated anchors with the external target inventory. Use the runner's fresh destination check for any retained visible original target, including a repaired URL; no catalog revision is required for repair. Owner review applies only to replacement or removal semantics. Absence of the historical target alone does not establish useful replacement navigation. No historical migration causation, domain ownership or compromise is inferred."
+    ],
+    "historicalCheckCount": 7,
+    "correction": "Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  }
+]

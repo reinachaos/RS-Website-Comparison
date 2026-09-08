@@ -1,0 +1,310 @@
+[
+  {
+    "id": "availability-01",
+    "url": "https://www.ieee.org/security-privacy.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE privacy-policy content is readable."
+  },
+  {
+    "id": "availability-02",
+    "url": "https://www.ieee.org/join",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE membership information is readable; joining was not tested."
+  },
+  {
+    "id": "availability-03",
+    "url": "https://www.ieee.org/give",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The public IEEE Foundation donation page and form render. No form submission or donation was attempted; availability is not a layout or transaction-quality assessment."
+  },
+  {
+    "id": "availability-04",
+    "url": "http://www.ieee.org/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE home-page content is readable."
+  },
+  {
+    "id": "availability-05",
+    "url": "http://www.ieee.org/sitemap",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE site-directory content is readable."
+  },
+  {
+    "id": "availability-06",
+    "url": "http://www.linkedin.com/groups?mostPopular=&gid=1855391",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The requested content is gated by a sign-in page. Login-page rendering does not establish public access to the destination content."
+  },
+  {
+    "id": "availability-07",
+    "url": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=MEMRL007",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The public Reliability Society membership catalog entry is readable."
+  },
+  {
+    "id": "availability-08",
+    "url": "http://www.ieee.org/accessibility_statement.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE accessibility-policy content is readable."
+  },
+  {
+    "id": "availability-09",
+    "url": "http://www.ieee.org/about/corporate/governance/p9-26.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE nondiscrimination-policy content is readable."
+  },
+  {
+    "id": "availability-10",
+    "url": "http://www.ieee.org/security_privacy.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE privacy-policy content is readable at its browser destination."
+  },
+  {
+    "id": "availability-11",
+    "url": "https://www.ieee.org/about/help/site-terms-conditions.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE terms-and-disclosures content is readable."
+  },
+  {
+    "id": "availability-12",
+    "url": "http://www.ieee.org/fellowprogram",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE Fellows content is readable."
+  },
+  {
+    "id": "availability-13",
+    "url": "https://www.ieee.org/profile/public/forgotpassword/forgotUsernamePassword.html?url=https://www.ieee.org",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The public password-recovery page renders. No form submission or account-recovery outcome was tested."
+  },
+  {
+    "id": "availability-14",
+    "url": "https://www.ieee.org/membership/join/emember-countries",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public electronic-membership information is readable."
+  },
+  {
+    "id": "availability-15",
+    "url": "https://mc.manuscriptcentral.com/ieee-access",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The requested content is gated by a sign-in page. Login-page rendering does not establish public access to the destination content."
+  },
+  {
+    "id": "availability-16",
+    "url": "https://www.ieee.org/membership-catalog/productdetail/showProductDetailPage.html?product=MEMRL007&refProd=MEMRL007",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The public Reliability Society catalog entry with refProd query is readable."
+  },
+  {
+    "id": "availability-17",
+    "url": "https://www.dau.edu/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The browser reaches a public training site at www.waru.edu. Availability is observed; organizational identity and ownership are not inferred."
+  },
+  {
+    "id": "availability-18",
+    "url": "https://icatalog.dau.edu/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The browser reaches a public iCatalog at icatalog.waru.edu. Availability is observed; organizational identity and ownership are not inferred."
+  },
+  {
+    "id": "availability-19",
+    "url": "http://inside.mines.edu/~cdgraas/",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Browser displays Forbidden; the independent HTTP response is 403. No bypass was attempted; target content remains unverified, not confirmed broken."
+  },
+  {
+    "id": "availability-20",
+    "url": "http://tech.groups.yahoo.com/group/IEEEReliabilitySociety/",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Browser DNS resolution failed (ERR_NAME_NOT_RESOLVED). Target content remains unverified, not confirmed broken."
+  },
+  {
+    "id": "availability-21",
+    "url": "https://eballot4.votenet.com/IEEE",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The requested content is gated by a sign-in page. Login-page rendering does not establish public access to the destination content."
+  },
+  {
+    "id": "availability-22",
+    "url": "http://paris.utdallas.edu/rs-certificate",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The bounded browser retry returned ERR_EMPTY_RESPONSE. Target content remains unverified, not confirmed broken."
+  },
+  {
+    "id": "availability-23",
+    "url": "http://www.555-1212.com/",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Browser DNS resolution failed (ERR_NAME_NOT_RESOLVED). Target content remains unverified, not confirmed broken."
+  },
+  {
+    "id": "availability-24",
+    "url": "http://www.teldir.com/eng/",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Browser displays a Cloudflare security-verification challenge at Infobel. No bypass was attempted; target content remains unverified, not confirmed broken."
+  },
+  {
+    "id": "availability-25",
+    "url": "http://www.fedex.com/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public FedEx location-selection content is readable; no sign-in or shipping transaction was tested."
+  },
+  {
+    "id": "availability-26",
+    "url": "http://www.ups.com/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public UPS content is readable at the recorded browser destination; shipping workflows were not tested."
+  },
+  {
+    "id": "availability-27",
+    "url": "http://www.mapquest.com/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The public MapQuest page renders; route planning and map interaction were not tested."
+  },
+  {
+    "id": "availability-28",
+    "url": "http://www.expedia.com/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public Expedia page content renders; searches and booking workflows were not tested."
+  },
+  {
+    "id": "availability-29",
+    "url": "http://www.travelocity.com/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public Travelocity page content renders; searches and booking workflows were not tested."
+  },
+  {
+    "id": "availability-30",
+    "url": "http://www.ieee.org/publications_standards/publications/authors/authors_journals.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE publication/author information renders at the browser destination."
+  },
+  {
+    "id": "availability-31",
+    "url": "http://www.ieee.org/conferences_events/index.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE conference information renders at the browser destination."
+  },
+  {
+    "id": "availability-32",
+    "url": "https://www.ieee.org/",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE home-page content is readable."
+  },
+  {
+    "id": "availability-33",
+    "url": "https://www.ieee.org/sitemap.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE site-directory content is readable."
+  },
+  {
+    "id": "availability-34",
+    "url": "https://www.linkedin.com/groups/1855391/",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The requested content is gated by a sign-in page. Login-page rendering does not establish public access to the destination content."
+  },
+  {
+    "id": "availability-35",
+    "url": "http://www.ieee.org/sitemap.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE site-directory content is readable."
+  },
+  {
+    "id": "availability-36",
+    "url": "https://www.ieee.org/accessibility-statement.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE accessibility-policy content is readable."
+  },
+  {
+    "id": "availability-37",
+    "url": "https://www.ieee.org/about/corporate/governance/p9-26.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE nondiscrimination-policy content is readable."
+  },
+  {
+    "id": "availability-38",
+    "url": "http://www.ieee.org/site_terms_conditions.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE terms-and-disclosures content is readable."
+  },
+  {
+    "id": "availability-39",
+    "url": "https://www.ieee.org/security_privacy.html",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE privacy-policy content is readable."
+  },
+  {
+    "id": "availability-40",
+    "url": "http://rlchongqing.ieee.org/",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Browser DNS resolution failed (ERR_NAME_NOT_RESOLVED). Target content remains unverified, not confirmed broken."
+  },
+  {
+    "id": "availability-41",
+    "url": "http://www.ieee.ch/rel",
+    "expectedDocument": false,
+    "historicalStatus": "unavailable-confirmed",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The Switzerland URL returns independent HTTP 404 at http://ieee.ch/rel; the browser separately shows Not Found at https://ieee.ch/rel. This is an additional appendix finding, not part of the original 36."
+  },
+  {
+    "id": "availability-42",
+    "url": "http://www.ieee.org.tw/chapters/About/?web_class=28",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Browser certificate-name validation failed (ERR_CERT_COMMON_NAME_INVALID); no certificate bypass was attempted. Target content remains unverified, not confirmed broken."
+  },
+  {
+    "id": "availability-43",
+    "url": "https://www.linkedin.com/groups/?mostPopular=&gid=1855391",
+    "expectedDocument": false,
+    "historicalStatus": "access-unverified",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. The requested content is gated by a sign-in page. Login-page rendering does not establish public access to the destination content."
+  },
+  {
+    "id": "availability-44",
+    "url": "https://www.ieee.org/communities-connection/awards-recognition/ieee-fellows",
+    "expectedDocument": false,
+    "historicalStatus": "available",
+    "note": "Historical 2026-09-08 observation; recheck before acceptance. Public IEEE Fellows content is readable."
+  }
+]

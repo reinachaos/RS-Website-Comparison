@@ -6,7 +6,7 @@ This is a deterministic Node.js and Playwright suite, not an AI conversation rep
 
 Versioned acceptance rules derive from the corrected September 8 report. Its 344 historical statements are retained only as a traceability register, not presented as 344 executable assertions. Coverage separately counts finding-level rules, historical statements, supplemental targets and manual decisions. Every original ID must have rules or an explicit review obligation. No omission can silently become a pass.
 
-Browser evidence consists of screenshots and structured DOM observations using fixed desktop 1440x1000 and mobile 390x844 viewports. Complete rendered DOM may be saved locally, never committed by default. Secrets, authentication state and original Word/evidence directories are excluded. Main-content selection must be explicit; missing content roots are blocked instead of falling back to the whole shell.
+Browser evidence consists of screenshots and structured DOM observations using fixed desktop 1440x1000 and mobile 390x844 viewports. Sanitized inert structural DOM is saved as text, never committed by default. Secrets, authentication state and original Word/evidence directories are excluded. Main-content selection must be explicit; missing content roots are blocked instead of falling back to the whole shell.
 
 Visual references are raw, unannotated PNGs generated in the same runtime as testing. Capture creates an unapproved candidate; approval is a separate explicit developer command with reviewer and reason. Normal QA never updates approved references. Old report JPEG crops are not silently treated as pixel baselines. Until approved references exist, visual evidence is review, not pass. Small font differences do not automatically fail acceptance.
 

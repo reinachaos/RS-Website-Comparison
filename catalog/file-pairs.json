@@ -1,0 +1,411 @@
+[
+  {
+    "id": "620d00b29e6fc148",
+    "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/index.html",
+    "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/index.html",
+    "expectedOldHash": "41d9649a66fa80f9516391b69ba3e58cd52e729cf928e68ce9b1adc654ae6c0d",
+    "expectedNewHash": "280453cd97b42b9e4c23a239c2f345fd2bd2ad692bd33c8388a6a60f5b0f0585",
+    "mode": "package",
+    "dependencies": [
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Announcements/Patent-Released-by-Member.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Announcements/Patent-Released-by-Member.pdf",
+        "sha256": "619073ba305b98ec37bcd8e47de1b1cb8651ed0d804baac9169f184e6379c680"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Announcements/Reliability-Society-Chapter-Awards.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Announcements/Reliability-Society-Chapter-Awards.pdf",
+        "sha256": "aaf9130ffaef9030bb40ae345a765486f1244c5a8ffd255270e566c66ca168e9"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Chapters/2025_June-Boston_Reliability_Newsletter.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Chapters/2025_June-Boston_Reliability_Newsletter.pdf",
+        "sha256": "d457f25780f10d0ac2be3cdd6b550a8c238b502da76f9f29f2e3fb2224cf24ee"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Chapters/DFR_Presentation_for IEEE RS AZ Chapter_2024-12-5.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Chapters/DFR_Presentation_for IEEE RS AZ Chapter_2024-12-5.pdf",
+        "sha256": "409dd73880b9ce07538fdf0d8644df3dd5bb7b304d5f06c0bf4b36eed1905c20"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Chapters/Dallas-Chapter.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Chapters/Dallas-Chapter.pdf",
+        "sha256": "b94e782161694bf3f6efbae31cc6934ee0d89f25f1bcb62d3593d52ec96ae303"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Chapters/Lou Gullo PHM Presentation-2025-2-27.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Chapters/Lou Gullo PHM Presentation-2025-2-27.pdf",
+        "sha256": "a362551bbffeb0e4d050ba39b14733b30777e16f73fffc0456cd3e41c21a8117"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Chapters/Sweden and Norway June.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Chapters/Sweden and Norway June.pdf",
+        "sha256": "ddc548c50c3bd1e475a1cf1d05ce4dbfb2541b3bd300783b629fd5cf82cacaec"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Event/DSC 2025.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Event/DSC 2025.pdf",
+        "sha256": "65f0dc440cc06191fe3fa50f823cef27e29136fbb6e6e1a671d289aa1376c7f0"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Event/ICIR2025 CFP Flyer apr26.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Event/ICIR2025 CFP Flyer apr26.pdf",
+        "sha256": "2b727afbd70b7aa5219fb8cac512d784614e31c3360ad6f378d10e27356fc2f5"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Event/IEEE RS AZ Supports 2025 Phoenix Section Annual Banquet.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Event/IEEE RS AZ Supports 2025 Phoenix Section Annual Banquet.pdf",
+        "sha256": "b01ba496e8d5525b9af9810f64a76cbd25891e1c897ac66faf2471bd15c4e681"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Event/PHM-2025.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Event/PHM-2025.pdf",
+        "sha256": "64dbc212cc36b43102bbdaf7fb1dc7b6e4e83f6eb0d41d75908e1e025b51f4de"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/Event/RAMS EUROPE 2025 Call For Papers_Janet 250123.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/Event/RAMS EUROPE 2025 Call For Papers_Janet 250123.pdf",
+        "sha256": "0518d03fdd9a829cd952861b648a1bdb2f4e2c0a85c7ec7e859514d8d585f92f"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/favicon.ico",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/favicon.ico",
+        "sha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/images/IEEE_RS_Logo.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/images/IEEE_RS_Logo.png",
+        "sha256": "fb9e265f45ff8e8280a1aca62c8918392a3b21559b048b327f3db216bf9ac4e4"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/images/Jason_Rupe.jpg",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/images/Jason_Rupe.jpg",
+        "sha256": "099556e34e800b6119260439a2e0cc3582caa76081561638e831cd29a60834a9"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/images/ieee_logo_transparent.gif",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/images/ieee_logo_transparent.gif",
+        "sha256": "ed802c5e4fa7f9f70115bf890447c29eee6b9625921a9a4bfff7ad9a32b5928a"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/logo192.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/logo192.png",
+        "sha256": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/logo512.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/logo512.png",
+        "sha256": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/manifest.json",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/manifest.json",
+        "sha256": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/static/css/main.a0a1170f.css",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/static/css/main.a0a1170f.css",
+        "sha256": "e21baa0ab593dbfb82015792940fa1772562d211eb41f2cf24c0052a900d0712"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/static/js/453.bceb1e94.chunk.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/static/js/453.bceb1e94.chunk.js",
+        "sha256": "9bc3133f7a1118fa527a460b01308c2ffc374fc5a935d07903d67ec3821f2985"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/2_2025/static/js/main.3aaffc24.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/2_2025/static/js/main.3aaffc24.js",
+        "sha256": "060b64a0fdd369679404f7547898ff970366f9f9db0233a0a9b9d5917ae30315"
+      }
+    ],
+    "note": "Historical equality covers these identified complete dependency files only. Re-fetch both sides through EOF and compare hashes; shell HTML differs. Compare settled runtime content separately; this is not exhaustive interaction or pagination parity."
+  },
+  {
+    "id": "49d0730a812128e2",
+    "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/index.html",
+    "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/index.html",
+    "expectedOldHash": "a734adac3862e83ba0d621726f11f340dff07a961f6a6e300b85b48e1935475d",
+    "expectedNewHash": "9ef6322f592e0872b55cda9e40ea2a88c7eb365745b9812622bc163fb7f6ce30",
+    "mode": "package",
+    "dependencies": [
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/Announcements/IEEE-Access-RS-Section-highlights.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/Announcements/IEEE-Access-RS-Section-highlights.pdf",
+        "sha256": "288b3e9bd05cf30c747378d805d1153c91dbf4eb44042fbe6ceb9d07953ea7f8"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/Announcements/September-2025-Issue-Highlights-IEEE-Transactions-on-Reliability.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/Announcements/September-2025-Issue-Highlights-IEEE-Transactions-on-Reliability.pdf",
+        "sha256": "bf6c2d2b8024cbddb46ff0a8fa1952cca60d52dd059755fe3fda0245e1fa7c49"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/Chapters/2025_September-Boston_Reliability_Newsletter.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/Chapters/2025_September-Boston_Reliability_Newsletter.pdf",
+        "sha256": "20e6df7390be32a9f34e3a573f4e3209d3b975d23f4646a8a6f5057638cb20ed"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/Chapters/Dallas-Chapter.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/Chapters/Dallas-Chapter.pdf",
+        "sha256": "b9410b3e8bbfe9582b01f16cc42936574a99758fe481f8c1b3c5c8d2f44def8d"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/Event/DSC 2025.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/Event/DSC 2025.pdf",
+        "sha256": "65f0dc440cc06191fe3fa50f823cef27e29136fbb6e6e1a671d289aa1376c7f0"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/Event/ICIR2025 CFP Flyer apr26.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/Event/ICIR2025 CFP Flyer apr26.pdf",
+        "sha256": "2b727afbd70b7aa5219fb8cac512d784614e31c3360ad6f378d10e27356fc2f5"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/favicon.ico",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/favicon.ico",
+        "sha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/images/IEEE_RS_Logo.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/images/IEEE_RS_Logo.png",
+        "sha256": "fb9e265f45ff8e8280a1aca62c8918392a3b21559b048b327f3db216bf9ac4e4"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/images/Jason_Rupe.jpg",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/images/Jason_Rupe.jpg",
+        "sha256": "099556e34e800b6119260439a2e0cc3582caa76081561638e831cd29a60834a9"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/images/ieee_logo_transparent.gif",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/images/ieee_logo_transparent.gif",
+        "sha256": "ed802c5e4fa7f9f70115bf890447c29eee6b9625921a9a4bfff7ad9a32b5928a"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/logo192.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/logo192.png",
+        "sha256": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/logo512.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/logo512.png",
+        "sha256": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/manifest.json",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/manifest.json",
+        "sha256": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/static/css/main.d65a41da.css",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/static/css/main.d65a41da.css",
+        "sha256": "d23398d1ff907aa90d312b624136f22399a973ade0452f86894cf9f0f2c26164"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/static/js/453.bceb1e94.chunk.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/static/js/453.bceb1e94.chunk.js",
+        "sha256": "9bc3133f7a1118fa527a460b01308c2ffc374fc5a935d07903d67ec3821f2985"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/3_2025/static/js/main.239aacd7.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/3_2025/static/js/main.239aacd7.js",
+        "sha256": "7d11471e8cce60bba66ca6a5892166c661cc750fe25988eaf2dc003f97348115"
+      }
+    ],
+    "note": "Historical equality covers these identified complete dependency files only. Re-fetch both sides through EOF and compare hashes; shell HTML differs. Compare settled runtime content separately; this is not exhaustive interaction or pagination parity."
+  },
+  {
+    "id": "0190e484c551a022",
+    "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/",
+    "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/",
+    "expectedOldHash": "06f01eccccbfee88ec4e52829530ab42a48e02ec0699858092f47f17a432a3a5",
+    "expectedNewHash": "b52293b6e0e27aa87a97185163b2dfe459fe4d9d5b8e5eb87da7229568a5bfa7",
+    "mode": "package",
+    "dependencies": [
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Announcements/From Vietnam Boat Refugee to Reliability Engineering Scholar.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Announcements/From Vietnam Boat Refugee to Reliability Engineering Scholar.pdf",
+        "sha256": "f1e68c694816b33d0f219530b357e25c92b4f0c0d834ae890f246d8dd2dc2ae4"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Announcements/Participating_Soc_Join_TEC_For_Free Ad.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Announcements/Participating_Soc_Join_TEC_For_Free Ad.pdf",
+        "sha256": "2a84e04f80bb6613f70e457573ffec923c6b89f4e1895eaa9ce071bbbc35ed4d"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Chapters/01-Roundtable-Discussion-Smart-Speaker.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Chapters/01-Roundtable-Discussion-Smart-Speaker.pdf",
+        "sha256": "3aa62fa009cee39cf38c9a8d09c4fc5d5349b73160077bf4b30ffc25e254c1b6"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Chapters/02-Dallas-Chapter-End-of-Year-Officer-Meeting.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Chapters/02-Dallas-Chapter-End-of-Year-Officer-Meeting.pdf",
+        "sha256": "3c21c0c658c88402f9b27692f048fb760f3002cb5423c60eaa33564dc3ad9b37"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Chapters/2025_December-IEEE_Boston_Reliability_Newsletter-Final.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Chapters/2025_December-IEEE_Boston_Reliability_Newsletter-Final.pdf",
+        "sha256": "c600d92335a0edad0a5ac61ddec6fd4488d3813e09485724a6f3d34ee89b6581"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Chapters/The_2nd_IEEE_Reliability_Society_Xi'an_Regional_Young_Scholars_Exchange_Conference.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Chapters/The_2nd_IEEE_Reliability_Society_Xi'an_Regional_Young_Scholars_Exchange_Conference.pdf",
+        "sha256": "63cc6410f188ca24edeb5607495d1a2cfc3657314a0bdbef395e5da889b1e4ea"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Event/RAMS_EUROPE_2026_Call_For_Papers_Final.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Event/RAMS_EUROPE_2026_Call_For_Papers_Final.pdf",
+        "sha256": "04376eb2a993b7876421c9b02eb44f8586d77eb322cec9a589cf9680dba37913"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/Event/RS_Newsletter_Dec_2025.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/Event/RS_Newsletter_Dec_2025.pdf",
+        "sha256": "a072e7cf872a49c0515ec4149445c162554a82b47f72f9739ee156835b63e171"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/favicon.ico",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/favicon.ico",
+        "sha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/images/IEEE_RS_Logo.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/images/IEEE_RS_Logo.png",
+        "sha256": "fb9e265f45ff8e8280a1aca62c8918392a3b21559b048b327f3db216bf9ac4e4"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/images/Jason_Rupe.jpg",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/images/Jason_Rupe.jpg",
+        "sha256": "099556e34e800b6119260439a2e0cc3582caa76081561638e831cd29a60834a9"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/images/ieee_logo_transparent.gif",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/images/ieee_logo_transparent.gif",
+        "sha256": "ed802c5e4fa7f9f70115bf890447c29eee6b9625921a9a4bfff7ad9a32b5928a"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/logo192.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/logo192.png",
+        "sha256": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/logo512.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/logo512.png",
+        "sha256": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/manifest.json",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/manifest.json",
+        "sha256": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/static/css/main.d65a41da.css",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/static/css/main.d65a41da.css",
+        "sha256": "d23398d1ff907aa90d312b624136f22399a973ade0452f86894cf9f0f2c26164"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/static/js/453.bceb1e94.chunk.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/static/js/453.bceb1e94.chunk.js",
+        "sha256": "9bc3133f7a1118fa527a460b01308c2ffc374fc5a935d07903d67ec3821f2985"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2025/4_2025/static/js/main.90ea4b3c.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2025/4_2025/static/js/main.90ea4b3c.js",
+        "sha256": "f49873a5f3810639b079f77678d834376985d00606db0acfba42c7272e39846c"
+      }
+    ],
+    "note": "Historical equality covers these identified complete dependency files only. Re-fetch both sides through EOF and compare hashes; shell HTML differs. Compare settled runtime content separately; this is not exhaustive interaction or pagination parity."
+  },
+  {
+    "id": "87ef528d4825bbfa",
+    "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/index.html",
+    "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/index.html",
+    "expectedOldHash": "d81f7c50a8cbf8b03eaaa1bb849360bdda7239086de3b50ba2b4044059d5d2b0",
+    "expectedNewHash": "53ed96bf32e05faa7dc5071e6d1f06aefd2effb94fac448a0c32c66fdf0b39e0",
+    "mode": "package",
+    "dependencies": [
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/Chapters/2026_March-IEEE_Boston_Reliability_Newsletter Final.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/Chapters/2026_March-IEEE_Boston_Reliability_Newsletter Final.pdf",
+        "sha256": "901c02501dfd7079ed8362b52c95f4947cee42bd9b06e75bb04d4468b04c8bdf"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/Chapters/Technical-Seminar-Professor-Xinda-Wang.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/Chapters/Technical-Seminar-Professor-Xinda-Wang.pdf",
+        "sha256": "829a47d39c5a24b023013bd76df4ced3e1ae290399e4a4b431324ae7e99f9230"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/Chapters/The-2026-Spring-IEEE-International-Contest-on-Software-Testing.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/Chapters/The-2026-Spring-IEEE-International-Contest-on-Software-Testing.pdf",
+        "sha256": "3ef0b7423444c42c84c69be3413b58595cb5c6451e8e60477b9ab32e73ae8f0f"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/Event/ICIR 2026.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/Event/ICIR 2026.pdf",
+        "sha256": "c2ef38dceea698a66237b4ac5b61351c1400d3ab528832ae12ee04410c707c84"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/Selected-Papers/IEEE Access Reliability Society Section - 2025-Highlights-V2.pdf",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/Selected-Papers/IEEE Access Reliability Society Section - 2025-Highlights-V2.pdf",
+        "sha256": "aa6f48dce1b1f3f4adb44040ed6a0363e740e317f2c9354ac7d07222b61955ee"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/favicon.ico",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/favicon.ico",
+        "sha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/images/IEEE_RS_Logo.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/images/IEEE_RS_Logo.png",
+        "sha256": "fb9e265f45ff8e8280a1aca62c8918392a3b21559b048b327f3db216bf9ac4e4"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/images/Jason_Rupe.jpg",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/images/Jason_Rupe.jpg",
+        "sha256": "099556e34e800b6119260439a2e0cc3582caa76081561638e831cd29a60834a9"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/images/ieee_logo_transparent.gif",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/images/ieee_logo_transparent.gif",
+        "sha256": "ed802c5e4fa7f9f70115bf890447c29eee6b9625921a9a4bfff7ad9a32b5928a"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/logo192.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/logo192.png",
+        "sha256": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/logo512.png",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/logo512.png",
+        "sha256": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/manifest.json",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/manifest.json",
+        "sha256": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/static/css/main.6f3eab99.css",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/static/css/main.6f3eab99.css",
+        "sha256": "8995f6f8c9a1fb053c8d40dfd4aa66620722a54b2adce78437220e73d09ba287"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/static/js/453.bceb1e94.chunk.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/static/js/453.bceb1e94.chunk.js",
+        "sha256": "9bc3133f7a1118fa527a460b01308c2ffc374fc5a935d07903d67ec3821f2985"
+      },
+      {
+        "oldURL": "https://rs.ieee.org/images/files/newsletters/2026/1_2026/static/js/main.d834d376.js",
+        "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/newsletters/2026/1_2026/static/js/main.d834d376.js",
+        "sha256": "ec16e72e972b55b2dc74e8c0f28cee06f63b68d4a69f9bda98a5830c0ae6e2af"
+      }
+    ],
+    "note": "Historical equality covers these identified complete dependency files only. Re-fetch both sides through EOF and compare hashes; shell HTML differs. Compare settled runtime content separately; this is not exhaustive interaction or pagination parity."
+  },
+  {
+    "id": "b17b0404ee164bf4",
+    "oldURL": "https://rs.ieee.org/images/files/Publications/2008/2008-01.doc",
+    "newURL": "https://ieeerelsoc.wpenginepowered.com/wp-content/uploads/2026/08/2008-01.pdf",
+    "expectedOldHash": "4d3a21d92dbeacf14f0b6b28d51902635ce16529cf0c178ef229b23ae19649e4",
+    "expectedNewHash": "6b27ba679111ef2001f2ed1ab59cb44e6eabd127247f884bacee195081d7a7a3",
+    "mode": "document-review",
+    "dependencies": [],
+    "note": "Document review required: the article body was retained in the DOC-to-PDF conversion, but title and typesetting changed. Compare full extracted body, title, pagination and rendered pages; do not require raw-byte equality or declare the title change automatically approved."
+  }
+]

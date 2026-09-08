@@ -1,0 +1,2410 @@
+[
+  {
+    "id": "ABOUT-01-H001",
+    "findingId": "ABOUT-01",
+    "statement": "The 2026 source column separates six named entries with line breaks.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-01-H002",
+    "findingId": "ABOUT-01",
+    "statement": "Missing boundary between Loretta Arellano and Joanna F. DeFranco in 2026.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-01-H003",
+    "findingId": "ABOUT-01",
+    "statement": "Missing boundary between Ruizhi (Ricky) Gao and George Pallis in 2026.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-01-H004",
+    "findingId": "ABOUT-01",
+    "statement": "The 2027 source column separates six named entries with line breaks.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-01-H005",
+    "findingId": "ABOUT-01",
+    "statement": "Missing boundary between Preeti Chauhan and Christian K. Hansen in 2027.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-01-H006",
+    "findingId": "ABOUT-01",
+    "statement": "Missing boundary between Farnoosh Naderkhani and Scott Tamashiro in 2027.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-01-H007",
+    "findingId": "ABOUT-01",
+    "statement": "Exactly four elected-table name boundaries lack a separating node.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The name-separation defect is confirmed. Do not combine it with the roster-authority question in ABOUT-02."
+  },
+  {
+    "id": "ABOUT-02-H001",
+    "findingId": "ABOUT-02",
+    "statement": "Complete elected roster comparison for term ending 2026.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the finding as an editorial discrepancy requiring owner confirmation, not a proven incorrect appointment."
+  },
+  {
+    "id": "ABOUT-02-H002",
+    "findingId": "ABOUT-02",
+    "statement": "Complete elected roster comparison for term ending 2027.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the finding as an editorial discrepancy requiring owner confirmation, not a proven incorrect appointment."
+  },
+  {
+    "id": "ABOUT-02-H003",
+    "findingId": "ABOUT-02",
+    "statement": "Complete elected roster comparison for term ending 2028.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the finding as an editorial discrepancy requiring owner confirmation, not a proven incorrect appointment."
+  },
+  {
+    "id": "ABOUT-02-H004",
+    "findingId": "ABOUT-02",
+    "statement": "Nir Kshetri is replaced by Joanna F. DeFranco in the 2026 named roster, not merely unlinked.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the finding as an editorial discrepancy requiring owner confirmation, not a proven incorrect appointment."
+  },
+  {
+    "id": "ABOUT-02-H005",
+    "findingId": "ABOUT-02",
+    "statement": "The authorized current roster can be established from these pages alone.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the finding as an editorial discrepancy requiring owner confirmation, not a proven incorrect appointment."
+  },
+  {
+    "id": "ABOUT-03-H001",
+    "findingId": "ABOUT-03",
+    "statement": "Adcom Only is a source AdCom entry absent from the corresponding migrated HTML navigation/sitemap.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not describe the protected body content as lost. Ask for intended routes and access roles."
+  },
+  {
+    "id": "ABOUT-03-H002",
+    "findingId": "ABOUT-03",
+    "statement": "Public GET of the source Adcom Only route leads to sign-in.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not describe the protected body content as lost. Ask for intended routes and access roles."
+  },
+  {
+    "id": "ABOUT-03-H003",
+    "findingId": "ABOUT-03",
+    "statement": "ExCom Only is a source AdCom entry absent from the corresponding migrated HTML navigation/sitemap.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not describe the protected body content as lost. Ask for intended routes and access roles."
+  },
+  {
+    "id": "ABOUT-03-H004",
+    "findingId": "ABOUT-03",
+    "statement": "Public GET of the source ExCom Only route leads to sign-in.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not describe the protected body content as lost. Ask for intended routes and access roles."
+  },
+  {
+    "id": "ABOUT-03-H005",
+    "findingId": "ABOUT-03",
+    "statement": "AdCom Meetings is a source AdCom entry absent from the corresponding migrated HTML navigation/sitemap.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not describe the protected body content as lost. Ask for intended routes and access roles."
+  },
+  {
+    "id": "ABOUT-03-H006",
+    "findingId": "ABOUT-03",
+    "statement": "Public GET of the source AdCom Meetings route leads to sign-in.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not describe the protected body content as lost. Ask for intended routes and access roles."
+  },
+  {
+    "id": "ABOUT-04-H001",
+    "findingId": "ABOUT-04",
+    "statement": "Source members-only route leads to sign-in.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an access-policy confirmation item. Neither unauthorized disclosure nor source/new content equality has been established."
+  },
+  {
+    "id": "ABOUT-04-H002",
+    "findingId": "ABOUT-04",
+    "statement": "Migrated members-only route delivers the Evans editorial heading in unauthenticated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an access-policy confirmation item. Neither unauthorized disclosure nor source/new content equality has been established."
+  },
+  {
+    "id": "ABOUT-04-H003",
+    "findingId": "ABOUT-04",
+    "statement": "The Evans On Reliability download anchor is delivered in the migrated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an access-policy confirmation item. Neither unauthorized disclosure nor source/new content equality has been established."
+  },
+  {
+    "id": "ABOUT-04-H004",
+    "findingId": "ABOUT-04",
+    "statement": "This establishes an unauthorized disclosure or protected-source content equivalence.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an access-policy confirmation item. Neither unauthorized disclosure nor source/new content equality has been established."
+  },
+  {
+    "id": "ABOUT-05-H001",
+    "findingId": "ABOUT-05",
+    "statement": "Seven source MOU links use the SAML content handler.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H002",
+    "findingId": "ABOUT-05",
+    "statement": "Seven migrated MOU labels retain source order and point directly to PDFs.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H003",
+    "findingId": "ABOUT-05",
+    "statement": "MOU 1: RAS with ISV source access and migrated anonymous PDF availability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H004",
+    "findingId": "ABOUT-05",
+    "statement": "MOU 2: RS IoT source access and migrated anonymous PDF availability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H005",
+    "findingId": "ABOUT-05",
+    "statement": "MOU 3: Sensors with Reliability Soc source access and migrated anonymous PDF availability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H006",
+    "findingId": "ABOUT-05",
+    "statement": "MOU 4: NTC with Reliability Soc source access and migrated anonymous PDF availability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H007",
+    "findingId": "ABOUT-05",
+    "statement": "MOU 5: CSC with Reliability Soc source access and migrated anonymous PDF availability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H008",
+    "findingId": "ABOUT-05",
+    "statement": "MOU 6: RL-TEC source access and migrated anonymous PDF availability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H009",
+    "findingId": "ABOUT-05",
+    "statement": "MOU 7: Reliability Society with ISV source access and migrated anonymous PDF availability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-05-H010",
+    "findingId": "ABOUT-05",
+    "statement": "The source and migrated MOU contents are equivalent and the public access is authorized.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Confirm whether public direct-file access is intended. No claim of protected-source PDF equality is made."
+  },
+  {
+    "id": "ABOUT-06-H001",
+    "findingId": "ABOUT-06",
+    "statement": "The source and migrated See chapter list anchors resolve to legacy /chapters.html.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Retain as an old-host navigation dependency, not a 404 or missing page."
+  },
+  {
+    "id": "ABOUT-06-H002",
+    "findingId": "ABOUT-06",
+    "statement": "The legacy chapter destination is currently available and does not redirect to the migrated host.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Retain as an old-host navigation dependency, not a 404 or missing page."
+  },
+  {
+    "id": "ABOUT-06-H003",
+    "findingId": "ABOUT-06",
+    "statement": "The corresponding migrated /chapters/ route is currently available.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Retain as an old-host navigation dependency, not a 404 or missing page."
+  },
+  {
+    "id": "ARCHIVE-01-H001",
+    "findingId": "ARCHIVE-01",
+    "statement": "The baseline May HTML names System and Software Assurance and contains exactly two articles.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H002",
+    "findingId": "ARCHIVE-01",
+    "statement": "May article Performance Testing of a Real-World System exists in the source and is absent from migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H003",
+    "findingId": "ARCHIVE-01",
+    "statement": "May article Intersecting Definitions of V&V exists in the source and is absent from migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H004",
+    "findingId": "ARCHIVE-01",
+    "statement": "Migrated May retains a May heading but its downloaded HTML cover image and Cover PDF depict August/September/October 2015.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H005",
+    "findingId": "ARCHIVE-01",
+    "statement": "Migrated May contains the combined-issue article Critical Infrastructure Systems and the Internet of Things.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H006",
+    "findingId": "ARCHIVE-01",
+    "statement": "Migrated May contains the combined-issue article Is Your Vehicle Controlled by You?.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H007",
+    "findingId": "ARCHIVE-01",
+    "statement": "Migrated May contains the combined-issue article Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H008",
+    "findingId": "ARCHIVE-01",
+    "statement": "Migrated May contains the combined-issue article Tool, Technique, and Tao in Computer Security Education.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H009",
+    "findingId": "ARCHIVE-01",
+    "statement": "Migrated May contains the combined-issue article CTF: Alternative Training for Offensive Security.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H010",
+    "findingId": "ARCHIVE-01",
+    "statement": "Entire-issue PDFs have 15 pages (baseline May) and 27 pages (migrated May); content identifies different issues.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H011",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Click Here to Download the Entire Issue matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H012",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Cover matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H013",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Reliability Society Administrative Committee (AdCom) Member matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H014",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Technical Committees matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H015",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Editorial Board matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H016",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Message from the Editor matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H017",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Regular Issue: IoT Critical Infrastructure and Computer Security Education matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H018",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Critical Infrastructure Systems and the Internet of Things matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H019",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Is Your Vehicle Controlled by You? matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H020",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H021",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document Tool, Technique, and Tao in Computer Security Education matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H022",
+    "findingId": "ARCHIVE-01",
+    "statement": "Misplaced document CTF: Alternative Training for Offensive Security matches baseline August/September/October content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H023",
+    "findingId": "ARCHIVE-01",
+    "statement": "Additional May PDF comparison: Cover is different issue content in migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H024",
+    "findingId": "ARCHIVE-01",
+    "statement": "Additional May PDF comparison: Reliability Society Administrative Committee (AdCom) Member is different issue content in migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H025",
+    "findingId": "ARCHIVE-01",
+    "statement": "Additional May PDF comparison: Technical Committees is different issue content in migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H026",
+    "findingId": "ARCHIVE-01",
+    "statement": "Additional May PDF comparison: Editorial Board is different issue content in migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H027",
+    "findingId": "ARCHIVE-01",
+    "statement": "Additional May PDF comparison: Message from the Editor is different issue content in migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H028",
+    "findingId": "ARCHIVE-01",
+    "statement": "Additional May PDF comparison: Special Issue on System and Software AssuranceÂÂ - Table of Contents is different issue content in migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H029",
+    "findingId": "ARCHIVE-01",
+    "statement": "The misplaced CTF HTML article title loses Alternative.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-01-H030",
+    "findingId": "ARCHIVE-01",
+    "statement": "The original finding's browser screenshot/rendered interaction evidence is freshly reproduced.",
+    "historicalStatus": "Supported by parent browser review",
+    "note": "Historical traceability only; not a current test or result. Fresh September 8 page and index captures provide the browser corroboration not performed by the HTTP worker. Parent correction: The CTF HTML article label omits Alternative, while the PDF retains it. The wrong content assignment is confirmed; correct May and the empty combined page together."
+  },
+  {
+    "id": "ARCHIVE-02-H001",
+    "findingId": "ARCHIVE-02",
+    "statement": "The source combined issue has a cover, five articles and twelve document links.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H002",
+    "findingId": "ARCHIVE-02",
+    "statement": "The migrated combined-issue main region has a heading but no issue body, cover or document links.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H003",
+    "findingId": "ARCHIVE-02",
+    "statement": "Article Critical Infrastructure Systems and the Internet of Things is omitted at its combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H004",
+    "findingId": "ARCHIVE-02",
+    "statement": "Article Is Your Vehicle Controlled by You? is omitted at its combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H005",
+    "findingId": "ARCHIVE-02",
+    "statement": "Article Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments is omitted at its combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H006",
+    "findingId": "ARCHIVE-02",
+    "statement": "Article Tool, Technique, and Tao in Computer Security Education is omitted at its combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H007",
+    "findingId": "ARCHIVE-02",
+    "statement": "Article CTF: Alternative Training for Offensive Security is omitted at its combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H008",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Click Here to Download the Entire Issue is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H009",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Cover is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H010",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Reliability Society Administrative Committee (AdCom) Member is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H011",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Technical Committees is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H012",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Editorial Board is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H013",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Message from the Editor is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H014",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Regular Issue: IoT Critical Infrastructure and Computer Security Education is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H015",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Critical Infrastructure Systems and the Internet of Things is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H016",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Is Your Vehicle Controlled by You? is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H017",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Launching a Security Testbed for Wireless Networks with Extensibility to Support Mobile Experiments is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H018",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link Tool, Technique, and Tao in Computer Security Education is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H019",
+    "findingId": "ARCHIVE-02",
+    "statement": "Document link CTF: Alternative Training for Offensive Security is absent from the migrated combined-issue page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H020",
+    "findingId": "ARCHIVE-02",
+    "statement": "Combined-issue files remain available under migrated May.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-02-H021",
+    "findingId": "ARCHIVE-02",
+    "statement": "The original finding's browser screenshot/rendered interaction evidence is freshly reproduced.",
+    "historicalStatus": "Supported by parent browser review",
+    "note": "Historical traceability only; not a current test or result. Fresh September 8 page and index captures provide the browser corroboration not performed by the HTTP worker. Parent correction: Empty means the issue body, not the whole website shell. Twelve links already include the five articles. No CMS media-library history was inspected."
+  },
+  {
+    "id": "ARCHIVE-03-H001",
+    "findingId": "ARCHIVE-03",
+    "statement": "Migrated February 2016 adds the incorrect Trustworthy Computing and Cybersecurity H2.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the added subject heading. Do not claim that every individual article is about Systems of Systems or that the entire issue was replaced."
+  },
+  {
+    "id": "ARCHIVE-03-H002",
+    "findingId": "ARCHIVE-03",
+    "statement": "The retained February 2016 cover and entire PDF identify Systems of Systems.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the added subject heading. Do not claim that every individual article is about Systems of Systems or that the entire issue was replaced."
+  },
+  {
+    "id": "ARCHIVE-03-H003",
+    "findingId": "ARCHIVE-03",
+    "statement": "February article retained: Reliability Analysis of Systems of Systems.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the added subject heading. Do not claim that every individual article is about Systems of Systems or that the entire issue was replaced."
+  },
+  {
+    "id": "ARCHIVE-03-H004",
+    "findingId": "ARCHIVE-03",
+    "statement": "February article retained: Strategic Asset Management: A System Driven Approach on Electrical Transmission Systems.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the added subject heading. Do not claim that every individual article is about Systems of Systems or that the entire issue was replaced."
+  },
+  {
+    "id": "ARCHIVE-03-H005",
+    "findingId": "ARCHIVE-03",
+    "statement": "February article retained: Big Data for Reliability Engineering:ÂÂ Threat and Opportunity.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the added subject heading. Do not claim that every individual article is about Systems of Systems or that the entire issue was replaced."
+  },
+  {
+    "id": "ARCHIVE-03-H006",
+    "findingId": "ARCHIVE-03",
+    "statement": "The original finding's browser screenshot/rendered interaction evidence is freshly reproduced.",
+    "historicalStatus": "Supported by parent browser review",
+    "note": "Historical traceability only; not a current test or result. Fresh September 8 page and index captures provide the browser corroboration not performed by the HTTP worker. Parent correction: Correct the added subject heading. Do not claim that every individual article is about Systems of Systems or that the entire issue was replaced."
+  },
+  {
+    "id": "ARCHIVE-04-H001",
+    "findingId": "ARCHIVE-04",
+    "statement": "2015-november: Cover changes from PDF to JPEG with the corresponding issue content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is a four-page PDF-to-image change, not four broken links or an exhaustive sitewide file-type count. A PDF response does not establish forced-download behavior."
+  },
+  {
+    "id": "ARCHIVE-04-H002",
+    "findingId": "ARCHIVE-04",
+    "statement": "2016-may: Cover changes from PDF to JPEG with the corresponding issue content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is a four-page PDF-to-image change, not four broken links or an exhaustive sitewide file-type count. A PDF response does not establish forced-download behavior."
+  },
+  {
+    "id": "ARCHIVE-04-H003",
+    "findingId": "ARCHIVE-04",
+    "statement": "2016-august: Cover changes from PDF to JPEG with the corresponding issue content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is a four-page PDF-to-image change, not four broken links or an exhaustive sitewide file-type count. A PDF response does not establish forced-download behavior."
+  },
+  {
+    "id": "ARCHIVE-04-H004",
+    "findingId": "ARCHIVE-04",
+    "statement": "2016-november: Cover changes from PDF to JPEG with the corresponding issue content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is a four-page PDF-to-image change, not four broken links or an exhaustive sitewide file-type count. A PDF response does not establish forced-download behavior."
+  },
+  {
+    "id": "ARCHIVE-04-H005",
+    "findingId": "ARCHIVE-04",
+    "statement": "The four named PDF-to-JPEG changes account for all four affected pages in this claim.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is a four-page PDF-to-image change, not four broken links or an exhaustive sitewide file-type count. A PDF response does not establish forced-download behavior."
+  },
+  {
+    "id": "ARCHIVE-04-H006",
+    "findingId": "ARCHIVE-04",
+    "statement": "The original finding's browser screenshot/rendered interaction evidence is freshly reproduced.",
+    "historicalStatus": "Supported by parent browser review",
+    "note": "Historical traceability only; not a current test or result. Fresh September 8 page and index captures provide the browser corroboration not performed by the HTTP worker. Parent correction: This is a four-page PDF-to-image change, not four broken links or an exhaustive sitewide file-type count. A PDF response does not establish forced-download behavior."
+  },
+  {
+    "id": "ARCHIVE-05-H001",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: source contents label Special Issue on Prognostics and Health Management (PHM) - Table of Contents: is omitted from migrated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H002",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: retained article A Circuit Component Modeling Approach Based on Vehicle Control System Health Simulation.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H003",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: retained article Life Prediction and Classification of Fault-Modes in Solid State Lamps Using Bayesian Probabilistic Models.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H004",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: retained article Data Driven Approach for Drill Bit Monitoring.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H005",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: retained article Fault Diagnostic Opportunities for Solenoid Operated Valves using Physics-of-Failure Analysis.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H006",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: retained article Fuel Cells Impedance Estimation Using Regression Analysis.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H007",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: retained article Challenges and Success in the Implementation of a Fleet Wide PHM for Energy Applications.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H008",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-february: retained article Fleet-Wide Prognostic and Health Management Suite: Asset Fault Signature Database.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H009",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-november: source contents label Special Issue - Invited Thoughts on the Internet of Things is omitted from migrated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H010",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-november: retained article Requirements Engineering of Reliable IoT Systems: The First Step.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H011",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-november: retained article Secure and Reliable IoT Adoption: “I think I can, I think I can”.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H012",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-november: retained article Considerations for Healthcare Applications in the Internet of Things.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H013",
+    "findingId": "ARCHIVE-05",
+    "statement": "2015-november: retained article Digital Immunity: An Intreaging Metaphor.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H014",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-may: source contents label Special Issue on Big Data: is omitted from migrated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H015",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-may: retained article Grid Reliability Depends on Big Data.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H016",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-may: retained article Farming Big Data Must Allow for Hills and Valleys that Affect Quality and Reliability.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H017",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-may: retained article The Internet of Things and Big Data Systems: The International Bazaar.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H018",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-august: source contents label Special Issue on IoT Security: is omitted from migrated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H019",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-august: source contents label Regular Issue: is omitted from migrated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H020",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-august: retained article Secure and Safe Automated Vehicle Platooning.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H021",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-august: retained article Investigating Anonymous and Secure Fault-Tolerable Routing Protocols for Overlay Networks.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H022",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-august: retained article A Density-Based Clustering Method for Machinery Anomaly Detection.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H023",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-november: source contents label Regular Issue: is omitted from migrated HTML.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H024",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-november: retained article Effects of Sampling Rate on the Accuracy of the Gas Turbine Performance Deterioration Modeling.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H025",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-november: retained article Applying Genetic Algorithm to Rearrange Cloud Virtual Machines for Balancing Resource Allocation.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H026",
+    "findingId": "ARCHIVE-05",
+    "statement": "2016-november: retained article Resolving Malware-Loading Problem by Leveraging Shellcode Detection Heuristics.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H027",
+    "findingId": "ARCHIVE-05",
+    "statement": "All five affected pages retain all 20 articles while losing their subject/category labels.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H028",
+    "findingId": "ARCHIVE-05",
+    "statement": "August 2016 loses the separation between two special-issue articles and one regular-issue article.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-05-H029",
+    "findingId": "ARCHIVE-05",
+    "statement": "The original finding's browser screenshot/rendered interaction evidence is freshly reproduced.",
+    "historicalStatus": "Supported by parent browser review",
+    "note": "Historical traceability only; not a current test or result. Fresh September 8 page and index captures provide the browser corroboration not performed by the HTTP worker. Parent correction: Do not call these five lost technical headings or lost articles. August's two category anchors share one Contents PDF: eleven source anchor occurrences represent ten distinct document targets."
+  },
+  {
+    "id": "ARCHIVE-06-H001",
+    "findingId": "ARCHIVE-06",
+    "statement": "Exact 2011 labels and href associations on https://rs.ieee.org/publications/reliability-society-newsletter.html.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed."
+  },
+  {
+    "id": "ARCHIVE-06-H002",
+    "findingId": "ARCHIVE-06",
+    "statement": "Exact 2011 labels and href associations on https://ieeerelsoc.wpenginepowered.com/publications/reliability-society-newsletter/.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed."
+  },
+  {
+    "id": "ARCHIVE-06-H003",
+    "findingId": "ARCHIVE-06",
+    "statement": "Exact 2011 labels and href associations on https://ieeerelsoc.wpenginepowered.com/technical-activities/reliability-society-newsletter-ta/.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed."
+  },
+  {
+    "id": "ARCHIVE-06-H004",
+    "findingId": "ARCHIVE-06",
+    "statement": "The 3_2011 destination contains its original Vol. 57, No. 3. August 2011 content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed."
+  },
+  {
+    "id": "ARCHIVE-06-H005",
+    "findingId": "ARCHIVE-06",
+    "statement": "The specialissue_2011 destination contains its original Special Issue for AdCom Election content.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed."
+  },
+  {
+    "id": "ARCHIVE-06-H006",
+    "findingId": "ARCHIVE-06",
+    "statement": "The report's spaced label August Special Issue is not the exact delivered anchor text.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed."
+  },
+  {
+    "id": "ARCHIVE-06-H007",
+    "findingId": "ARCHIVE-06",
+    "statement": "The original finding's browser screenshot/rendered interaction evidence is freshly reproduced.",
+    "historicalStatus": "Supported by parent browser review",
+    "note": "Historical traceability only; not a current test or result. Fresh September 8 page and index captures provide the browser corroboration not performed by the HTTP worker. Parent correction: Correct the original report's transcription August Special Issue. The association defect and missing space persist; report wording corrected does not mean the website was fixed."
+  },
+  {
+    "id": "ARCHIVE-07-H001",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 1 (2016-february): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H002",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 2 (2016-may): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H003",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 3 (2016-august): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H004",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 4 (2016-november): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H005",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 5 (2015-february): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H006",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 6 (2015-may): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H007",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 7 (2015-august-september-october): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H008",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 8 (2015-november): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H009",
+    "findingId": "ARCHIVE-07",
+    "statement": "Caption 9 (2014-november): native caption link removed, image anchor and matching route retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H010",
+    "findingId": "ARCHIVE-07",
+    "statement": "Index anchors decrease from 18 to 9, comprising nine lost caption anchors and nine retained image anchors.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H011",
+    "findingId": "ARCHIVE-07",
+    "statement": "The combined 2015 caption is shortened from August/September/October Issue to August Issue.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "ARCHIVE-07-H012",
+    "findingId": "ARCHIVE-07",
+    "statement": "The original finding's browser screenshot/rendered interaction evidence is freshly reproduced.",
+    "historicalStatus": "Supported by parent browser review",
+    "note": "Historical traceability only; not a current test or result. Fresh September 8 page and index captures provide the browser corroboration not performed by the HTTP worker. Parent correction: Distinguish nine removed caption links from nine missing pages. Separate index captures, not only issue-page screenshots, support this finding."
+  },
+  {
+    "id": "GENERAL-01-H001",
+    "findingId": "GENERAL-01",
+    "statement": "Both captures use the same requested 390px viewport.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-01-H002",
+    "findingId": "GENERAL-01",
+    "statement": "The source page remains 390px wide.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-01-H003",
+    "findingId": "GENERAL-01",
+    "statement": "The source has narrower local table overflow.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-01-H004",
+    "findingId": "GENERAL-01",
+    "statement": "The new page expands to about 633px and its table to about 618px.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-01-H005",
+    "findingId": "GENERAL-01",
+    "statement": "The Contact column lies beyond the visible screen.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-01-H006",
+    "findingId": "GENERAL-01",
+    "statement": "Pagination explains different displayed row counts, not missing chapters.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-01-H007",
+    "findingId": "GENERAL-01",
+    "statement": "The migration worsens overflow and should preserve complete table access.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the original source-width claim of exactly 390px with these environment-specific metrics. The source also has local table overflow; only the material worsening is asserted."
+  },
+  {
+    "id": "GENERAL-02-H001",
+    "findingId": "GENERAL-02",
+    "statement": "Source includes Xiaoge Zhang, PhD.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The omission relative to baseline is confirmed, but an approved roster update remains possible. Ask the editor to resolve that policy question."
+  },
+  {
+    "id": "GENERAL-02-H002",
+    "findingId": "GENERAL-02",
+    "statement": "Source gives The Hong Kong Polytechnic University, Hong Kong as Xiaoge's affiliation.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The omission relative to baseline is confirmed, but an approved roster update remains possible. Ask the editor to resolve that policy question."
+  },
+  {
+    "id": "GENERAL-02-H003",
+    "findingId": "GENERAL-02",
+    "statement": "Migrated root omits the name.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The omission relative to baseline is confirmed, but an approved roster update remains possible. Ask the editor to resolve that policy question."
+  },
+  {
+    "id": "GENERAL-02-H004",
+    "findingId": "GENERAL-02",
+    "statement": "Migrated root omits the affiliation.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The omission relative to baseline is confirmed, but an approved roster update remains possible. Ask the editor to resolve that policy question."
+  },
+  {
+    "id": "GENERAL-02-H005",
+    "findingId": "GENERAL-02",
+    "statement": "Other retained entries are reordered.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The omission relative to baseline is confirmed, but an approved roster update remains possible. Ask the editor to resolve that policy question."
+  },
+  {
+    "id": "GENERAL-02-H006",
+    "findingId": "GENERAL-02",
+    "statement": "Absence is established beyond a crop; intentional roster update is unknown.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The omission relative to baseline is confirmed, but an approved roster update remains possible. Ask the editor to resolve that policy question."
+  },
+  {
+    "id": "GENERAL-03-H001",
+    "findingId": "GENERAL-03",
+    "statement": "Source includes the closing conference-search paragraph.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is omitted navigation/content, not an unavailable external destination."
+  },
+  {
+    "id": "GENERAL-03-H002",
+    "findingId": "GENERAL-03",
+    "statement": "The paragraph links to the stated IEEE search destination.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is omitted navigation/content, not an unavailable external destination."
+  },
+  {
+    "id": "GENERAL-03-H003",
+    "findingId": "GENERAL-03",
+    "statement": "The paragraph follows the last event table.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is omitted navigation/content, not an unavailable external destination."
+  },
+  {
+    "id": "GENERAL-03-H004",
+    "findingId": "GENERAL-03",
+    "statement": "The migrated closing paragraph is absent.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is omitted navigation/content, not an unavailable external destination."
+  },
+  {
+    "id": "GENERAL-03-H005",
+    "findingId": "GENERAL-03",
+    "statement": "The migrated corresponding link is absent.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is omitted navigation/content, not an unavailable external destination."
+  },
+  {
+    "id": "GENERAL-03-H006",
+    "findingId": "GENERAL-03",
+    "statement": "Full captured root proves absence beyond a crop; removal intent needs confirmation.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is omitted navigation/content, not an unavailable external destination."
+  },
+  {
+    "id": "GENERAL-04-H001",
+    "findingId": "GENERAL-04",
+    "statement": "Source includes Society Sponsor and Technical Cosponsor controls.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-04-H002",
+    "findingId": "GENERAL-04",
+    "statement": "Source includes Date/Location/Title sort controls and search.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-04-H003",
+    "findingId": "GENERAL-04",
+    "statement": "Source sponsor buttons demonstrate correctly working category filters.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-04-H004",
+    "findingId": "GENERAL-04",
+    "statement": "Old visibleRows:13 means no visible result changed.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-04-H005",
+    "findingId": "GENERAL-04",
+    "statement": "New schedule has text search and sortable columns without sponsor controls.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-04-H006",
+    "findingId": "GENERAL-04",
+    "statement": "New RAMS search works in the saved sequence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-04-H007",
+    "findingId": "GENERAL-04",
+    "statement": "New Date sorting works; sorting is not missing.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-04-H008",
+    "findingId": "GENERAL-04",
+    "statement": "Equivalent category controls should be restored or removal confirmed.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Narrow the finding to missing sponsor-category controls. Functional baseline sponsor filtering was not proven, so do not present it as a verified working feature lost in migration."
+  },
+  {
+    "id": "GENERAL-05-H001",
+    "findingId": "GENERAL-05",
+    "statement": "The source upcoming schedule lists thirteen conferences.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: A wider listing range is verified. No added event is labeled false merely because it is absent from the source; confirm the intended feed horizon or item limit."
+  },
+  {
+    "id": "GENERAL-05-H002",
+    "findingId": "GENERAL-05",
+    "statement": "Source ends at March 2027 IRPS.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: A wider listing range is verified. No added event is labeled false merely because it is absent from the source; confirm the intended feed horizon or item limit."
+  },
+  {
+    "id": "GENERAL-05-H003",
+    "findingId": "GENERAL-05",
+    "statement": "All thirteen entries are retained.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: A wider listing range is verified. No added event is labeled false merely because it is absent from the source; confirm the intended feed horizon or item limit."
+  },
+  {
+    "id": "GENERAL-05-H004",
+    "findingId": "GENERAL-05",
+    "statement": "Eight extra events span 2028-2032.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: A wider listing range is verified. No added event is labeled false merely because it is absent from the source; confirm the intended feed horizon or item limit."
+  },
+  {
+    "id": "GENERAL-05-H005",
+    "findingId": "GENERAL-05",
+    "statement": "All eight follow the final source event.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: A wider listing range is verified. No added event is labeled false merely because it is absent from the source; confirm the intended feed horizon or item limit."
+  },
+  {
+    "id": "GENERAL-05-H006",
+    "findingId": "GENERAL-05",
+    "statement": "Feed extent needs confirmation; extra dates are not classified as incorrect.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: A wider listing range is verified. No added event is labeled false merely because it is absent from the source; confirm the intended feed horizon or item limit."
+  },
+  {
+    "id": "TECH-01-H001",
+    "findingId": "TECH-01",
+    "statement": "The migrated text joins linebetween while the source retains whitespace.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Restore readable separation. Minor punctuation and body-font differences remain outside this finding."
+  },
+  {
+    "id": "TECH-01-H002",
+    "findingId": "TECH-01",
+    "statement": "The migrated text joins DigitalTransformation while the source retains whitespace.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Restore readable separation. Minor punctuation and body-font differences remain outside this finding."
+  },
+  {
+    "id": "TECH-01-H003",
+    "findingId": "TECH-01",
+    "statement": "The migrated text joins besuccessful while the source retains whitespace.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Restore readable separation. Minor punctuation and body-font differences remain outside this finding."
+  },
+  {
+    "id": "TECH-01-H004",
+    "findingId": "TECH-01",
+    "statement": "The migrated text joins personallearning while the source retains whitespace.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Restore readable separation. Minor punctuation and body-font differences remain outside this finding."
+  },
+  {
+    "id": "TECH-02-H001",
+    "findingId": "TECH-02",
+    "statement": "Fifteen source mailto elements are removed, leaving the W. Eric Wong action.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H002",
+    "findingId": "TECH-02",
+    "statement": "The retained email action is ewong@utdallas.edu.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H003",
+    "findingId": "TECH-02",
+    "statement": "Removed action 1, label yang@guardstrike.com, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H004",
+    "findingId": "TECH-02",
+    "statement": "Removed action 2, label alur@cis.upenn.edu, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H005",
+    "findingId": "TECH-02",
+    "statement": "Removed action 3, label yue.chen@futurewei.com, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H006",
+    "findingId": "TECH-02",
+    "statement": "Removed action 4, label zychen@nju.edu.cn, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H007",
+    "findingId": "TECH-02",
+    "statement": "Removed action 5, label mjia@yxqiche.com, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H008",
+    "findingId": "TECH-02",
+    "statement": "Removed action 6, label eskang@cmu.edu, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H009",
+    "findingId": "TECH-02",
+    "statement": "Removed action 7, label kaisheng@tsinghua.edu.cn, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H010",
+    "findingId": "TECH-02",
+    "statement": "Removed action 8, label manan123@bjut.edu.cn, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H011",
+    "findingId": "TECH-02",
+    "statement": "Removed action 9, label weisong@wayne.edu, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H012",
+    "findingId": "TECH-02",
+    "statement": "Removed action 10, label shinichi.shiraishi@tri-ad.global, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H013",
+    "findingId": "TECH-02",
+    "statement": "Removed action 11, label songfu@shanghaitech.edu.cn, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H014",
+    "findingId": "TECH-02",
+    "statement": "Removed action 12, label gsong7@ford.com, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H015",
+    "findingId": "TECH-02",
+    "statement": "Removed action 13, label lzwang@nju.edu.cn, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H016",
+    "findingId": "TECH-02",
+    "statement": "Removed action 14, label minxie@cityu.edu.hk, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H017",
+    "findingId": "TECH-02",
+    "statement": "Removed action 15, label mz@queensu.ca, remains as migrated text.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-02-H018",
+    "findingId": "TECH-02",
+    "statement": "The source Eunsuk Kang mailto target differs from its visible address.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The source Eunsuk Kang label is eskang@cmu.edu but its href is gsong7@ford.com. Restore verified email actions, not that inherited mismatched href. No email was sent."
+  },
+  {
+    "id": "TECH-03-H001",
+    "findingId": "TECH-03",
+    "statement": "BIG Data: full route/hierarchy correspondence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "TECH-03-H002",
+    "findingId": "TECH-03",
+    "statement": "Prognostics and Health Management (PHM): full route/hierarchy correspondence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "TECH-03-H003",
+    "findingId": "TECH-03",
+    "statement": "Reliability Science for Advanced Materials & Devices: full route/hierarchy correspondence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "TECH-03-H004",
+    "findingId": "TECH-03",
+    "statement": "System and Software Assurance: full route/hierarchy correspondence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "TECH-03-H005",
+    "findingId": "TECH-03",
+    "statement": "Systems of Systems: full route/hierarchy correspondence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "TECH-03-H006",
+    "findingId": "TECH-03",
+    "statement": "Trustworthy Computing and Cybersecurity: full route/hierarchy correspondence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "TECH-03-H007",
+    "findingId": "TECH-03",
+    "statement": "Reliability Society Newsletter: full route/hierarchy correspondence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "TECH-03-H008",
+    "findingId": "TECH-03",
+    "statement": "Four committee topics plus the newsletter have duplicate migrated body text at separate routes.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This verifies organization and parallel-route differences, not missing committee bodies. Self-canonical duplicates do not establish a measured search-ranking penalty."
+  },
+  {
+    "id": "STYLE-01-H001",
+    "findingId": "STYLE-01",
+    "statement": "Source sampled H1 is approximately 28px, regular weight.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is sample-based evidence of a substantial title difference, not measurement of every site's heading or a minor-font defect list."
+  },
+  {
+    "id": "STYLE-01-H002",
+    "findingId": "STYLE-01",
+    "statement": "New sampled H1 is approximately 48px, bold.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is sample-based evidence of a substantial title difference, not measurement of every site's heading or a minor-font defect list."
+  },
+  {
+    "id": "STYLE-01-H003",
+    "findingId": "STYLE-01",
+    "statement": "Fonts are Helvetica Neue versus Open Sans Condensed.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result. Font-family evidence is the computed CSS stack, not a separate verification of the loaded font face. Parent correction: This is sample-based evidence of a substantial title difference, not measurement of every site's heading or a minor-font defect list."
+  },
+  {
+    "id": "STYLE-01-H004",
+    "findingId": "STYLE-01",
+    "statement": "Same desktop viewport and corresponding heading are compared.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is sample-based evidence of a substantial title difference, not measurement of every site's heading or a minor-font defect list."
+  },
+  {
+    "id": "STYLE-01-H005",
+    "findingId": "STYLE-01",
+    "statement": "Wrapping changes.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is sample-based evidence of a substantial title difference, not measurement of every site's heading or a minor-font defect list."
+  },
+  {
+    "id": "STYLE-01-H006",
+    "findingId": "STYLE-01",
+    "statement": "The sample establishes shared title styling and equal-pixel crop export.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is sample-based evidence of a substantial title difference, not measurement of every site's heading or a minor-font defect list."
+  },
+  {
+    "id": "STYLE-02-H001",
+    "findingId": "STYLE-02",
+    "statement": "Source officer/committee tables use light horizontal rules.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep this visual finding separate from the four missing line breaks in the elected-member table."
+  },
+  {
+    "id": "STYLE-02-H002",
+    "findingId": "STYLE-02",
+    "statement": "New tables add full vertical cell grids.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep this visual finding separate from the four missing line breaks in the elected-member table."
+  },
+  {
+    "id": "STYLE-02-H003",
+    "findingId": "STYLE-02",
+    "statement": "Names columns are narrower on source and more evenly divided on new.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep this visual finding separate from the four missing line breaks in the elected-member table."
+  },
+  {
+    "id": "STYLE-02-H004",
+    "findingId": "STYLE-02",
+    "statement": "Spacing changes in corresponding officer rows.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep this visual finding separate from the four missing line breaks in the elected-member table."
+  },
+  {
+    "id": "STYLE-02-H005",
+    "findingId": "STYLE-02",
+    "statement": "Styling is separate from ABOUT-01 elected-member corruption.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep this visual finding separate from the four missing line breaks in the elected-member table."
+  },
+  {
+    "id": "STYLE-03-H001",
+    "findingId": "STYLE-03",
+    "statement": "Source cover sits right of a compact contents/download table.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-03-H002",
+    "findingId": "STYLE-03",
+    "statement": "New cover is left aligned and enlarged.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-03-H003",
+    "findingId": "STYLE-03",
+    "statement": "New cover is above the links.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-03-H004",
+    "findingId": "STYLE-03",
+    "statement": "New auxiliary links are stacked spaced paragraphs.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-03-H005",
+    "findingId": "STYLE-03",
+    "statement": "Article list follows farther down.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-03-H006",
+    "findingId": "STYLE-03",
+    "statement": "Both page labels identify November 2015.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-03-H007",
+    "findingId": "STYLE-03",
+    "statement": "The representative proves all special-issue layouts and equal-pixel crops.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Scope the measured rearrangement to November 2015 and do not say every link is below the cover. Wrong content and file-target changes are evaluated separately."
+  },
+  {
+    "id": "STYLE-04-H001",
+    "findingId": "STYLE-04",
+    "statement": "Wong's portrait is enlarged.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "STYLE-04-H002",
+    "findingId": "STYLE-04",
+    "statement": "Yang's portrait is enlarged.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "STYLE-04-H003",
+    "findingId": "STYLE-04",
+    "statement": "Yang is displayed above natural resolution.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "STYLE-04-H004",
+    "findingId": "STYLE-04",
+    "statement": "Both portraits are visibly softer.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "STYLE-04-H005",
+    "findingId": "STYLE-04",
+    "statement": "Source portrait is alongside a compact contact block.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "STYLE-04-H006",
+    "findingId": "STYLE-04",
+    "statement": "Contacts move farther below portraits.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "STYLE-04-H007",
+    "findingId": "STYLE-04",
+    "statement": "Images and contacts remain, rather than missing images.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Enlargement is confirmed and only Yang is browser-upscaled. Do not claim both files are corrupted or both are proven softer; correct the original description of the contacts as alongside the image."
+  },
+  {
+    "id": "NAV-01-H001",
+    "findingId": "NAV-01",
+    "statement": "The source main sitemap sections follow the main navigation sequence.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an ordering difference requiring baseline-parity or editorial confirmation, not evidence of missing report files."
+  },
+  {
+    "id": "NAV-01-H002",
+    "findingId": "NAV-01",
+    "statement": "Migrated sitemap ordering is largely alphabetical.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an ordering difference requiring baseline-parity or editorial confirmation, not evidence of missing report files."
+  },
+  {
+    "id": "NAV-01-H003",
+    "findingId": "NAV-01",
+    "statement": "Annual report links reverse from descending 2011-2007 to ascending 2007-2011.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an ordering difference requiring baseline-parity or editorial confirmation, not evidence of missing report files."
+  },
+  {
+    "id": "NAV-01-H004",
+    "findingId": "NAV-01",
+    "statement": "All nine issue labels are reordered by year then alphabetical month name, rather than chronological month.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: This is an ordering difference requiring baseline-parity or editorial confirmation, not evidence of missing report files."
+  },
+  {
+    "id": "NAV-02-H001",
+    "findingId": "NAV-02",
+    "statement": "The sitemap exposes the public label Editorial Board-RM.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H002",
+    "findingId": "NAV-02",
+    "statement": "The sitemap exposes the public label Editorial Board-TOR.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H003",
+    "findingId": "NAV-02",
+    "statement": "The sitemap exposes the public label Editorial Board-RNSI.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H004",
+    "findingId": "NAV-02",
+    "statement": "The sitemap exposes the public label Education-TC.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H005",
+    "findingId": "NAV-02",
+    "statement": "The sitemap exposes the public label Reliability Society Newsletter-TA.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H006",
+    "findingId": "NAV-02",
+    "statement": "The sitemap exposes the public label Systems of Systems – TC.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H007",
+    "findingId": "NAV-02",
+    "statement": "The corresponding baseline public naming includes Editorial Board without the new suffix.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H008",
+    "findingId": "NAV-02",
+    "statement": "The corresponding baseline public naming includes Education without the new suffix.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H009",
+    "findingId": "NAV-02",
+    "statement": "The corresponding baseline public naming includes Systems of Systems without the new suffix.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "NAV-02-H010",
+    "findingId": "NAV-02",
+    "statement": "The special-issue editorial document title adds RNSI while the body heading remains Editorial Board.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Correct the shortened transcription Newsletter-TA to Reliability Society Newsletter-TA. Preserve exact punctuation in the screenshot/HTML; confirm public naming with the owner."
+  },
+  {
+    "id": "ASSET-01-H001",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 1: Industrial_Electronics_Society_IES.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H002",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 2: Education_Society_EDS.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H003",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 3: Product_Safety_Engineering_Society_PSES.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H004",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 4: Technology_and_Engineering_Management_Society_TEMS.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H005",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 5: Reliability_Society_RS.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H006",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 6: Professional_communication_society_PCS.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H007",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 7: Society_on_social_implication_of_Technology.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H008",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 8: Binghamton.pptx.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result. This href exists in an empty or line-break-only residual anchor. Its labeled download counterpart points to a migrated file; no visible old-host download action is established. Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H009",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 9: 2025-Roadmap-Schedule.png.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H010",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 10: RD5._Prof._Brahim_Hamid_last.pdf.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result. This href exists in an empty or line-break-only residual anchor. Its labeled download counterpart points to a migrated file; no visible old-host download action is established. Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H011",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 11: RD6_11-17.pdf.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result. This href exists in an empty or line-break-only residual anchor. Its labeled download counterpart points to a migrated file; no visible old-host download action is established. Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H012",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 12: 2016-02-a01.pdf.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result. This href exists in an empty or line-break-only residual anchor. Its labeled download counterpart points to a migrated file; no visible old-host download action is established. Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H013",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 13: 2016-02-a02.pdf.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result. This href exists in an empty or line-break-only residual anchor. Its labeled download counterpart points to a migrated file; no visible old-host download action is established. Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H014",
+    "findingId": "ASSET-01",
+    "statement": "Legacy-host dependency 14: 2016-02-a03.pdf.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result. This href exists in an empty or line-break-only residual anchor. Its labeled download counterpart points to a migrated file; no visible old-host download action is established. Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "ASSET-01-H015",
+    "findingId": "ASSET-01",
+    "statement": "Exactly seven Division VI logo URLs, one Roadmap schedule image and six document destinations in the listed pages use the legacy host.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Preserve or migrate the eight image dependencies and clean up or deliberately retain the six residual hrefs. Withdraw the implication that six visible download actions still depend on the old host; they do not."
+  },
+  {
+    "id": "LINK-01-H001",
+    "findingId": "LINK-01",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H002",
+    "findingId": "LINK-01",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H003",
+    "findingId": "LINK-01",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H004",
+    "findingId": "LINK-01",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H005",
+    "findingId": "LINK-01",
+    "statement": "Wikipedia lacks an article at the linked exact name.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H006",
+    "findingId": "LINK-01",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H007",
+    "findingId": "LINK-01",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H008",
+    "findingId": "LINK-01",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H009",
+    "findingId": "LINK-01",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H010",
+    "findingId": "LINK-01",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H011",
+    "findingId": "LINK-01",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H012",
+    "findingId": "LINK-01",
+    "statement": "Zhaojun (Steven) Li's profile target serves an unexpected-error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H013",
+    "findingId": "LINK-01",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-01-H014",
+    "findingId": "LINK-01",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H001",
+    "findingId": "LINK-02",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H002",
+    "findingId": "LINK-02",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H003",
+    "findingId": "LINK-02",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H004",
+    "findingId": "LINK-02",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H005",
+    "findingId": "LINK-02",
+    "statement": "The Thesaurus URL serves a University of Chicago not-found page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H006",
+    "findingId": "LINK-02",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H007",
+    "findingId": "LINK-02",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H008",
+    "findingId": "LINK-02",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H009",
+    "findingId": "LINK-02",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H010",
+    "findingId": "LINK-02",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H011",
+    "findingId": "LINK-02",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H012",
+    "findingId": "LINK-02",
+    "statement": "Dictionaries Online serves a file-or-directory-not-found error.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H013",
+    "findingId": "LINK-02",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Current result differs",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-02-H014",
+    "findingId": "LINK-02",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03-H001",
+    "findingId": "LINK-03",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03-H002",
+    "findingId": "LINK-03",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03-H003",
+    "findingId": "LINK-03",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03-H004",
+    "findingId": "LINK-03",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03-H005",
+    "findingId": "LINK-03",
+    "statement": "Life Science Initiative serves an inactive-site hosting error.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03-H006",
+    "findingId": "LINK-03",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-03-H007",
+    "findingId": "LINK-03",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-04-H001",
+    "findingId": "LINK-04",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H002",
+    "findingId": "LINK-04",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H003",
+    "findingId": "LINK-04",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H004",
+    "findingId": "LINK-04",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H005",
+    "findingId": "LINK-04",
+    "statement": "The UK/Ireland chapter target serves a Not Found page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H006",
+    "findingId": "LINK-04",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H007",
+    "findingId": "LINK-04",
+    "statement": "The UK/Ireland destination displays credit-card casino promotion in its footer.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H008",
+    "findingId": "LINK-04",
+    "statement": "Inheritance must remain unknown because only the first ten baseline chapter rows are available.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-04-H009",
+    "findingId": "LINK-04",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history."
+  },
+  {
+    "id": "LINK-05-H001",
+    "findingId": "LINK-05",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H002",
+    "findingId": "LINK-05",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H003",
+    "findingId": "LINK-05",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H004",
+    "findingId": "LINK-05",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H005",
+    "findingId": "LINK-05",
+    "statement": "San Diego's chapter target serves a not-found error.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H006",
+    "findingId": "LINK-05",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H007",
+    "findingId": "LINK-05",
+    "statement": "Inheritance must remain unknown because only the first ten baseline chapter rows are available.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H008",
+    "findingId": "LINK-05",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H009",
+    "findingId": "LINK-05",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H010",
+    "findingId": "LINK-05",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H011",
+    "findingId": "LINK-05",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H012",
+    "findingId": "LINK-05",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H013",
+    "findingId": "LINK-05",
+    "statement": "Twin Cities' chapter target serves a not-found error.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H014",
+    "findingId": "LINK-05",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H015",
+    "findingId": "LINK-05",
+    "statement": "Inheritance must remain unknown because only the first ten baseline chapter rows are available.",
+    "historicalStatus": "Report wording corrected",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-05-H016",
+    "findingId": "LINK-05",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart."
+  },
+  {
+    "id": "LINK-06-H001",
+    "findingId": "LINK-06",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-06-H002",
+    "findingId": "LINK-06",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-06-H003",
+    "findingId": "LINK-06",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-06-H004",
+    "findingId": "LINK-06",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-06-H005",
+    "findingId": "LINK-06",
+    "statement": "Peer Reviewers serves an IEEE Access missing-page message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-06-H006",
+    "findingId": "LINK-06",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-06-H007",
+    "findingId": "LINK-06",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07-H001",
+    "findingId": "LINK-07",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07-H002",
+    "findingId": "LINK-07",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07-H003",
+    "findingId": "LINK-07",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07-H004",
+    "findingId": "LINK-07",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07-H005",
+    "findingId": "LINK-07",
+    "statement": "The PHM Call for paper target serves a server not-found error.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07-H006",
+    "findingId": "LINK-07",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-07-H007",
+    "findingId": "LINK-07",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue."
+  },
+  {
+    "id": "LINK-08-H001",
+    "findingId": "LINK-08",
+    "statement": "The exact target occurs on the current baseline page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  },
+  {
+    "id": "LINK-08-H002",
+    "findingId": "LINK-08",
+    "statement": "The exact target occurs on the current migrated page.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  },
+  {
+    "id": "LINK-08-H003",
+    "findingId": "LINK-08",
+    "statement": "The target returns HTTP 404.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  },
+  {
+    "id": "LINK-08-H004",
+    "findingId": "LINK-08",
+    "statement": "The final response URL matches the old browser-recheck finalURL.",
+    "historicalStatus": "Not established",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  },
+  {
+    "id": "LINK-08-H005",
+    "findingId": "LINK-08",
+    "statement": "P7009 displays a Page not found message in the current browser capture.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  },
+  {
+    "id": "LINK-08-H006",
+    "findingId": "LINK-08",
+    "statement": "The current browser document URL matches the old recorded finalURL.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  },
+  {
+    "id": "LINK-08-H007",
+    "findingId": "LINK-08",
+    "statement": "A fresh destination screenshot confirms the reported missing-page or error message.",
+    "historicalStatus": "Supported",
+    "note": "Historical traceability only; not a current test or result.  Parent correction: Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404."
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "candidate-01",
+    "findingId": "LINK-01",
+    "url": "http://en.wikipedia.org/wiki/Emmanuel_Gonzalez",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-02",
+    "findingId": "LINK-02",
+    "url": "http://humanities.uchicago.edu/forms_unrest/ROGET.html",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-03",
+    "findingId": "LINK-03",
+    "url": "http://lifesciences.ieee.org/",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-04",
+    "findingId": "LINK-02",
+    "url": "http://www.facstaff.bucknell.edu/rbeard/diction.html",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-05",
+    "findingId": "LINK-04",
+    "url": "http://www.ieee.org.uk/cpmt.html",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Replace the old first-ten-rows/inheritance-unknown limitation with the complete current 53-row comparison. This does not reconstruct earlier site history. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-06",
+    "findingId": "LINK-05",
+    "url": "http://www.sdieee.org/cgi-bin/webobjects/ieee.woa/1/wo/pcyb7ctvim4wwkszlehobg/0.1.7.1.21.5",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-07",
+    "findingId": "LINK-05",
+    "url": "http://www.tc-ieee.org/index.php/local-chaptersaffinity-groups/reliability.html",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. The former uncaptured-baseline-row limitation is resolved. The two links are only on the current migrated table, not on its current source counterpart. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-08",
+    "findingId": "LINK-01",
+    "url": "http://www1.wne.edu/engineering/ie/index.cfm?selection=doc.10756",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-09",
+    "findingId": "LINK-06",
+    "url": "https://ieeeaccess.ieee.org/the-rapid-peer-review-advantage/",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-10",
+    "findingId": "LINK-07",
+    "url": "https://phmconf.org/callforpapers.html",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Current source and migrated pages contain the same exact target. This does not establish historical migration causation or categorically exclude every migration-related issue. Confirm an approved replacement or removal and recheck its destination."
+  },
+  {
+    "id": "candidate-11",
+    "findingId": "LINK-08",
+    "url": "https://sagroups.ieee.org/7009/",
+    "note": "Historical 2026-09-08 target inventory, not a current availability result. Keep the visible destination failure, but distinguish the fresh browser result from the fresh HTTP timeout and the earlier report's HTTP 404. Confirm an approved replacement or removal and recheck its destination."
+  }
+]

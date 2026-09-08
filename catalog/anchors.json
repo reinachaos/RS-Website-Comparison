@@ -1,0 +1,74 @@
+[
+  {
+    "id": "awards-sections",
+    "baselineURL": "https://rs.ieee.org/awards.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/awards/",
+    "mode": "sections",
+    "expectedSections": [
+      {
+        "label": "Annual Reliability Society \"Engineer of the Year\" Award",
+        "baselineFragment": "#engineer",
+        "migratedFragment": "#engineer-award"
+      },
+      {
+        "label": "Chapters Award",
+        "baselineFragment": "#chapters",
+        "migratedFragment": "#chapters-award"
+      },
+      {
+        "label": "Education Award",
+        "baselineFragment": "#education",
+        "migratedFragment": "#education-award"
+      },
+      {
+        "label": "Certificate of Achievement - Chapter Chairperson",
+        "baselineFragment": "#achievement",
+        "migratedFragment": "#Certificate-of-Achievement"
+      },
+      {
+        "label": "Company Recognition Award",
+        "baselineFragment": "#company",
+        "migratedFragment": "#Company-Recognition-Award"
+      },
+      {
+        "label": "IEEE Reliability Society Lifetime Achievement Award",
+        "baselineFragment": "#lifetime",
+        "migratedFragment": "#Lifetime-Achievement-Award"
+      },
+      {
+        "label": "IEEE Reliability Society Student Achievement Award",
+        "baselineFragment": "#student_achievement",
+        "migratedFragment": "#student-achievement-award"
+      },
+      {
+        "label": "IEEE Reliability Society Richard Kowalski Outstanding Service Award",
+        "baselineFragment": "#Kowalski",
+        "migratedFragment": "#Richard-Kowalski-Outstanding-Service-Award"
+      },
+      {
+        "label": "IEEE Reliability Society Best Conference Paper Award",
+        "baselineFragment": "#best_conference_paper",
+        "migratedFragment": "#Best-Conference-Paper-Award"
+      },
+      {
+        "label": "IEEE Best Paper Award - IEEE Transactions on Reliability",
+        "baselineFragment": "#best_tr_paper",
+        "migratedFragment": "#Best-Paper-Award"
+      }
+    ]
+  },
+  {
+    "id": "awards-return-top",
+    "baselineURL": "https://rs.ieee.org/awards.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/awards/",
+    "mode": "return-top",
+    "expectedSections": 10
+  },
+  {
+    "id": "past-networks-return-top",
+    "baselineURL": "https://rs.ieee.org/technical-activities/technical-committees/past-reliability-society-technical-networks.html",
+    "migratedURL": "https://ieeerelsoc.wpenginepowered.com/technical-activities/technical-committees/past-reliability-society-technical-networks/",
+    "mode": "return-top",
+    "expectedSections": 30
+  }
+]
