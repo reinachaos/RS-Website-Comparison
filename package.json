@@ -1,0 +1,23 @@
+{
+  "name": "rs-website-comparison",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "playwright test --config=playwright.config.mjs",
+    "qa": "node src/cli.mjs run",
+    "qa:list": "node src/cli.mjs list",
+    "qa:validate": "node src/cli.mjs validate",
+    "qa:smoke": "node src/cli.mjs run --ids ABOUT-01,ARCHIVE-02,TECH-01",
+    "baseline:capture": "node src/cli.mjs baseline-capture",
+    "baseline:approve": "node src/cli.mjs baseline-approve",
+    "setup:browsers": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "pixelmatch": "7.1.0",
+    "pngjs": "7.0.0"
+  }
+}
