@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { capturePage, exerciseAnchors } from '../../src/browser.mjs';
+import { evaluateRule } from '../../src/rules.mjs';
 import { securityFixture } from './security-fixture.mjs';
 let server, base, output;
 const securityHits=[];
@@ -48,6 +49,111 @@ test('browser never requests auth/action GETs or credential queries, including r
 test('preventDefault cannot pass when the anchor target was already visible',async({browser})=>{
   const s=await exerciseAnchors(browser,base+'/prevented#near',{outDir:output,side:'new',allowLocal:true,expectedSections:1,mode:'sections'});
   expect(s.checks.find(c=>c.id==='target-1').status).toBe('fail');
+});
+
+test('collector regression: return-top requires movement caused by Enter',async({browser})=>{
+  for(const prevented of [true,false]) {
+    const s=await exerciseAnchors(browser,base+'/return-top'+(prevented?'?prevented':''),{outDir:output,side:'new',allowLocal:true,expectedSections:1,mode:'return-top'});
+    const check=s.checks.find(c=>c.id==='top-1');
+    expect(check.status).toBe(prevented?'fail':'pass');
+    expect(check.actual.beforeScrollY).toBeGreaterThan(2);
+  }
+});
+
+test('return-top on an unscrollable document is blocked',async({browser})=>{
+  const s=await exerciseAnchors(browser,base+'/return-top?short',{outDir:output,side:'new',allowLocal:true,expectedSections:1,mode:'return-top'});
+  const check=s.checks.find(c=>c.id==='top-1');
+  expect(check.status).toBe('blocked');
+  expect(check.actual.beforeScrollY).toBe(0);
+});
+
+test('browser rejects loopback requests without the local-fixture opt-in',async({browser})=>{
+  securityHits.length=0;
+  const s=await capturePage(browser,base+'/private-hit',{outDir:output,side:'new'});
+  expect(s.status).toBe('blocked');
+  expect(securityHits).toEqual([]);
+});
+
+test('collector regression: invisible headings cannot satisfy requireHeading',async({browser})=>{
+  const s=await capturePage(browser,base+'/hidden-headings',{outDir:output,side:'new',allowLocal:true});
+  expect(s.status).toBe('ready');
+  for(const text of ['Hidden title','Hidden attribute','Hidden ancestor','Hidden visibility']) {
+    expect(evaluateRule({id:'heading',label:'Visible heading',type:'requireHeading',text},{new:s}).status,text).toBe('fail');
+  }
+  expect(s.headings.map(h=>h.text)).toEqual(['Visible title','Visible section']);
+});
+
+test('collector regression: broken complete images cannot settle newsletter capture',async({browser})=>{
+  const s=await capturePage(browser,base+'/image-readiness',{outDir:output,side:'newsletter',allowLocal:true});
+  expect(s.images[0].loaded).toBe(false);
+  expect(s.imagesSettled).toBe(false);
+  expect(s.status).toBe('blocked');
+});
+
+test('collector regression: offscreen native lazy images load before snapshot extraction',async({browser})=>{
+  securityHits.length=0;
+  const s=await capturePage(browser,base+'/image-readiness?lazy',{outDir:output,side:'newsletter',allowLocal:true});
+  expect(s.imagesSettled).toBe(true);
+  expect(s.status).toBe('ready');
+  expect(s.images[0].loaded).toBe(true);
+  expect(s.images[0].naturalWidth).toBe(1);
+  expect(s.images[0].y).toBeGreaterThan(10000);
+  expect(securityHits).toContain('/fixture-pixel.png');
+});
+
+test('unsized native lazy images cannot be omitted from newsletter readiness',async({browser})=>{
+  const s=await capturePage(browser,base+'/image-readiness?lazy&unsized',{outDir:output,side:'newsletter',allowLocal:true});
+  expect(s.status).toBe('ready');
+  expect(s.imagesSettled).toBe(true);
+  expect(s.images[0]).toMatchObject({loaded:true,naturalWidth:1,naturalHeight:1});
+});
+
+for(const hiddenOnly of [false,true]) test(`image readiness ignores nonrendered placeholders (${hiddenOnly?'hidden only':'mixed'})`,async({browser})=>{
+  const s=await capturePage(browser,base+'/image-placeholders'+(hiddenOnly?'?hidden-only':''),{outDir:output,side:'newsletter',allowLocal:true});
+  expect(s.imagesSettled).toBe(true);
+  expect(s.status).toBe('ready');
+  expect(s.images).toHaveLength(hiddenOnly?5:6);
+  const hidden=s.images.filter(i=>i.inMain&&!i.visible);
+  expect(hidden).toHaveLength(4);
+  expect(hidden.every(i=>!i.loaded)).toBe(true);
+  expect(s.images.find(i=>!i.inMain)).toMatchObject({visible:true,loaded:false});
+  if(!hiddenOnly)expect(s.images.find(i=>i.inMain&&i.visible)).toMatchObject({loaded:true,naturalWidth:1});
+});
+
+test('collector regression: redaction preserves URL and markup structure on token collisions',async({browser})=>{
+  const s=await capturePage(browser,base+'/redaction-collision',{outDir:output,side:'new',allowLocal:true});
+  const dom=await readFile(join(output,s.artifacts.dom),'utf8');
+  expect.soft(s.links[0].href).toBe(base+'/catalog');
+  expect.soft(s.mainHTML).toContain('<a data-href=');
+  expect.soft(dom).toContain('<main');
+  expect.soft(s.mainText).toContain('Public article contains a REDACTED.');
+  expect.soft(s.mainHTML).toContain('<blockquote class="REDACTED">');
+  expect.soft(s.links[1].href).toBe(base+'/catalog?token=REDACTED');
+  expect.soft(s.links[2].href).toBe(base+'/archive?code=REDACTED');
+});
+
+test('redaction of long form secrets preserves tag and attribute names and URL paths',async({browser})=>{
+  const s=await capturePage(browser,base+'/redaction-long-form',{outDir:output,side:'new',allowLocal:true});
+  const dom=await readFile(join(output,s.artifacts.dom),'utf8');
+  expect.soft(s.mainHTML).toContain('<blockquote class="REDACTED" title="REDACTED">Public quotation.</blockquote>');
+  expect.soft(dom).toContain('<blockquote class="REDACTED" title="REDACTED">');
+  expect.soft(s.links[0].href).toBe(base+'/blockquote');
+  expect.soft(s.mainText).toContain('Repeated secret: REDACTED');
+});
+
+test('redaction sanitizes escaped text and attributes before serialization and URL credentials structurally',async({browser})=>{
+  const s=await capturePage(browser,base+'/redaction-escaped',{outDir:output,side:'new',allowLocal:true});
+  const dom=await readFile(join(output,s.artifacts.dom),'utf8');
+  expect.soft(JSON.stringify(s)+dom).not.toMatch(/TEXTAREA_|USER_SECRET|PASSWORD_SECRET|QUERY_SECRET|FRAGMENT_SECRET|IMAGE_SECRET/);
+  expect.soft(s.mainHTML).toContain('<p title="REDACTED">REDACTED</p>');
+  expect.soft(s.links[0].href).toBe('http://127.0.0.1/article?token=REDACTED#auth=REDACTED');
+});
+
+test('reflected long URL secrets are removed from text and inert DOM evidence',async({browser})=>{
+  const s=await capturePage(browser,base+'/redaction-reflected',{outDir:output,side:'new',allowLocal:true});
+  const dom=await readFile(join(output,s.artifacts.dom),'utf8');
+  expect(JSON.stringify(s)+dom).not.toMatch(/QUERY_SECRET_123|FRAGMENT_SECRET_456/);
+  expect(s.mainText).toContain('Debug token: REDACTED and REDACTED');
 });
 
 test('opening saved evidence cannot execute the original image error handler',async({browser,page})=>{

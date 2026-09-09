@@ -93,7 +93,7 @@ export function validateRule(rule) {
 
 function unavailable(snapshot, side) {
   if (!isObject(snapshot) || snapshot.status !== 'ready') return `${side} snapshot is unavailable.`;
-  if (!Number.isInteger(snapshot.httpStatus) || snapshot.httpStatus < 200 || snapshot.httpStatus >= 300) {
+  if (!Number.isInteger(snapshot.httpStatus) || snapshot.httpStatus < 200 || snapshot.httpStatus >= 300 || [202, 206].includes(snapshot.httpStatus)) {
     return `${side} snapshot does not have a successful HTTP status.`;
   }
   return null;

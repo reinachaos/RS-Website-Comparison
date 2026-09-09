@@ -71,16 +71,18 @@ export async function runAudit(catalog,options,services={}) {
     } else {
       const snapshot=await getSnapshot(item.url,'external');
       evidence.push(...evidenceOf(snapshot,'Destination'));
+      const emptyBody=!normalize(snapshot.mainText)&&!snapshot.images?.some(i=>i.inMain&&i.visible&&i.loaded);
       let status;
       if(snapshot.status==='missing')status='fail';
       else if(snapshot.status==='error')status='error';
       else if(snapshot.status!=='ready')status='blocked';
+      else if(emptyBody)status='blocked';
       else if(resource.status==='missing')status='review';
       else status='pass';
-      checks.push({id:'destination',label:'Browser-visible destination availability',status,expected:'Readable destination rather than a missing-page, access gate or challenge',actual:{browserStatus:snapshot.status,httpStatus:resource.httpStatus,browserHTTP:snapshot.httpStatus,finalURL:snapshot.finalURL,title:snapshot.title},note:status==='review'?'HTTP and browser outcomes conflict; review both observations.':snapshot.error||'Availability is distinct from semantic correctness and migration causation.'});
-      if(item.expectedDocument&&isHTML)checks.push({id:'document-type',label:'Expected downloadable document',status:'review',actual:resource.contentType,note:'An HTML response must not be certified as the expected document.'});
+      checks.push({id:'destination',label:'Browser-visible destination availability',status,expected:'Readable destination rather than a missing-page, access gate or challenge',actual:{browserStatus:snapshot.status,httpStatus:resource.httpStatus,browserHTTP:snapshot.httpStatus,finalURL:snapshot.finalURL,title:snapshot.title},note:status==='review'?'HTTP and browser outcomes conflict; review both observations.':snapshot.error||(snapshot.status==='ready'&&emptyBody?'No readable body text or loaded visible image was captured.':'Availability is distinct from semantic correctness and migration causation.')});
+      if(item.expectedDocument)checks.push({id:'document-type',label:'Expected downloadable document',status:resource.status==='blocked'?'blocked':'review',actual:{contentType:resource.contentType,complete:resource.complete,status:resource.status},note:'The complete expected file was not verified. A browser-readable landing page does not establish downloadable document availability.'});
     }
-    return result(item.id,item.url,'availability',checks,evidence,[item.note||'',`Historical status: ${item.historicalStatus||'not supplied'} (not reused as a current result)`]);
+    return result(item.id,item.url,'availability',checks,evidence,[item.note?`Catalog context (not a current check result): ${item.note}`:'',`Historical status: ${item.historicalStatus||'not supplied'} (not reused as a current result)`]);
   };
   try {
     browser=await (services.launch||(()=>chromium.launch({headless:true})))();
@@ -123,9 +125,14 @@ export async function runAudit(catalog,options,services={}) {
           const present=primary.links?.some(a=>a.href===link.url&&a.visible&&a.inMain);
           if(primary.status!=='ready')checks.push({id:link.id,label:'External link occurrence',status:'blocked',note:'The migrated page is unreadable; current link occurrence is unknown.'});
           else if(!present)checks.push({id:link.id,label:'External link was removed or changed',status:'review',note:'The exact old target is no longer a visible migrated link. Verify the replacement before closing this finding.'});
-          else {const r=await availability({...link,historicalStatus:'Previously unavailable'});checks.push(...r.checks.map(c=>({...c,id:`${link.id}/${c.id}`})));evidence.push(...r.evidence);}
+          else {
+            try {
+              const r=await availability({...link,historicalStatus:'Previously unavailable'});
+              checks.push(...r.checks.map(c=>({...c,id:`${link.id}/${c.id}`})));evidence.push(...r.evidence);
+            } catch(e) {checks.push({id:`${link.id}/execution`,label:'External destination execution',status:'error',note:e.message});}
+          }
         }
-        return announce(result(finding.id,finding.title,'finding',checks,evidence,[finding.correction||'']));
+        return announce(result(finding.id,finding.title,'finding',checks,evidence,[finding.correction?`Historical report correction (not a current check result): ${finding.correction}`:'']));
       } catch(e) {return announce(result(finding.id,finding.title,'finding',[{id:'execution',label:'Finding execution',status:'error',note:e.message}]));}
     });
     if(supplemental) {
@@ -152,7 +159,7 @@ export async function runAudit(catalog,options,services={}) {
           checks.push({id:'format-conversion',label:'DOC to PDF content and approved title',status:'review',expected:'Documented body comparison and owner approval of title/version changes',actual:{oldHash:old.sha256,newHash:current.sha256},note:pair.note});
         }
         if(pair.mode==='package')checks.push({id:'package-scope',label:'Package dependency coverage',status:pair.dependencies.length?'pass':'error',actual:pair.dependencies.length,note:'Only the versioned identified dependency inventory is compared; new or unlisted dependencies and exhaustive pagination are not certified.'});
-        return result(`FILE-${pair.id}`,pair.newURL,'file',checks,evidence,[pair.note||'']);
+        return result(`FILE-${pair.id}`,pair.newURL,'file',checks,evidence,[pair.note?`Catalog context (not a current check result): ${pair.note}`:'']);
       }));
       for(const task of anchorTasks) {
         await collect(task,async()=>{

@@ -36,7 +36,7 @@ for(const unsettled of [false,true])test(`baseline capture resolves primary rout
       capture:async(_browser,url,options)=>{
         const image=`source-${calls.length}.png`;calls.push({url,viewport:options.viewport});
         await writeFile(join(options.outDir,image),PNG.sync.write(png));
-        return {status:'ready',fontsReady:true,imagesSettled:!unsettled,artifacts:{mainScreenshot:image}};
+        return {requestedURL:url,finalURL:url,status:'ready',fontsReady:true,imagesSettled:!unsettled,artifacts:{mainScreenshot:image}};
       }
     });
     assert.equal(outcome.exitCode,unsettled?2:0);assert.equal(closed,true);
@@ -45,7 +45,39 @@ for(const unsettled of [false,true])test(`baseline capture resolves primary rout
     const coverage=JSON.parse(await readFile(join(directory,'capture-coverage.json'),'utf8'));
     assert.equal(coverage.length,calls.length);
     assert.ok(coverage.every(c=>c.imagesSettled===!unsettled));
+    assert.ok(coverage.every(c=>c.requestedURL===c.url&&c.finalURL===c.url));
     if(unsettled)await assert.rejects(readFile(join(directory,'manifest.json')),/ENOENT/);
     else assert.equal(JSON.parse(await readFile(join(directory,'manifest.json'),'utf8')).entries.length,calls.length);
   } finally {await rm(directory,{recursive:true,force:true});}
 });
+
+for(const finalURL of [undefined,'https://ieeerelsoc.wpenginepowered.com/source','https://rs.ieee.org/redirected-source']) {
+  test(`baseline capture preserves and checks final URL: ${finalURL??'missing'}`,async t=>{
+    const directory=await mkdtemp(join(tmpdir(),'rs-cli-provenance-'));
+    t.after(()=>rm(directory,{recursive:true,force:true}));
+    const url='https://rs.ieee.org/source';
+    const selected=[{baselineURL:url,rules:[{type:'review'}]}];
+    const png=new PNG({width:2,height:2});png.data.fill(255);
+    let closed=false;
+    const capture=()=>cli.captureBaseline(selected,directory,{
+      launch:async()=>({version:()=> 'fixture',close:async()=>{closed=true;}}),
+      capture:async(_browser,requestedURL,options)=>{
+        await writeFile(join(options.outDir,'source.png'),PNG.sync.write(png));
+        return {requestedURL,finalURL,status:'ready',fontsReady:true,imagesSettled:true,artifacts:{mainScreenshot:'source.png'}};
+      }
+    });
+    if(finalURL==='https://rs.ieee.org/redirected-source') {
+      assert.equal((await capture()).exitCode,0);
+      const manifest=JSON.parse(await readFile(join(directory,'manifest.json'),'utf8'));
+      assert.equal(manifest.entries[0].requestedURL,url);
+      assert.equal(manifest.entries[0].finalURL,finalURL);
+    } else {
+      await assert.rejects(capture,/provenance/i);
+      await assert.rejects(readFile(join(directory,'manifest.json')),/ENOENT/);
+    }
+    assert.equal(closed,true);
+    const [coverage]=JSON.parse(await readFile(join(directory,'capture-coverage.json'),'utf8'));
+    assert.equal(coverage.requestedURL,url);
+    assert.equal(coverage.finalURL,finalURL??null);
+  });
+}

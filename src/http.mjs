@@ -21,6 +21,7 @@ function requestOne(url,{maxBytes,timeoutMs,allowLocal}) {
     const req=transport.request(u,{method:'GET',rejectUnauthorized:true,headers:{'User-Agent':'RS-Website-Comparison/1.0 (read-only migration QA)','Accept-Encoding':'identity'},lookup:allowLocal?lookup:guardedLookup},res=>{
       statusCode=res.statusCode; headers=res.headers;
       if([301,302,303,307,308].includes(statusCode)&&headers.location){finish({redirect:headers.location,complete:false});res.destroy();return;}
+      if(statusCode===206||headers['content-range']){finish({complete:false,sha256:null,error:'Partial representation received; EOF does not establish the complete file'});res.destroy();return;}
       if(headers['content-encoding']&&headers['content-encoding'].trim().toLowerCase()!=='identity'){finish({complete:false,sha256:null,error:'Unsupported Content-Encoding; wire bytes are not comparable file bytes'});res.destroy();return;}
       const hash=createHash('sha256');let head=Buffer.alloc(0);
       res.on('data',chunk=>{
@@ -72,7 +73,7 @@ export async function fetchResource(input,{maxBytes=32*1024*1024,timeoutMs=20000
       const inspection=inspectFile(input,url,contentType,prefix,signature);
       if(status==='ready'&&inspection.blocked){status='blocked';rest.sha256=null;rest.error='Response is not the expected readable file type, or is a login/challenge page';}
       // Body prefixes can contain credentials; persist only type markers and binary magic.
-      return redactEvidence({requestedURL:redactURL(input),finalURL:redactURL(lastURL),status,redirects,contentType,contentEncoding,...rest,fileTypeValid:inspection.fileTypeValid,prefix:inspection.html?'<html>':'',signature:status==='ready'&&!inspection.html?signature.slice(0,32):'',elapsedMs:Date.now()-started});
+      return redactEvidence({requestedURL:redactURL(input),finalURL:redactURL(lastURL),status,redirects,contentType,contentEncoding,contentRange:headers['content-range']||null,...rest,fileTypeValid:inspection.fileTypeValid,prefix:inspection.html?'<html>':'',signature:status==='ready'&&!inspection.html?signature.slice(0,32):'',elapsedMs:Date.now()-started});
     }
     throw new Error('Redirect limit exceeded');
   } catch(e) {return redactEvidence({requestedURL:redactURL(input),finalURL:lastURL?redactURL(lastURL):null,status:'blocked',complete:false,sha256:null,redirects,error:e.message,elapsedMs:Date.now()-started});}

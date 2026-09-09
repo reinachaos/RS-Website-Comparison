@@ -72,6 +72,19 @@ test('encoded wire bodies cannot be certified as complete file bytes',async()=>{
     assert.equal(r.contentEncoding,'gzip');assert.equal(r.status,'blocked');assert.equal(r.sha256,null);
   } finally {server.closeAllConnections();await new Promise(resolve=>server.close(resolve));}
 });
+
+test('partial representations cannot be certified as complete files even after EOF',async()=>{
+  const server=createServer((req,res)=>{res.writeHead(req.url==='/range.pdf'?206:200,{'content-type':'application/pdf','content-range':'bytes 0-15/1000'});res.end('%PDF-1.7 partial');});
+  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  try {
+    for(const path of ['/range.pdf','/mislabelled.pdf']) {
+      const response=await fetchResource(`http://127.0.0.1:${server.address().port}${path}`,{allowLocal:true});
+      assert.equal(response.status,'blocked',path);
+      assert.equal(response.complete,false);assert.equal(response.sha256,null);
+      assert.equal(compareFiles(response,response).status,'blocked');
+    }
+  } finally {server.closeAllConnections();await new Promise(resolve=>server.close(resolve));}
+});
 test('resolved private and mapped addresses are rejected',()=>{
   for(const address of ['127.0.0.1','10.2.3.4','192.168.2.1','172.31.1.1','169.254.169.254','::1','fc00::1','fe80::1','::ffff:127.0.0.1','2002:7f00:1::','2001::1','3fff::1']) assert.equal(isPublicAddress(address),false,address);
   assert.equal(isPublicAddress('1.1.1.1'),true);

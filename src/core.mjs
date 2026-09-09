@@ -67,8 +67,8 @@ export function safeWebURL(input, {allowLocal = false} = {}) {
   return url.href;
 }
 export function classifyPage({httpStatus, title = '', text = '', finalURL = '', error, loginVisible = false}) {
-  if (error) return 'blocked';
-  if ([401, 403, 418, 429, 202].includes(httpStatus) || httpStatus >= 500) return 'blocked';
+  if (error || !Number.isInteger(httpStatus)) return 'blocked';
+  if ([401, 403, 418, 429, 202, 206].includes(httpStatus) || httpStatus >= 500) return 'blocked';
   let pathname = '';
   try { pathname = new URL(finalURL).pathname; } catch { /* Missing URL is resolved by the capture error boundary. */ }
   if (loginVisible || actionPath.test(decodedPath(pathname))) return 'blocked';
@@ -76,6 +76,6 @@ export function classifyPage({httpStatus, title = '', text = '', finalURL = '', 
   if (/just a moment|checking your browser|verify (?:that )?you are human|access denied|enable javascript and cookies to continue/i.test(leading)) return 'blocked';
   if ([404, 410].includes(httpStatus)) return 'missing';
   if (/^(?:404(?:\b.*)?|not found|page not found|server error|site not found)(?:\s*[|\-].*)?$/i.test(title.trim())) return 'missing';
-  if (httpStatus && (httpStatus < 200 || httpStatus >= 400)) return 'blocked';
+  if (httpStatus < 200 || httpStatus >= 300) return 'blocked';
   return 'ready';
 }

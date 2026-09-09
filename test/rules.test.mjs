@@ -15,6 +15,11 @@ const snapshot = (parameters = {}) => ({
 });
 const pair = (newParameters = {}, oldParameters = {}) => ({ old: snapshot(oldParameters), new: snapshot(newParameters) });
 
+for(const httpStatus of [202,206])test(`partial or pending HTTP ${httpStatus} cannot satisfy catalog predicates`,()=>{
+  assert.equal(evaluateRule(rule('requireText',{values:['Alpha']}),pair({httpStatus})).status,'blocked');
+  assert.equal(evaluateRule(rule('compareMetric',{path:'h1.fontSize'}),pair({},{httpStatus})).status,'blocked');
+});
+
 const validRules = [
   rule('requireText', { values: ['Alpha'] }), rule('forbidText', { values: ['Absent'] }),
   rule('orderedText', { values: ['Alpha', 'Gamma'] }), rule('requireLink', { filter: { text: 'Guide' } }),

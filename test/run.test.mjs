@@ -18,6 +18,70 @@ const hash='a'.repeat(64);
 const fixtureServices=()=>({launch:async()=>({version:()=> 'fixture',close:async()=>{}}),capture:async()=>fixtureSnapshot(),fetch:async()=>({status:'ready',httpStatus:200,complete:true,sha256:hash,contentType:'application/pdf'}),anchors:async()=>({checks:[{id:'target',label:'Fixture anchor',status:'pass'}],evidence:[]})});
 const filePair=(id,mode='document-review')=>({id,mode,oldURL:`https://rs.ieee.org/${id}`,newURL:`https://ieeerelsoc.wpenginepowered.com/${id}`,dependencies:mode==='package'?[{oldURL:`https://rs.ieee.org/${id}.js`,newURL:`https://ieeerelsoc.wpenginepowered.com/${id}.js`,sha256:hash}]:[]});
 
+for(const httpStatus of ['blocked','missing'])test(`a browser-readable landing page cannot certify a document after ${httpStatus} download`,async()=>{
+  const root=await mkdtemp(join(tmpdir(),'rs-document-availability-'));
+  const catalog=fixtureCatalog();catalog.availability=[{id:'download',url:'https://rs.ieee.org/file.pdf',expectedDocument:true}];
+  try {
+    const run=await runAudit(catalog,{outDir:join(root,'run')},{...fixtureServices(),fetch:async()=>({status:httpStatus,httpStatus:httpStatus==='missing'?404:null,complete:false,sha256:null,contentType:''})});
+    const record=run.results.find(r=>r.id==='download');
+    assert.notEqual(record.status,'pass');
+    assert.ok(record.checks.some(c=>c.id==='document-type'&&c.status!=='pass'));
+  } finally {await rm(root,{recursive:true,force:true});}
+});
+
+test('complete recognized documents pass availability without relying on a browser landing page',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'rs-complete-document-'));
+  const catalog=fixtureCatalog();catalog.availability=[{id:'download',url:'https://rs.ieee.org/file.pdf',expectedDocument:true}];
+  let destinationCaptures=0;
+  try {
+    const run=await runAudit(catalog,{outDir:join(root,'run')},{...fixtureServices(),
+      fetch:async()=>({status:'ready',httpStatus:200,complete:true,sha256:hash,contentType:'application/pdf',signature:'255044462d312e37'}),
+      capture:async(_b,_u,options)=>{if(options.side==='external')destinationCaptures++;return fixtureSnapshot();}
+    });
+    assert.equal(run.results.find(r=>r.id==='download').status,'pass');assert.equal(destinationCaptures,0);
+  } finally {await rm(root,{recursive:true,force:true});}
+});
+
+test('external collector failure preserves completed finding rules and checks later destinations',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'rs-external-failure-'));
+  const catalog=fixtureCatalog();
+  catalog.externalLinks=[{id:'external-broken',findingId:'ABOUT-01',url:'https://example.org/broken'},{id:'external-good',findingId:'ABOUT-01',url:'https://example.org/good'}];
+  const services=fixtureServices();
+  try {
+    const run=await runAudit(catalog,{outDir:join(root,'run')},{...services,
+      capture:async()=>({...fixtureSnapshot(),links:catalog.externalLinks.map(l=>({text:l.id,href:l.url,rawHref:l.url,visible:true,inMain:true}))}),
+      fetch:async url=>{if(url.endsWith('/broken'))throw new Error('External collector failed');return services.fetch(url);}
+    });
+    const record=run.results.find(r=>r.id==='ABOUT-01');
+    assert.equal(record.checks.find(c=>c.id==='text')?.status,'pass');
+    assert.equal(record.checks.find(c=>c.id==='external-broken/execution')?.status,'error');
+    assert.equal(record.checks.find(c=>c.id==='external-good/destination')?.status,'pass');
+    assert.equal(run.coverage.automaticRuleCount,1);assert.equal(run.exitCode,3);
+  } finally {await rm(root,{recursive:true,force:true});}
+});
+
+test('an empty browser-visible body cannot pass destination availability',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'rs-empty-destination-'));
+  const catalog=fixtureCatalog();catalog.availability=[{id:'blank',url:'https://example.org/blank'}];
+  try {
+    const run=await runAudit(catalog,{outDir:join(root,'run')},{...fixtureServices(),capture:async(_b,_u,options)=>options.side==='external'?{...fixtureSnapshot(),mainText:'  ',mainHTML:'<div style="height:100vh"></div>'}:fixtureSnapshot()});
+    assert.equal(run.results.find(r=>r.id==='blank').status,'blocked');
+    const imageOnly=await runAudit(catalog,{outDir:join(root,'image-only')},{...fixtureServices(),capture:async(_b,_u,options)=>options.side==='external'?{...fixtureSnapshot(),mainText:'',images:[{inMain:true,visible:true,loaded:true}]}:fixtureSnapshot()});
+    assert.equal(imageOnly.results.find(r=>r.id==='blank').status,'pass');
+  } finally {await rm(root,{recursive:true,force:true});}
+});
+
+test('historical correction notes cannot masquerade as current defect confirmations',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'rs-historical-note-'));
+  const catalog=fixtureCatalog();catalog.findings[0].correction='The defect is confirmed.';
+  try {
+    const run=await runAudit(catalog,{outDir:join(root,'run')},fixtureServices());
+    const finding=run.results.find(r=>r.id==='ABOUT-01');
+    assert.equal(finding.status,'pass');
+    assert.match(finding.notes[0],/^Historical report correction \(not a current check result\): /);
+  } finally {await rm(root,{recursive:true,force:true});}
+});
+
 for(const concurrency of [1,2])test(`supplemental failures retain successes and execute every remaining item (concurrency ${concurrency})`,async()=>{
   const root=await mkdtemp(join(tmpdir(),'rs-run-items-'));
   const catalog=fixtureCatalog();

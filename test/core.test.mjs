@@ -44,3 +44,7 @@ test('403, challenge, TLS and login states never become missing pages or readabl
   assert.equal(classifyPage({httpStatus:200,title:'Not Found',text:'Page not found',finalURL:'https://example.org'}), 'missing');
   assert.equal(classifyPage({httpStatus:200,title:'Awards',text:'Awards list',finalURL:'https://example.org'}), 'ready');
 });
+
+test('partial, uncompleted redirect and unobserved HTTP responses cannot be readable pages',()=>{
+  for(const httpStatus of [206,301,302,304,null,undefined])assert.equal(classifyPage({httpStatus,title:'Public article',text:'Readable-looking body',finalURL:'https://example.org/article'}),'blocked',String(httpStatus));
+});

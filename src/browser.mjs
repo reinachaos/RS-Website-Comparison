@@ -74,28 +74,46 @@ async function openPage(browser, url, options) {
   } catch(error){await close();throw error;}
 }
 
-// This function is serialized into the browser and reads rendered DOM only.
+// Serialized into the browser: extract inert evidence before masking screenshot text.
 function extractSnapshot({selector,sensitiveSource}) {
   const root=document.querySelector(selector);
   const sensitive=new RegExp(sensitiveSource,'i');
   const secrets=[...document.querySelectorAll('input,textarea,select')].flatMap(e=>{
     const protectedField=e.type==='password'||sensitive.test(e.name)||sensitive.test(e.id);
-    // Ordinary hidden flags such as page=1 are removed as controls, not replaced throughout the article.
-    return [e.value,e.getAttribute('value')].filter(value=>value&&(protectedField||(e.type==='hidden'&&value.length>=8)));
+    // Short form values are removed/masked as controls, never replaced throughout an article.
+    return [e.value,e.getAttribute('value')].filter(value=>value?.length>=8&&(protectedField||e.type==='hidden'));
   });
   for(const e of document.querySelectorAll('*'))for(const attr of e.attributes) {
-    try {const u=new URL(attr.value,document.baseURI);for(const [key,value] of u.searchParams)if(sensitive.test(key)&&value)secrets.push(value);}catch{}
+    try {
+      const u=new URL(attr.value,document.baseURI);
+      for(const [key,value] of [...u.searchParams,...new URLSearchParams(u.hash.slice(1))])if(sensitive.test(key)&&value.length>=8)secrets.push(value);
+    } catch {}
   }
+  const text=value=>{
+    let result=String(value??'').replace(/([?&#]|&amp;)([a-z\d_%.-]+)=([^\s&#<>"']*)/gi,(whole,separator,key)=>{
+      let decoded=key;try{decoded=decodeURIComponent(key);}catch{}
+      return sensitive.test(decoded)?`${separator}${key}=REDACTED`:whole;
+    });
+    for(const secret of secrets)result=result.split(secret).join('REDACTED');
+    return result;
+  };
+  const href=value=>{
+    const u=new URL(value,document.baseURI);
+    for(const key of [...u.searchParams.keys()])if(sensitive.test(key))u.searchParams.set(key,'REDACTED');
+    const fragment=new URLSearchParams(u.hash.slice(1));
+    for(const key of [...fragment.keys()])if(sensitive.test(key)){fragment.set(key,'REDACTED');u.hash=fragment.toString();}
+    u.username='';u.password='';return u.href;
+  };
   // Rebuild inert structural markup: no executable elements, resource URLs, CSS, or form state.
   const excluded=new Set('SCRIPT STYLE LINK META BASE IFRAME FRAME OBJECT EMBED INPUT TEXTAREA SELECT OPTION BUTTON FORM SVG MATH TEMPLATE NOSCRIPT'.split(' '));
   const allowed=new Set('HTML HEAD BODY TITLE MAIN ARTICLE SECTION HEADER FOOTER NAV DIV SPAN P A IMG H1 H2 H3 H4 H5 H6 TABLE THEAD TBODY TFOOT TR TH TD CAPTION COLGROUP COL UL OL LI DL DT DD BR HR STRONG EM B I U S SMALL BLOCKQUOTE PRE CODE FIGURE FIGCAPTION TIME SUP SUB'.split(' '));
   const clean=node=>{
-    if(node.nodeType===Node.TEXT_NODE)return document.createTextNode(node.textContent);
+    if(node.nodeType===Node.TEXT_NODE)return document.createTextNode(text(node.textContent));
     if(node.nodeType!==Node.ELEMENT_NODE||excluded.has(node.tagName))return document.createTextNode('');
     const e=document.createElement(allowed.has(node.tagName)?node.tagName.toLowerCase():'span');
-    for(const name of ['id','class','alt','colspan','rowspan','scope','title'])if(node.hasAttribute(name))e.setAttribute(name,node.getAttribute(name));
+    for(const name of ['id','class','alt','colspan','rowspan','scope','title'])if(node.hasAttribute(name))e.setAttribute(name,text(node.getAttribute(name)));
     if(node.tagName==='A'&&node.hasAttribute('href')) {
-      try {const u=new URL(node.getAttribute('href'),document.baseURI);for(const key of [...u.searchParams.keys()])if(sensitive.test(key))u.searchParams.set(key,'REDACTED');u.username='';u.password='';e.setAttribute('data-href',u.href);}catch{}
+      try {e.setAttribute('data-href',href(node.getAttribute('href')));}catch{}
     }
     for(const child of node.childNodes)e.append(clean(child));
     return e;
@@ -103,15 +121,20 @@ function extractSnapshot({selector,sensitiveSource}) {
   const html=e=>clean(e).innerHTML;
   const rect=e=>{const r=e.getBoundingClientRect();return {width:r.width,height:r.height,x:r.x,y:r.y+scrollY};};
   const visible=e=>{const r=e.getBoundingClientRect(),s=getComputedStyle(e);return !!(r.width&&r.height&&s.visibility!=='hidden'&&s.display!=='none'&&!e.closest('[hidden]'));};
-  const h=document.querySelector('h1'),hs=h?getComputedStyle(h):null;
-  return {
-    mainText:root.innerText,mainHTML:html(root),sanitizedDOM:'<!doctype html>\n'+clean(document.documentElement).outerHTML,secrets,
-    headings:[...document.querySelectorAll('h1,h2,h3,h4,h5,h6')].filter(e=>e===h||root.contains(e)).map(e=>({level:Number(e.tagName[1]),text:e.innerText.trim(),id:e.id})),
-    links:[...document.querySelectorAll('a[href]')].map(e=>({text:e.innerText.trim(),href:e.href,rawHref:e.getAttribute('href'),visible:visible(e),inMain:root.contains(e)})),
-    images:[...document.images].map(e=>({src:e.src,currentSrc:e.currentSrc,alt:e.alt,loaded:e.complete&&e.naturalWidth>0,visible:visible(e),inMain:root.contains(e),naturalWidth:e.naturalWidth,naturalHeight:e.naturalHeight,...rect(e)})),
-    tables:[...root.querySelectorAll('table')].map(t=>({text:t.innerText,rows:[...t.rows].map(r=>({cells:[...r.cells].map(c=>({text:c.innerText,html:html(c),...rect(c)}))})),...rect(t)})),
+  const h=[...document.querySelectorAll('h1')].find(visible),hs=h?getComputedStyle(h):null;
+  const snapshot={
+    title:text(document.title),mainText:text(root.innerText),mainHTML:html(root),sanitizedDOM:'<!doctype html>\n'+clean(document.documentElement).outerHTML,
+    headings:[...document.querySelectorAll('h1,h2,h3,h4,h5,h6')].filter(e=>(e===h||root.contains(e))&&visible(e)).map(e=>({level:Number(e.tagName[1]),text:text(e.innerText.trim()),id:text(e.id)})),
+    links:[...document.querySelectorAll('a[href]')].map(e=>({text:text(e.innerText.trim()),href:e.href,rawHref:e.getAttribute('href'),visible:visible(e),inMain:root.contains(e)})),
+    images:[...document.images].map(e=>({src:e.src,currentSrc:e.currentSrc,alt:text(e.alt),loaded:e.complete&&e.naturalWidth>0,visible:visible(e),inMain:root.contains(e),naturalWidth:e.naturalWidth,naturalHeight:e.naturalHeight,...rect(e)})),
+    tables:[...root.querySelectorAll('table')].map(t=>({text:text(t.innerText),rows:[...t.rows].map(r=>({cells:[...r.cells].map(c=>({text:text(c.innerText),html:html(c),...rect(c)}))})),...rect(t)})),
     metrics:{scrollWidth:document.documentElement.scrollWidth,clientWidth:document.documentElement.clientWidth,overflow:Math.max(0,document.documentElement.scrollWidth-document.documentElement.clientWidth),h1:hs?{fontSize:parseFloat(hs.fontSize),fontWeight:parseFloat(hs.fontWeight)}:{}},
   };
+  for(const e of document.querySelectorAll('input,textarea,select'))if(['hidden','password'].includes(e.type)||sensitive.test(e.name)||sensitive.test(e.id))e.setAttribute('data-rs-sensitive-control','');
+  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+  while(walker.nextNode())if(!walker.currentNode.parentElement?.closest('script,style'))walker.currentNode.textContent=text(walker.currentNode.textContent);
+  for(const image of document.images)image.alt=text(image.alt);
+  return snapshot;
 }
 
 export async function capturePage(browser,url,options={}) {
@@ -127,21 +150,28 @@ export async function capturePage(browser,url,options={}) {
   try {
     if(state.status==='ready') {
       snapshot.fontsReady=await page.waitForFunction(()=>document.fonts.status==='loaded',null,{timeout:5000}).then(()=>true,()=>false);
-      snapshot.imagesSettled=await page.waitForFunction(s=>[...document.querySelector(s).querySelectorAll('img')].every(i=>i.complete),selector,{timeout:5000}).then(()=>true,()=>false);
-      const {sanitizedDOM,secrets,...extracted}=await page.evaluate(extractSnapshot,{selector,sensitiveSource:sensitiveKey.source});
-      Object.assign(snapshot,redactEvidence(extracted,secrets));
+      const imageState=await page.waitForFunction(s=>{
+        const images=[...document.querySelector(s).querySelectorAll('img')].filter(image=>{
+          const style=getComputedStyle(image);
+          return image.getClientRects().length&&style.visibility!=='hidden'&&style.display!=='none'&&!image.closest('[hidden]');
+        });
+        // Unsized lazy images can have a zero-size box until their first load.
+        for(const image of images)if(image.loading==='lazy')image.loading='eager';
+        if(images.some(i=>!i.complete))return false;
+        const rendered=images.filter(i=>{const r=i.getBoundingClientRect();return r.width&&r.height;});
+        return {settled:rendered.every(i=>i.naturalWidth>0)};
+      },selector,{timeout:5000}).catch(()=>null);
+      snapshot.imagesSettled=imageState?(await imageState.jsonValue()).settled:false;
+      await imageState?.dispose();
+      const {sanitizedDOM,...extracted}=await page.evaluate(extractSnapshot,{selector,sensitiveSource:sensitiveKey.source});
+      Object.assign(snapshot,extracted);
       snapshot.contentSettled=state.contentSettled??null;
       if(options.side==='newsletter'&&!snapshot.imagesSettled){snapshot.status='blocked';snapshot.error='Newsletter images did not finish loading before capture.';}
       snapshot.contentSelector=selector;
       snapshot.links=snapshot.links.map(l=>({...l,href:redactURL(l.href),rawHref:redactURL(l.rawHref,state.finalURL)}));
-      await writeFile(join(outDir,paths.dom),redactEvidence(sanitizedDOM,secrets));
+      snapshot.images=snapshot.images.map(i=>({...i,src:redactURL(i.src),currentSrc:redactURL(i.currentSrc)}));
+      await writeFile(join(outDir,paths.dom),sanitizedDOM);
       snapshot.artifacts.dom=paths.dom;
-      await page.evaluate(({values,sensitiveSource})=>{
-        const sensitive=new RegExp(sensitiveSource,'i');
-        for(const e of document.querySelectorAll('input,textarea,select'))if(['hidden','password'].includes(e.type)||sensitive.test(e.name)||sensitive.test(e.id))e.setAttribute('data-rs-sensitive-control','');
-        const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
-        while(walker.nextNode())if(!walker.currentNode.parentElement?.closest('script,style'))for(const secret of values)if(secret)walker.currentNode.textContent=walker.currentNode.textContent.split(secret).join('REDACTED');
-      },{values:secrets,sensitiveSource:sensitiveKey.source});
       const bounds=await page.locator(selector).boundingBox();
       if(bounds&&bounds.height<=20000) {
         const region=`evidence/${key}-main.png`;
@@ -155,7 +185,7 @@ export async function capturePage(browser,url,options={}) {
       await page.screenshot({path:join(outDir,paths.screenshot),fullPage:height<=20000,animations:'disabled',timeout:10000,mask:[page.locator('[data-rs-sensitive-control]')]});
       snapshot.artifacts.screenshot=paths.screenshot;
     } catch(e) {snapshot.screenshotError=e.message.split('\n')[0];}
-    snapshot=redactEvidence(snapshot);
+    for(const field of ['title','error','regionScreenshotError','screenshotError'])if(typeof snapshot[field]==='string')snapshot[field]=redactEvidence(snapshot[field]);
     await writeFile(join(outDir,paths.json),JSON.stringify(snapshot,null,2));
     return snapshot;
   } finally {await close();}
@@ -185,12 +215,21 @@ export async function exerciseAnchors(browser,url,options={}) {
         await page.evaluate(()=>{history.replaceState(null,'',location.pathname+location.search);scrollTo(0,document.documentElement.scrollHeight);});
         await link.scrollIntoViewIfNeeded();
         await link.focus();
-        await link.press('Enter');
         if(options.mode==='return-top') {
-          await page.waitForFunction(()=>scrollY<=2,null,{timeout:2000}).catch(()=>{});
-          check.actual={scrollY:await page.evaluate(()=>scrollY)};
-          check.status=check.actual.scrollY<=2?'pass':'fail';
+          // Focus can scroll a control at the start of the document to y=0 before activation.
+          const beforeScrollY=await page.evaluate(()=>{scrollTo({top:document.documentElement.scrollHeight,behavior:'instant'});return scrollY;});
+          if(beforeScrollY>2) {
+            await page.keyboard.press('Enter');
+            await page.waitForFunction(()=>scrollY<=2,null,{timeout:2000}).catch(()=>{});
+            check.actual={beforeScrollY,scrollY:await page.evaluate(()=>scrollY)};
+            check.status=check.actual.scrollY<=2?'pass':'fail';
+          } else {
+            check.actual={beforeScrollY,scrollY:beforeScrollY};
+            check.status='blocked';
+            check.note='The document cannot establish a non-top scroll position to test return-to-top movement.';
+          }
         } else {
+          await link.press('Enter');
           const target=decodeURIComponent(new URL(a.resolved).hash.slice(1));
           const measure=()=>page.evaluate(id=>{const e=document.getElementById(id)||[...document.getElementsByName(id)][0];if(!e)return {exists:false};const r=e.getBoundingClientRect();return {exists:true,top:r.top,viewportHeight:innerHeight,text:(e.innerText||e.nextElementSibling?.innerText||'').slice(0,160),hash:location.hash};},target);
           const expectedHash=new URL(a.resolved).hash;

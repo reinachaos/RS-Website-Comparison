@@ -81,8 +81,8 @@ export async function captureBaseline(selected,candidate,services={}) {
       const viewport=rule.viewport||'desktop';pages.set(visualKey(page.baselineURL,viewport),{url:page.baselineURL,viewport});
     }
     const captures=await mapLimit([...pages],2,async([key,p])=>({key,...p,snapshot:await (services.capture||capturePage)(browser,p.url,{outDir:evidenceDir,side:'old',viewport:p.viewport})}));
-    const images=captures.filter(c=>c.snapshot.status==='ready'&&c.snapshot.fontsReady&&c.snapshot.imagesSettled&&c.snapshot.artifacts.mainScreenshot).map(c=>({key:c.key,url:c.url,viewport:c.viewport,path:join(evidenceDir,c.snapshot.artifacts.mainScreenshot)}));
-    await writeFile(join(candidate,'capture-coverage.json'),JSON.stringify(captures.map(c=>({url:c.url,viewport:c.viewport,status:c.snapshot.status,fontsReady:c.snapshot.fontsReady,imagesSettled:c.snapshot.imagesSettled,error:c.snapshot.error})),null,2));
+    const images=captures.filter(c=>c.snapshot.status==='ready'&&c.snapshot.fontsReady&&c.snapshot.imagesSettled&&c.snapshot.artifacts.mainScreenshot).map(c=>({key:c.key,url:c.url,requestedURL:c.snapshot.requestedURL,finalURL:c.snapshot.finalURL,viewport:c.viewport,path:join(evidenceDir,c.snapshot.artifacts.mainScreenshot)}));
+    await writeFile(join(candidate,'capture-coverage.json'),JSON.stringify(captures.map(c=>({url:c.url,requestedURL:c.snapshot.requestedURL??null,finalURL:c.snapshot.finalURL??null,viewport:c.viewport,status:c.snapshot.status,fontsReady:c.snapshot.fontsReady,imagesSettled:c.snapshot.imagesSettled,error:c.snapshot.error})),null,2));
     const env={platform:process.platform,arch:process.arch,browser:browser.version(),locale:'en-US',timezone:'UTC',scale:1};
     if(images.length)await createCandidate(images,candidate,env);
     return {captured:images.length,total:captures.length,exitCode:images.length===captures.length?0:2};

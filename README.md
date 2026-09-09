@@ -75,6 +75,8 @@ npm run baseline:approve -- --candidate baselines/candidates/RUN-ID --reviewer "
 
 Replace `RUN-ID` with the directory printed by capture. Review `capture-coverage.json` and every candidate image before approval. Approval of an incomplete candidate does not fill absent references. Replacing an approved set requires explicit `--replace` and keeps the previous manifest history. Review and commit `baselines/approved` separately; ordinary QA never updates it.
 
+Candidates must retain both the requested and final captured source URLs. A redirect outside the requested source origin cannot become a source reference; same-origin redirects remain visible for owner review. Older candidates or approved references without this provenance must be re-captured and explicitly approved rather than silently reused.
+
 Pixel comparison is limited to the configured STYLE and GENERAL-01 main-content captures. It ignores anti-aliasing and uses a conservative threshold; a significant pixel or dimension difference requests review rather than declaring a migration defect. Missing references or mismatched runtime environments cannot pass. Windows references will not silently match the Ubuntu GitHub runner. Capture in the `capture-baseline` workflow mode when preparing Ubuntu references, download its artifact and review it before explicit approval.
 
 ## Coverage And Evidence
@@ -82,6 +84,7 @@ Pixel comparison is limited to the configured STYLE and GENERAL-01 main-content 
 The versioned JSON catalogs are sufficient to run this repository. Original Word files and private/local evidence directories are not required or included. Each finding has stable IDs, expected content/link rules, source and destination URLs, and explicit review obligations. See [coverage](docs/coverage.md), [contracts](docs/contracts.md), and [report format](docs/report-format.md).
 
 The [release verification record](docs/verification.md) separates checker self-tests from the first complete live acceptance results.
+The [checker logic audit](docs/debug-audit.md) records subsequent reproduced bugs, fixes, regression tests and the limits of the follow-up smoke run.
 
 - DOM assertions use recognized main-content roots, not navigation/footer text as a fallback. Browser observations are rendered DOM and computed styles, **not access to the site's server-side source code**.
 - Desktop is 1440 x 1000; mobile is 390 x 844. Anchor tests use keyboard activation on both. They do not certify touch reliability. Missing inline Top of Page links do not imply the global Back to Top button is missing.

@@ -12,6 +12,10 @@ export const visualKey=(url,viewport='desktop')=>sha(`${url}|${viewport}`);
 function validateIdentity(entry) {
   safeWebURL(entry.url);
   if(new URL(entry.url).hostname!=='rs.ieee.org'||!['desktop','mobile'].includes(entry.viewport||'desktop')||entry.key!==visualKey(entry.url,entry.viewport||'desktop'))throw new Error('Visual reference URL/viewport key identity mismatch');
+  if(typeof entry.requestedURL!=='string'||typeof entry.finalURL!=='string'||!entry.finalURL.trim())throw new Error('Visual capture provenance missing; recapture and review the source reference');
+  if(entry.requestedURL!==entry.url)throw new Error('Visual capture provenance requested URL does not match the reference identity');
+  try {safeWebURL(entry.finalURL);}catch {throw new Error('Visual capture provenance has an invalid final URL');}
+  if(new URL(entry.finalURL).origin!==new URL(entry.requestedURL).origin)throw new Error('Visual capture provenance final URL is outside the requested source origin');
 }
 
 export async function createCandidate(images,directory,environment) {
@@ -25,7 +29,7 @@ export async function createCandidate(images,directory,environment) {
     if(new URL(item.url).hostname!=='rs.ieee.org')throw new Error('A source reference must come from rs.ieee.org');
     const bytes=await readFile(item.path),png=PNG.sync.read(bytes),digest=sha(bytes),file=`${digest}.png`;
     await copyFile(item.path,join(directory,file));
-    entries.push({key:item.key,url:item.url,file,sha256:digest,width:png.width,height:png.height,viewport:item.viewport||'desktop'});
+    entries.push({key:item.key,url:item.url,requestedURL:item.requestedURL,finalURL:item.finalURL,file,sha256:digest,width:png.width,height:png.height,viewport:item.viewport||'desktop'});
   }
   const result={schemaVersion:1,approved:false,createdAt:new Date().toISOString(),environment,entries};
   await writeFile(join(directory,'manifest.json'),JSON.stringify(result,null,2));
